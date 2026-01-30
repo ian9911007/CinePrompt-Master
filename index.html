@@ -34,6 +34,7 @@
     <script type="text/babel">
         const { useState, useMemo, useEffect } = React;
 
+        // 穩定的圖示渲染組件
         const Icon = ({ name, size = 16, className = "" }) => {
             useEffect(() => {
                 if (window.lucide) { window.lucide.createIcons(); }
@@ -101,7 +102,7 @@
                     { id: 'split', name: 'Split Diopter ｜ 雙焦鏡', desc: '特殊鏡頭：前後景同時清晰，超現實感。', prompt: 'split diopter shot, dual focus planes' },
                     { id: 'petzval', name: 'Petzval Art Lens ｜ 藝術鏡', desc: '特殊鏡頭：旋轉焦外，藝術美學。', prompt: 'Petzval art lens, swirly bokeh' },
                     { id: 'fisheye', name: 'Fisheye Lens ｜ 廣域魚眼', desc: '特殊鏡頭：180度畸變，主體突出。', prompt: 'extreme fisheye distortion' },
-                    { id: 'noct095', name: 'Noctilux f/0.95 ｜ 夜神', desc: '特殊鏡頭：極薄深焦，夢幻氛圍。', prompt: 'Noctilux f/0.95 lens, paper-thin DoF' },
+                    { id: 'noct095', name: 'Noctilux f/0.95 ｜ 夜神', desc: '特殊鏡頭：極淺景深，夢幻氛圍。', prompt: 'Noctilux f/0.95 lens, paper-thin DoF' },
                     { id: 'promist', name: 'Pro-Mist Filter ｜ 柔光', desc: '特殊鏡頭：降低銳利度，夢幻感。', prompt: '1/4 black pro-mist filter, highlight bloom' },
                     { id: 'lensbaby', name: 'Lensbaby Composer ｜ 創意鏡', desc: '特殊鏡頭：手動焦點，周圍拉伸模糊。', prompt: 'Lensbaby Composer, selective focus' }
                 ],
@@ -136,7 +137,7 @@
                     { id: 'provia', name: 'Fujifilm Provia 100F ｜ 準確正片', desc: '標準色彩：色彩還原最準的正片。', prompt: 'Fujifilm Provia 100F (RDPIII), accurate slide film colors' },
                     { id: 'reala', name: 'Fujifilm Reala 500D ｜ 自然膚色', desc: '標準色彩：寬容度高，呈現自然。', prompt: 'Fujifilm Reala 500D film stock, exceptional skin tones' },
                     { id: 'portra400', name: 'Kodak Portra 400 ｜ 柯達', desc: '創意風格：人像首選，溫潤細膩。', prompt: 'Kodak Portra 400 film stock emulation, natural skin tones' },
-                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調底片', desc: '創意風格：夜景首選紅色光暈。', prompt: 'CineStill 800T, tungsten balanced, red halation highlights' },
+                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調', desc: '創意風格：夜景首選紅色光暈。', prompt: 'CineStill 800T, red halation highlights' },
                     { id: 'eterna', name: 'Fujifilm Eterna ｜ 富士電影', desc: '創意風格：低反差柔和質感。', prompt: 'Fujifilm Eterna film stock, soft look' },
                     { id: 'velvia', name: 'Fujifilm Velvia 50 ｜ 富士', desc: '創意風格：風景首選，極高飽和。', prompt: 'Fujifilm Velvia 50, vivid landscape' },
                     { id: 'lomo', name: 'LOMO ｜ 洛莫風格', desc: '創意風格：高飽和強暗角，膠片感。', prompt: 'Lomography aesthetic, high saturation' },
@@ -187,8 +188,8 @@
             };
 
             // --- 記憶狀態鍵值 ---
-            const KEY_SHOTS = 'cine_shots_v11_9';
-            const KEY_CONFIG = 'cine_config_v11_9';
+            const KEY_SHOTS = 'cine_shots_v12_0';
+            const KEY_CONFIG = 'cine_config_v12_0';
 
             const [shots, setShots] = useState(() => JSON.parse(localStorage.getItem(KEY_SHOTS) || '[]'));
             const [current, setCurrent] = useState(() => JSON.parse(localStorage.getItem(KEY_CONFIG) || JSON.stringify({
@@ -200,21 +201,21 @@
             useEffect(() => localStorage.setItem(KEY_SHOTS, JSON.stringify(shots)), [shots]);
             useEffect(() => localStorage.setItem(KEY_CONFIG, JSON.stringify(current)), [current]);
 
-            // --- 動態語意增強 ---
+            // --- 動態語意增強 (攝影級強化) ---
             const analyzeSubjectBoost = (text) => {
                 if (!text) return "";
                 const t = text.toLowerCase();
                 let boosters = [];
                 if (/(man|woman|girl|boy|face|eyes|skin|model|subject|hand|body|character|person|child|old)/i.test(t)) {
-                    boosters.push("intricate skin pores, natural skin texture, lifelike hair strands, sub-surface scattering, detailed iris reflections, facial micro-expressions");
+                    boosters.push("highly realistic skin textures and pores, natural skin subsurface scattering, detailed iris reflections, lifelike hair detail, masterful studio portrait lighting");
                 }
                 if (/(apple|fruit|bottle|product|glass|liquid|watch|jewelry|car|metal|object|gadget|iphone|phone|watch)/i.test(t)) {
-                    boosters.push("physically accurate surface textures, micro-scratches, realistic light refraction and transmission, spectral caustic reflections, premium material rendering");
+                    boosters.push("ultra-high fidelity surface textures, micro-scratches on material, authentic optical light refraction, caustic reflections on surfaces, premium commercial product photography");
                 }
                 if (/(street|city|forest|mountain|room|inside|outside|landscape|interior|exterior)/i.test(t)) {
-                    boosters.push("atmospheric depth, high fidelity environmental textures, naturalistic light occlusion");
+                    boosters.push("atmospheric optical depth, authentic environmental lighting, intricate organic textures, high dynamic range landscape photography");
                 }
-                return boosters.length > 0 ? boosters.join(", ") : "high precision physical rendering";
+                return boosters.length > 0 ? boosters.join(", ") : "high-fidelity photographic detail, organic textures";
             };
 
             const finalPrompt = useMemo(() => {
@@ -241,9 +242,12 @@
                 ].filter(val => val && val.trim() !== '');
 
                 const boost = analyzeSubjectBoost(current.action);
-                const quality = "hyper-realistic, 16K resolution, unreal engine 5.4, octane render, physically based rendering (PBR), global illumination, ray-tracing, depth of field";
+                
+                // --- 核心變更：移除 3D 渲染，改為極致攝影參數與 24-Bit RAW ---
+                const photographicQuality = "award-winning professional photography, ultra-realistic, 8K resolution, 24-Bit RAW Depth, raw format, optical excellence, sharp focus, intricate organic textures, masterful composition, cinematic lighting, depth of field";
                 const aspect = `--ar ${current.aspect.replace(':', ':')}`;
-                return `${techChain.join(", ")}, ${boost}, ${quality} ${aspect}`;
+                
+                return `${techChain.join(", ")}, ${boost}, ${photographicQuality} ${aspect}`;
             }, [current]);
 
             const addShot = () => { if (current.action) { setShots([{ ...current, id: Date.now(), prompt: finalPrompt }, ...shots]); setCurrent({ ...current, action: '' }); } };
@@ -256,11 +260,10 @@
                 document.body.removeChild(el);
             };
 
-            // --- 修正後的 Reset 函數：僅針對指定項目回到 None，其餘不變 ---
             const handleReset = () => {
                 if (window.confirm("確定要重置技術參數（攝影機、鏡頭、燈光等）至 None 嗎？")) {
                     setCurrent(prev => ({
-                        ...prev, // 保留其餘狀態 (描述、比例、景別、視角)
+                        ...prev, 
                         camera: 'none',
                         focal: 'none',
                         aperture: 'none',
@@ -285,11 +288,11 @@
                                     </div>
                                     <div>
                                         <h1 className="text-lg font-black tracking-tighter text-white uppercase leading-none">CinePrompt Master</h1>
-                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V11.9 | PRODUCTION WORKSTATION</p>
+                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V12.0 | PHOTOGRAPHIC CORE</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold">
-                                    <Icon name="Brain" size={10} /> DYNAMIC REASONING
+                                    <Icon name="Brain" size={10} /> RAW 24-BIT OPTIC ENGINE
                                 </div>
                             </header>
 
@@ -301,7 +304,7 @@
                                     <textarea 
                                         value={current.action}
                                         onChange={(e) => setCurrent({...current, action: e.target.value})}
-                                        placeholder="把你心中所想的寫出來...（點擊 Reset 僅重置技術參數至 None）"
+                                        placeholder="把你心中所想的寫出來...（啟用動態偵測技術）"
                                         className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none"
                                     />
                                 </div>
@@ -445,7 +448,7 @@
                                 </div>
                             </div>
                             <footer className="text-[9px] text-gray-700 flex justify-between items-center px-2 font-black mt-2">
-                                <div>PBR ACTIVE | 16K SUPER-RES ENHANCED</div>
+                                <div>RAW PHOTOGRAPHIC CORE | 24-BIT RAW DEPTH ACTIVE</div>
                                 <div>© 2026 CINEPROMPT MASTER WORKSTATION</div>
                             </footer>
                         </div>
