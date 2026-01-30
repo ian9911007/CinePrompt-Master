@@ -83,7 +83,7 @@
                     { id: 'phaseone', name: 'Phase One XF IQ4 ｜ 飛思一億', desc: '商業高品質：極致商業靜物攝影，紋理細節爆棚。', prompt: 'shot on Phase One XF IQ4 150MP, medium format clarity, commercial macro precision' },
                     { id: 'h6d', name: 'Hasselblad H6D-100c ｜ 哈蘇中幅', desc: '商業高品質：色彩深度極高，適合高級產品與人像。', prompt: 'shot on Hasselblad H6D-100c, high color depth, elite commercial aesthetic' },
                     { id: 'gfx100', name: 'Fujifilm GFX 100 II ｜ 富士中幅', desc: '商業高品質：富士獨有色彩模擬，極高寬容度。', prompt: 'shot on Fujifilm GFX 100 II, medium format depth, film simulation colors' },
-                    { id: '5d4', name: 'Canon 5D Mark IV ｜ 佳能 5D4', desc: '商業高品質：標準商業數位單眼質感，色彩討喜。', prompt: 'shot on Canon EOS 5D Mark IV, standard DSLR look, vibrant warm tones' },
+                    { id: '5d4', name: 'Canon EOS 5D Mark IV ｜ 佳能 5D4', desc: '商業高品質：標準商業數位單眼質感，色彩討喜。', prompt: 'shot on Canon EOS 5D Mark IV, standard DSLR look, vibrant warm tones' },
                     { id: 'venice2', name: 'Sony VENICE 2 ｜ 索尼威尼斯', desc: '商業高品質：色彩還原準確，膚色自然，高感純淨。', prompt: 'shot on Sony VENICE 2, CineAlta color science, natural skin tones, high ISO purity' },
                     { id: 'm11m', name: 'Leica M11 Monochrom ｜ 徠卡黑白', desc: '商業高品質：純粹的黑白灰階，高對比與銳利度。', prompt: 'shot on Leica M11 Monochrom, pure B&W photography, high contrast grayscale' },
                     { id: 'nkonf3', name: 'Nikon F3 ｜ 尼康 F3', desc: '商業高品質：經典新聞攝影質感，樸實剛硬。', prompt: 'shot on Nikon F3, 35mm photojournalism aesthetic, robust analog look' },
@@ -145,33 +145,6 @@
                     { id: 'promist', name: 'Pro-Mist Filter ｜ 柔光', desc: '高光溢出，降低銳利度，夢幻感。', prompt: '1/4 black pro-mist filter, highlight bloom' },
                     { id: 'lensbaby', name: 'Lensbaby Composer ｜ 創意鏡', desc: '焦點移動，周圍拉伸模糊效果。', prompt: 'Lensbaby Composer, selective focus, radial stretching' }
                 ],
-                luts: [
-                    { id: 'none', name: 'None ｜ 不指定', desc: '不指定色彩風格，保留空白。', prompt: '' },
-                    // --- 色彩 LUT 排序：標準商業高品質 ---
-                    { id: 'correct', name: 'Color Accurate ｜ 色彩準確', desc: '精準還原物理色彩，專業參考級中性配置。', prompt: 'calibrated color accuracy, neutral reference profile' },
-                    { id: 'commercial', name: 'Commercial ｜ 頂級商攝', desc: '高端商業廣告色彩科學，通透且高級。', prompt: 'high-end commercial editorial color science, standard white balance' },
-                    { id: 'provia', name: 'Fujifilm Provia 100F ｜ 準確正片', desc: '公認色彩還原最精準的正片風格。', prompt: 'Fujifilm Provia 100F (RDPIII), accurate slide film colors' },
-                    { id: 'reala', name: 'Fujifilm Reala 500D ｜ 自然膚色', desc: '寬容度極高，呈現極自然的動態範圍。', prompt: 'Fujifilm Reala 500D film stock, exceptional skin tones' },
-                    // --- 色彩 LUT 排序：創意色彩 ---
-                    { id: 'portra400', name: 'Kodak Portra 400 ｜ 柯達人像', desc: '人像首選，膚色溫潤細膩，顆粒感優雅。', prompt: 'Kodak Portra 400 film stock emulation, natural skin tones' },
-                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調底片', desc: '夜景中高光處有紅色光暈。', prompt: 'CineStill 800T, tungsten balanced, red halation highlights' },
-                    { id: 'eterna', name: 'Fujifilm Eterna ｜ 富士電影', desc: '低反差、低飽和的柔和底片質感。', prompt: 'Fujifilm Eterna film stock, low contrast, soft filmic look' },
-                    { id: 'velvia', name: 'Fujifilm Velvia 50 ｜ 富士鮮豔', desc: '風景首選，極高飽和度與高反差。', prompt: 'Fujifilm Velvia 50, ultra-saturated vivid landscape colors' },
-                    { id: 'lomo', name: 'LOMO ｜ 洛莫風格', desc: '高飽和、強暗角，隨性的膠片美學。', prompt: 'Lomography aesthetic, high saturation, heavy vignetting' },
-                    { id: 'holga', name: 'Holga ｜ 賀加 Lo-Fi', desc: '塑膠鏡頭質感，漏光且具備模糊邊緣。', prompt: 'Holga photography style, light leaks, soft focus blur' },
-                    { id: 'lomopurple', name: 'LomoChrome Purple ｜ 紫色世界', desc: '將綠色轉化為超現實紫色空間。', prompt: 'LomoChrome Purple film aesthetic, surreal purple infrared look' },
-                    { id: 'vista400', name: 'Agfa Vista 400 ｜ 愛克發', desc: '色彩鮮豔活潑，具備經典歐式街頭感。', prompt: 'Agfa Vista 400, vibrant street photography colors' },
-                    { id: 'expired', name: 'Expired Film ｜ 過期底片', desc: '褪色、色彩偏差與強烈顆粒，故事感強。', prompt: 'expired film aesthetic, faded colors, fogged edges' },
-                    { id: 'crossproc', name: 'Cross Processing ｜ 負沖', desc: '跨製程沖印產生的不可預測偏色。', prompt: 'cross processed film look, color shift, high contrast' },
-                    // --- 色彩 LUT 排序：單色調 ---
-                    { id: 'sepia', name: 'Sepia Tone ｜ 懷舊褐', desc: '老照片棕褐色調，古拙且懷舊。', prompt: 'sepia tone vintage photograph, nostalgic monochrome' },
-                    { id: 'cyanotype', name: 'Cyanotype ｜ 藍曬法', desc: '深藍色單色影像，工程藍圖美感。', prompt: 'cyanotype alternative process, monochromatic Prussian blue' },
-                    // --- 色彩 LUT 排序：黑白 ---
-                    { id: 'hp5', name: 'Ilford HP5 Plus ｜ 經典黑白', desc: '傳統黑白紀實質感，有機顆粒明顯。', prompt: 'Ilford HP5 Plus black and white film, grainy texture' },
-                    { id: 'tmax', name: 'Kodak T-MAX ｜ 紀錄黑白', desc: '現代黑白，灰階過渡極其細膩。', prompt: 'Kodak T-MAX 400 film, fine grain B&W, sharp details' },
-                    { id: 'trix400', name: 'Kodak Tri-X 400 ｜ 強力黑白', desc: '高反差黑白，粗獷有力，紀實標竿。', prompt: 'Kodak Tri-X 400 film, high contrast B&W, gritty grain' },
-                    { id: 'wetplate', name: 'Wet Plate ｜ 濕版攝影', desc: '模擬 19 世紀濕版工藝，具備邊緣腐蝕質感。', prompt: 'antique wet plate collodion, silver halide marks, aged texture' }
-                ],
                 lighting: [
                     { id: 'none', name: 'None ｜ 不指定', desc: '不指定燈光參數，保留空白。', prompt: '' },
                     { id: 'threepoint', name: 'Three-Point Lighting ｜ 三點照明', desc: '標準商攝架構，建立立體感與深度。', prompt: 'professional three-point lighting (key, fill, back)' },
@@ -180,9 +153,9 @@
                     { id: 'specular', name: 'Specular ｜ 鏡面高光', desc: '定義金屬與精密物件質感。', prompt: 'intense specular highlights' },
                     { id: 'chiaroscuro', name: 'Chiaroscuro ｜ 明暗對照', desc: '劇性光影，模仿古典畫作。', prompt: 'chiaroscuro lighting, dramatic contrast' },
                     { id: 'rembrandt', name: 'Rembrandt ｜ 林布蘭光', desc: '最強肖像層次感。', prompt: 'Rembrandt lighting, triangle cheek highlight' },
-                    { id: 'butterfly', name: 'Butterfly Lighting ｜ 蝴蝶光', desc: '時尚攝影標配。', prompt: 'butterfly lighting, fashion style' },
+                    { id: 'butterfly', name: 'Butterfly Lighting ｜ 蝴蝶光', desc: '時尚攝影標配。', prompt: 'butterfly lighting, glamour shadow, fashion style' },
                     { id: 'lowkey', name: 'Low-Key ｜ 低暗調', desc: '神祕與戲劇感強烈。', prompt: 'low-key lighting, heavy shadows, high contrast drama' },
-                    { id: 'split_lit', name: 'Split Lighting ｜ 側向切光', desc: '戲劇感強烈側向打光。', prompt: 'split lighting setup, dramatic side light' },
+                    { id: 'split_lit', name: 'Split Lighting ｜ 側向切光', desc: '側向硬光，強調輪廓。', prompt: 'split lighting setup, dramatic side light' },
                     { id: 'rimlight', name: 'Rim Light ｜ 輪廓光', desc: '勾勒邊緣，抽離背景。', prompt: 'powerful rim lighting, glowing edges' },
                     { id: 'gobo', name: 'Gobo Projection ｜ 遮光投影', desc: '投射陰影圖案（百葉窗/樹葉）。', prompt: 'gobo lighting, shadow patterns' },
                     { id: 'slash', name: 'Slash Lighting ｜ 條狀光', desc: '窄長硬光，定義焦點。', prompt: 'slash lighting, strip of hard light' },
@@ -195,6 +168,41 @@
                     { id: 'blue', name: 'Blue Hour ｜ 藍調時刻', desc: '日落冷藍質感。', prompt: 'cold blue hour lighting, sapphire reflection' },
                     { id: 'neon', name: 'Neon Noir ｜ 霓虹黑色', desc: '未來科幻霓虹配色。', prompt: 'neon noir lighting, cyan and magenta color cast' },
                     { id: 'tyndall', name: 'Tyndall Effect ｜ 丁達爾', desc: '神聖的光束感。', prompt: 'Tyndall effect, divine god rays' }
+                ],
+                luts: [
+                    { id: 'none', name: 'None ｜ 不指定', desc: '不指定色彩風格，保留空白。', prompt: '' },
+                    // --- 色彩 LUT 排序：標準商業高品質 ---
+                    { id: 'correct', name: 'Color Accurate ｜ 色彩準確', desc: '精準還原物理色彩，專業參考級中性配置。', prompt: 'calibrated color accuracy, neutral reference profile' },
+                    { id: 'commercial', name: 'Commercial ｜ 頂級商攝', desc: '高端商業廣告色彩科學，通透且高級。', prompt: 'high-end commercial editorial color science, standard white balance' },
+                    { id: 'provia', name: 'Fujifilm Provia 100F ｜ 準確正片', desc: '公認色彩還原最精準的正片風格。', prompt: 'Fujifilm Provia 100F (RDPIII), accurate slide film colors' },
+                    { id: 'reala', name: 'Fujifilm Reala 500D ｜ 自然膚色', desc: '寬容度極高，呈現極自然的動態範圍。', prompt: 'Fujifilm Reala 500D film stock, exceptional skin tones' },
+                    { id: 'technicolor', name: 'Technicolor ｜ 經典彩色', desc: '模擬三膠片噴墨技術，飽和度極高。', prompt: 'vibrant Technicolor 3-strip process, saturated primary colors, historical cinema aesthetic' },
+                    // --- 色彩 LUT 排序：創意色彩 ---
+                    { id: 'portra400', name: 'Kodak Portra 400 ｜ 柯達人像', desc: '人像首選，膚色溫潤細膩，顆粒優雅。', prompt: 'Kodak Portra 400 film stock emulation, natural skin tones' },
+                    { id: 'ektar100', name: 'Kodak Ektar 100 ｜ 極致鮮豔', desc: '世界最高飽和度的彩色負片質感，細顆粒彩色攝影。', prompt: 'Kodak Ektar 100 film emulation, ultra-vivid colors, extremely fine grain, high saturation' },
+                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調底片', desc: '夜景首選，高光處有迷人的紅色光暈。', prompt: 'CineStill 800T, tungsten balanced, red halation highlights' },
+                    { id: 'eterna', name: 'Fujifilm Eterna ｜ 富士電影', desc: '低反差、低飽和的柔和電影感。', prompt: 'Fujifilm Eterna film stock, low contrast, soft filmic look' },
+                    { id: 'velvia', name: 'Fujifilm Velvia 50 ｜ 富士鮮豔', desc: '風景首選，極高飽和度與高反差。', prompt: 'Fujifilm Velvia 50, ultra-saturated vivid landscape colors' },
+                    { id: 'lomo', name: 'LOMO ｜ 洛莫風格', desc: '高飽和、強暗角，隨性的膠片美學。', prompt: 'Lomography aesthetic, high saturation, heavy vignetting' },
+                    { id: 'holga', name: 'Holga ｜ 賀加 Lo-Fi', desc: '塑膠鏡頭質感，漏光且具備模糊邊緣。', prompt: 'Holga photography style, light leaks, soft focus blur' },
+                    { id: 'lomopurple', name: 'LomoChrome Purple ｜ 紫色世界', desc: '將綠色轉化為超現實紫色空間。', prompt: 'LomoChrome Purple film aesthetic, surreal purple infrared look' },
+                    { id: 'vista400', name: 'Agfa Vista 400 ｜ 愛克發', desc: '色彩鮮豔活潑，具備歐式街頭感。', prompt: 'Agfa Vista 400, vibrant street photography colors' },
+                    { id: 'agfaprecisa', name: 'Agfa Precisa ｜ 愛克發正片', desc: '經典歐洲正片負沖感，強烈青藍調。', prompt: 'Agfa Precisa 100 cross-processed, punchy blues and greens, high contrast' },
+                    { id: 'expired', name: 'Expired Film ｜ 過期底片', desc: '褪色、色彩偏差與強烈顆粒，故事感強。', prompt: 'expired film aesthetic, faded colors, fogged edges' },
+                    { id: 'crossproc', name: 'Cross Processing ｜ 負沖', desc: '色彩偏移，不可預測的高反差偏色。', prompt: 'cross processed film look, color shift, high contrast' },
+                    { id: 'tealorange', name: 'Teal & Orange ｜ 商業大片', desc: '好萊塢電影配色，暖調膚色與冷調陰影。', prompt: 'blockbuster teal and orange color grade, high contrast, warm skin tones, cool shadows' },
+                    { id: 'bleachbypass', name: 'Bleach Bypass ｜ 跳銀處理', desc: '高反差、低飽和的粗獷金屬質感。', prompt: 'bleach bypass film process, high contrast, desaturated colors, gritty metallic texture' },
+                    // --- 色彩 LUT 排序：單色調 ---
+                    { id: 'sepia', name: 'Sepia Tone ｜ 懷舊褐', desc: '老照片棕褐色調，古拙且懷舊。', prompt: 'sepia tone vintage photograph, nostalgic monochrome' },
+                    { id: 'cyanotype', name: 'Cyanotype ｜ 藍曬法', desc: '深藍色單色影像，工程藍圖美感。', prompt: 'cyanotype alternative process, monochromatic Prussian blue' },
+                    { id: 'infrared', name: 'Rollei Infrared 400 ｜ 紅外線', desc: '非現實光譜感，雪白植被與漆黑天空。', prompt: 'infrared photography, Rollei Infrared 400 look, wood effect' },
+                    { id: 'goldtone', name: 'Gold Tone ｜ 金色單色', desc: '琥珀質感的金色單色效果。', prompt: 'gold toned monochrome photography, warm yellow-gold highlights, deep amber shadows' },
+                    // --- 色彩 LUT 排序：黑白 ---
+                    { id: 'hp5', name: 'Ilford HP5 Plus ｜ 經典黑白', desc: '傳統黑白紀實質感，有機顆粒明顯。', prompt: 'Ilford HP5 Plus black and white film, grainy texture' },
+                    { id: 'tmax', name: 'Kodak T-MAX ｜ 紀錄黑白', desc: '現代黑白，灰階過渡極其細膩。', prompt: 'Kodak T-MAX 400 film, fine grain B&W, sharp details' },
+                    { id: 'trix400', name: 'Kodak Tri-X 400 ｜ 強力黑白', desc: '高反差黑白，粗獷有力，紀實標竿。', prompt: 'Kodak Tri-X 400 film, high contrast B&W, gritty grain' },
+                    { id: 'doublex', name: 'Double-X 5222 ｜ 電影黑白', desc: '傳奇電影底片，豐富中間調與電影感。', prompt: 'Kodak Double-X 5222 cinematic black and white, rich midtones, classic movie grain' },
+                    { id: 'wetplate', name: 'Wet Plate ｜ 濕版攝影', desc: '19 世紀濕版工藝，具備邊緣腐蝕質感。', prompt: 'antique wet plate collodion, silver halide marks, aged texture' }
                 ],
                 focals: [
                     { id: 'none', name: 'None' }, { id: '6mm', name: '6mm' }, { id: '8mm', name: '8mm' },
@@ -239,7 +247,7 @@
                 aspectRatios: ['1:1', '9:16', '16:9', '3:4', '4:3', '3:2', '2:3', '5:4', '4:5', '21:9']
             };
 
-            const STORAGE_KEY = 'cine_v13_final';
+            const STORAGE_KEY = 'cine_v13_3_final';
             const [shots, setShots] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_list') || '[]'));
             const [current, setCurrent] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_cfg') || JSON.stringify({
                 action: '', camera: 'phaseone', focal: '35mm', aperture: 'none', lens: 'otus55', 
@@ -342,7 +350,7 @@
                                     <div className="bg-blue-600 p-2 rounded-xl shadow-lg"><Icon name="Smartphone" size={20} className="text-white" /></div>
                                     <div>
                                         <h1 className="text-lg font-black tracking-tighter text-white uppercase leading-none">CinePrompt Master</h1>
-                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V13.0 | CINEMATOGRAPHY ENGINE</p>
+                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V13.3 | PRODUCTION MASTER</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold"><Icon name="Brain" size={10} /> RAW 24-BIT OPTIC ENGINE</div>
