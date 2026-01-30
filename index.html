@@ -15,11 +15,11 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Lucide Vanilla Script (穩定版圖示系統) -->
+    <!-- Lucide Vanilla Script -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-        body { background-color: #070708; color: #e4e4e7; -webkit-tap-highlight-color: transparent; }
+        body { background-color: #070708; color: #e4e4e7; -webkit-tap-highlight-color: transparent; overflow-x: hidden; }
         .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #27272a; border-radius: 20px; }
@@ -38,9 +38,7 @@
             transition: all 0.2s ease;
         }
 
-        select:focus {
-            background-color: #1c1c1e;
-        }
+        select:focus { background-color: #1c1c1e; outline: none; }
 
         input[type="checkbox"] {
             width: 1.25rem;
@@ -49,18 +47,37 @@
             cursor: pointer;
         }
 
+        /* 增強型拖曳手勢樣式 */
         .drag-handle {
             cursor: grab;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 8px;
+            padding: 0 12px;
             color: #3f3f46;
             transition: color 0.2s;
+            touch-action: none; /* 重要：防止行動端捲動干擾拖曳 */
+            user-select: none;
         }
         .drag-handle:active { cursor: grabbing; }
         .drag-handle:hover { color: #60a5fa; }
-        tr.dragging { opacity: 0.5; background-color: #1e1e2e; }
+        
+        /* 拖曳中的浮起效果 */
+        .row-dragging {
+            opacity: 0.9;
+            background-color: #1e1e2e !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+            z-index: 50;
+            position: relative;
+            border-top: 1px solid #3b82f6;
+            border-bottom: 1px solid #3b82f6;
+        }
+
+        /* 平滑移動動畫 */
+        tr {
+            transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), background-color 0.2s;
+        }
 
         @media (max-width: 640px) { 
             select, textarea, button { font-size: 16px !important; } 
@@ -88,7 +105,7 @@
                     { id: 'phaseone', name: 'Phase One XF IQ4 ｜ 飛思一億', desc: '商業高品質：極致商業靜物攝影，紋理細節爆棚。', prompt: 'shot on Phase One XF IQ4 150MP, medium format clarity, commercial macro precision' },
                     { id: 'h6d', name: 'Hasselblad H6D-100c ｜ 哈蘇中幅', desc: '商業高品質：色彩深度極高，適合高級產品與人像。', prompt: 'shot on Hasselblad H6D-100c, high color depth, elite commercial aesthetic' },
                     { id: 'gfx100', name: 'Fujifilm GFX 100 II ｜ 富士中幅', desc: '商業高品質：富士獨有色彩模擬，極高寬容度。', prompt: 'shot on Fujifilm GFX 100 II, medium format depth, film simulation colors' },
-                    { id: '5d4', name: 'Canon EOS 5D Mark IV ｜ 佳能 5D4', desc: '商業高品質：標準商業數位單眼質感，色彩討喜。', prompt: 'shot on Canon EOS 5D Mark IV, standard DSLR look, vibrant warm tones' },
+                    { id: '5d4', name: 'Canon EOS 5D Mark IV ｜ 佳能 5D4', desc: '商業高品質：標準商業數位單眼質感，色彩討喜溫潤。', prompt: 'shot on Canon EOS 5D Mark IV, standard DSLR look, vibrant warm tones' },
                     { id: 'venice2', name: 'Sony VENICE 2 ｜ 索尼威尼斯', desc: '商業高品質：色彩還原準確，膚色自然，高感純淨。', prompt: 'shot on Sony VENICE 2, CineAlta color science, natural skin tones, high ISO purity' },
                     { id: 'm11m', name: 'Leica M11 Monochrom ｜ 徠卡黑白', desc: '商業高品質：純粹的黑白灰階，高對比與銳利度。', prompt: 'shot on Leica M11 Monochrom, pure B&W photography, high contrast grayscale' },
                     { id: 'nkonf3', name: 'Nikon F3 ｜ 尼康 F3', desc: '商業高品質：經典新聞攝影質感，樸實剛硬。', prompt: 'shot on Nikon F3, 35mm photojournalism aesthetic, robust analog look' },
@@ -111,7 +128,6 @@
                 ],
                 lenses: [
                     { id: 'none', name: 'None ｜ 不指定', desc: '不指定鏡頭參數，保留空白。', prompt: '' },
-                    // --- 鏡頭排序：商業高品質 ---
                     { id: 'otus55', name: 'Zeiss Otus 55mm ｜ 蔡司', desc: '無視像差，極致物理正確，光學素質之巔。', prompt: 'Zeiss Otus 55mm f/1.4, apochromatic precision, flawless resolution' },
                     { id: 'sigma14', name: 'Sigma 14mm ｜ 廣角王', desc: '壯闊星空與建築，邊緣畫質極度銳利。', prompt: 'Sigma 14mm f/1.4 DG DN Art lens, wide perspective, high corner-to-corner sharpness' },
                     { id: 'canon85L', name: 'Canon 85mm ｜ 傳奇人像', desc: '夢幻奶油散景，捕捉細膩眼神光。', prompt: 'Canon EF 85mm f/1.2L II USM, legendary creamy bokeh, portrait compression' },
@@ -121,7 +137,6 @@
                     { id: 'nikkor24', name: 'Nikkor 24mm ｜ 標準廣角', desc: '極致解像力，邊緣畫質無懈可擊。', prompt: 'Nikkor 24mm f/1.4G ED lens, sharp wide angle, professional optics' },
                     { id: 'tele70200', name: 'Canon 70-200mm ｜ 長焦標配', desc: '傳奇小白砲，專業級背景壓縮，主體分離感極強。', prompt: 'Canon EF 70-200mm f/2.8L IS III USM, professional white-lens telephoto compression' },
                     { id: 'canon600', name: 'Canon 600mm ｜ 極遠長焦', desc: '頂級白砲，競技與動物攝影標配，強大的背景貼近感。', prompt: 'Canon EF 600mm f/4L IS III USM, extreme professional subject isolation' },
-                    // --- 鏡頭排序：電影鏡 ---
                     { id: 'arrisig', name: 'ARRI Signature 47mm ｜ 電影鏡', desc: '自然膚色渲染之巔，極致溫潤質感。', prompt: 'ARRI Signature Prime lens, LPL mount, naturalistic rendering, creamy texture' },
                     { id: 'xtal', name: 'JDC Xtal 50mm ｜ 變形鏡', desc: '傳奇電影變形鏡，獨特橢圓散景與耀光。', prompt: 'JDC Xtal Xpress Anamorphic lens, Joe Dunton vintage glass, legendary anamorphic flare' },
                     { id: 'hawkvlite', name: 'Hawk V-Lite 55mm ｜ 變形鏡', desc: '現代變形鏡標竿，緊湊且對比鮮明。', prompt: 'Hawk V-Lite Anamorphic lens, modern cinematic anamorphic look' },
@@ -130,11 +145,9 @@
                     { id: 'leicalux', name: 'Leica 35mm ｜ 頂級光學', desc: '高微反差，銳利通透，極致還原細節。', prompt: 'Leica Summilux-C, high micro-contrast, optical clarity' },
                     { id: 'zeisssup', name: 'Zeiss Supreme 50mm ｜ 蔡司電影', desc: '現代且科技感強，呈現冷峻專業感。', prompt: 'Zeiss Supreme Prime, clean modern rendering' },
                     { id: 'angenieux', name: 'Angénieux Optimo ｜ 安琴', desc: '極致滑順的電影變焦感。', prompt: 'Angénieux Optimo zoom, creamy cinema texture' },
-                    // --- 鏡頭排序：底片鏡 (Vintage) ---
                     { id: 'zeiss35', name: 'Zeiss Distagon 35mm ｜ 蔡司人文', desc: '經典人文視角，具備 3D 立體感與底片微反差。', prompt: 'Zeiss Distagon T* 35mm f/1.4, micro-contrast, 3D pop aesthetic' },
                     { id: 'k35', name: 'Canon K-35 35mm ｜ 復古鏡', desc: '暖調低反差，經典 70 年代電影質感。', prompt: 'vintage Canon K-35 prime, nostalgic warm bloom, low contrast' },
                     { id: 'helios', name: 'Helios 44-2 58mm ｜ 八羽怪', desc: '底片鏡：強烈的旋轉散景效果。', prompt: 'Helios 44-2 lens, extreme swirly radial bokeh, organic vintage feel' },
-                    // --- 鏡頭排序：特效鏡 ---
                     { id: 'nikon1700', name: 'Nikkor 1200-1700mm ｜ 1700mm 遠望', desc: '1700mm 極限長焦，定義監視與遠望質感。', prompt: 'Nikkor 1200-1700mm f/5.6-8.0P ED IF lens, super telephoto zoom, extreme spatial flattening' },
                     { id: 'canon800', name: 'Canon 800mm ｜ 長焦之巔', desc: '捕捉野性或競技瞬間，極致背景抽離。', prompt: 'Canon EF 800mm f/5.6L IS USM, maximum telephoto reach, ultra-sharp isolation' },
                     { id: 'canon1200', name: 'Canon 1200mm ｜ 超視距', desc: '衛星級望遠鏡頭，極致空間扁平感。', prompt: 'Canon EF 1200mm f/5.6L USM, extreme telephoto compression, super distance' },
@@ -143,7 +156,7 @@
                     { id: 'nikkor8mm', name: 'Nikkor 8mm ｜ 標準魚眼', desc: '180度視角，標準魚眼變形感。', prompt: 'Nikkor 8mm f/2.8 fisheye lens, 180-degree circular perspective' },
                     { id: 'probe', name: 'Laowa 24mm ｜ 探針鏡', desc: '蟲視角微距，穿梭於物體內部。', prompt: 'Laowa 24mm Probe lens, bug-eye perspective, tubular macro depth' },
                     { id: 'tiltshift', name: 'Tilt-Shift Lens ｜ 移軸', desc: '微縮模型效果，或修正建築透視。', prompt: 'tilt-shift lens effect, miniature model aesthetic' },
-                    { id: 'split diopter', name: 'Split Diopter ｜ 雙焦鏡', desc: '前景與背景同時清晰，超現實感。', prompt: 'split diopter shot, dual focus planes' },
+                    { id: 'split', name: 'Split Diopter ｜ 雙焦鏡', desc: '前景與背景同時清晰，超現實感。', prompt: 'split diopter shot, dual focus planes' },
                     { id: 'petzval', name: 'Petzval Art ｜ 藝術鏡', desc: '中心銳利，邊緣強烈旋轉模糊。', prompt: 'Petzval art lens, swirly bokeh' },
                     { id: 'fisheye', name: 'Fisheye Lens ｜ 廣域魚眼', desc: '廣視角魚眼效果，球體變形感。', prompt: 'extreme fisheye distortion' },
                     { id: 'noct095', name: 'Noctilux 𝑓/0.95 ｜ 夜神', desc: '極薄深焦，夢幻般的焦外虛化。', prompt: 'Noctilux 𝑓/0.95 lens, paper-thin depth of field' },
@@ -176,13 +189,11 @@
                 ],
                 luts: [
                     { id: 'none', name: 'None ｜ 不指定', desc: '不指定色彩風格，保留空白。', prompt: '' },
-                    // --- 色彩 LUT 排序：標準商業高品質 ---
                     { id: 'correct', name: 'Color Accurate ｜ 色彩準確', desc: '精準還原物理色彩，專業參考級中性配置。', prompt: 'calibrated color accuracy, neutral reference profile' },
                     { id: 'commercial', name: 'Commercial ｜ 頂級商攝', desc: '高端商業廣告色彩科學，通透且高級。', prompt: 'high-end commercial editorial color science, standard white balance' },
                     { id: 'provia', name: 'Fujifilm Provia 100F ｜ 準確正片', desc: '公認色彩還原最精準的正片風格。', prompt: 'Fujifilm Provia 100F (RDPIII), accurate slide film colors' },
                     { id: 'reala', name: 'Fujifilm Reala 500D ｜ 自然膚色', desc: '寬容度極高，呈現極自然的動態範圍。', prompt: 'Fujifilm Reala 500D film stock, exceptional skin tones' },
                     { id: 'technicolor', name: 'Technicolor ｜ 經典彩色', desc: '模擬三膠片噴墨技術，飽和度極高。', prompt: 'vibrant Technicolor 3-strip process, saturated primary colors, historical cinema aesthetic' },
-                    // --- 色彩 LUT 排序：創意色彩 ---
                     { id: 'portra400', name: 'Kodak Portra 400 ｜ 柯達人像', desc: '人像首選，膚色溫潤細膩，顆粒優雅。', prompt: 'Kodak Portra 400 film stock emulation, natural skin tones' },
                     { id: 'ektar100', name: 'Kodak Ektar 100 ｜ 極致鮮豔', desc: '世界最高飽和度的彩色負片質感。', prompt: 'Kodak Ektar 100 film emulation, ultra-vivid colors, extremely fine grain, high saturation' },
                     { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調底片', desc: '夜景首選，高光處有迷人的紅色光暈。', prompt: 'CineStill 800T, tungsten balanced, red halation highlights' },
@@ -197,12 +208,10 @@
                     { id: 'crossproc', name: 'Cross Processing ｜ 負沖', desc: '色彩偏移，不可預測的高反差偏色。', prompt: 'cross processed film look, color shift, high contrast' },
                     { id: 'tealorange', name: 'Teal & Orange ｜ 商業大片', desc: '好萊塢電影配色，暖調膚色與冷調陰影。', prompt: 'blockbuster teal and orange color grade, high contrast, warm skin tones, cool shadows' },
                     { id: 'bleachbypass', name: 'Bleach Bypass ｜ 跳銀處理', desc: '高反差、低飽和的粗獷金屬質感。', prompt: 'bleach bypass film process, high contrast, desaturated colors, gritty metallic texture' },
-                    // --- 色彩 LUT 排序：單色調 ---
                     { id: 'sepia', name: 'Sepia Tone ｜ 懷舊褐', desc: '老照片棕褐色調，古拙且懷舊。', prompt: 'sepia tone vintage photograph, nostalgic monochrome' },
                     { id: 'cyanotype', name: 'Cyanotype ｜ 藍曬法', desc: '深藍色單色影像，工程藍圖美感。', prompt: 'cyanotype alternative process, monochromatic Prussian blue' },
                     { id: 'infrared', name: 'Rollei Infrared 400 ｜ 紅外線', desc: '非現實光譜感，呈現雪白植被與漆黑天空。', prompt: 'infrared photography, Rollei Infrared 400 look, wood effect' },
                     { id: 'goldtone', name: 'Gold Tone ｜ 金色單色', desc: '琥珀質感的金色單色效果。', prompt: 'gold toned monochrome photography, warm yellow-gold highlights, deep amber shadows' },
-                    // --- 色彩 LUT 排序：黑白 ---
                     { id: 'hp5', name: 'Ilford HP5 Plus ｜ 經典黑白', desc: '傳統黑白紀實質感，有機顆粒明顯。', prompt: 'Ilford HP5 Plus black and white film, grainy texture' },
                     { id: 'tmax', name: 'Kodak T-MAX ｜ 紀錄黑白', desc: '現代黑白，灰階過渡極其細膩。', prompt: 'Kodak T-MAX 400 film, fine grain B&W, sharp details' },
                     { id: 'trix400', name: 'Kodak Tri-X 400 ｜ 強力黑白', desc: '高反差黑白，粗獷有力，紀實標竿。', prompt: 'Kodak Tri-X 400 film, high contrast B&W, gritty grain' },
@@ -252,7 +261,7 @@
                 aspectRatios: ['1:1', '9:16', '16:9', '3:4', '4:3', '3:2', '2:3', '5:4', '4:5', '21:9']
             };
 
-            const STORAGE_KEY = 'cine_v13_7_chroma';
+            const STORAGE_KEY = 'cine_v13_8_final';
             const [shots, setShots] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_list') || '[]'));
             const [current, setCurrent] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_cfg') || JSON.stringify({
                 action: '', camera: 'phaseone', focal: '35mm', aperture: 'none', lens: 'otus55', 
@@ -260,8 +269,11 @@
                 refPerson: false, refProduct: false, refEnv: false, refStyle: false
             })));
             const [copyId, setCopyId] = useState(null);
-            const dragItemIndex = useRef();
-            const dragOverItemIndex = useRef();
+            
+            // 拖曳狀態管理
+            const [dragIndex, setDragIndex] = useState(null);
+            const scrollContainerRef = useRef(null);
+            const dragOverIndex = useRef(null);
 
             useEffect(() => localStorage.setItem(STORAGE_KEY + '_list', JSON.stringify(shots)), [shots]);
             useEffect(() => localStorage.setItem(STORAGE_KEY + '_cfg', JSON.stringify(current)), [current]);
@@ -338,16 +350,44 @@
 
             const handleClear = () => { if (window.confirm("確定要清除所有分鏡紀錄嗎？")) setShots([]); };
 
-            const handleSort = () => {
-                const newShots = [...shots];
-                const draggedItemContent = newShots.splice(dragItemIndex.current, 1)[0];
-                newShots.splice(dragOverItemIndex.current, 0, draggedItemContent);
-                dragItemIndex.current = null; dragOverItemIndex.current = null;
-                setShots(newShots);
+            // --- 強化版拖曳邏輯 ---
+            const handlePointerDown = (index) => {
+                setDragIndex(index);
+                dragOverIndex.current = index;
+            };
+
+            const handlePointerMove = (e, index) => {
+                if (dragIndex === null) return;
+                
+                // 自動捲動邏輯
+                if (scrollContainerRef.current) {
+                    const rect = scrollContainerRef.current.getBoundingClientRect();
+                    const threshold = 60; // 邊緣觸發範圍
+                    if (e.clientY < rect.top + threshold) {
+                        scrollContainerRef.current.scrollTop -= 5;
+                    } else if (e.clientY > rect.bottom - threshold) {
+                        scrollContainerRef.current.scrollTop += 5;
+                    }
+                }
+
+                // 即時交換位置邏輯 (底層條目自動讓開)
+                if (index !== dragOverIndex.current) {
+                    const newShots = [...shots];
+                    const itemToMove = newShots.splice(dragOverIndex.current, 1)[0];
+                    newShots.splice(index, 0, itemToMove);
+                    dragOverIndex.current = index;
+                    setDragIndex(index); // 更新目前的索引以維持浮起狀態
+                    setShots(newShots);
+                }
+            };
+
+            const handlePointerUp = () => {
+                setDragIndex(null);
+                dragOverIndex.current = null;
             };
 
             return (
-                <div className="min-h-screen bg-[#070708] text-gray-200 font-sans p-2 md:p-6 pb-20">
+                <div className="min-h-screen bg-[#070708] text-gray-200 font-sans p-2 md:p-6 pb-20 select-none">
                     <div className="max-w-screen-2xl mx-auto grid grid-cols-1 xl:grid-cols-12 gap-4 md:gap-6">
                         
                         <div className="xl:col-span-5 space-y-4">
@@ -356,16 +396,16 @@
                                     <div className="bg-blue-600 p-2 rounded-xl shadow-lg border border-blue-400/20"><Icon name="Clapperboard" size={24} className="text-white" /></div>
                                     <div>
                                         <h1 className="text-lg font-black tracking-tighter text-white uppercase leading-none">CinePrompt Master</h1>
-                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V13.7 | CHROMATIC EDITION</p>
+                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V13.8 | INTERACTION ENGINE</p>
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold"><Icon name="Brain" size={10} /> RAW 24-BIT OPTIC ENGINE</div>
+                                <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold"><Icon name="Brain" size={10} /> TOUCH GESTURE READY</div>
                             </header>
 
                             <div className="bg-[#121214] border border-gray-800 rounded-3xl p-4 md:p-6 shadow-2xl space-y-5">
                                 <div className="space-y-1.5">
                                     <label className="mobile-label text-[12px] font-black text-gray-400 uppercase flex items-center gap-2 tracking-widest"><Icon name="ChevronRight" className="text-blue-500" size={16} /> Visual Beat 畫面描述</label>
-                                    <textarea value={current.action} onChange={(e) => setCurrent({...current, action: e.target.value})} placeholder="把你心中所想的寫出來... （已啟用動態偵測技術）" className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none shadow-inner" />
+                                    <textarea value={current.action} onChange={(e) => setCurrent({...current, action: e.target.value})} placeholder="把你心中所想的寫出來... （已啟用動態偵測技術）" className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none shadow-inner select-text" />
                                 </div>
 
                                 <div className="bg-[#18181b] border border-gray-800/50 rounded-2xl p-4 space-y-3 shadow-inner">
@@ -382,7 +422,6 @@
                                 </div>
 
                                 <div className="space-y-5">
-                                    {/* 第一列：Cameras | Focal Length | Aperture (文字色彩同步) */}
                                     <div className="grid grid-cols-3 gap-3">
                                         <div className="space-y-1.5">
                                             <label className="mobile-label text-[12px] font-black text-sky-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Camera" size={14}/> Cameras</label>
@@ -404,7 +443,6 @@
                                         </div>
                                     </div>
 
-                                    {/* 第二列：Lens Series | Color LUTs (文字色彩同步) */}
                                     <div className="grid grid-cols-2 gap-3">
                                         <div className="space-y-1.5">
                                             <label className="mobile-label text-[12px] font-black text-indigo-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Disc" size={14}/> Lens Series</label>
@@ -420,7 +458,6 @@
                                         </div>
                                     </div>
 
-                                    {/* 第三列：Shot Types | Perspectives (文字色彩同步) */}
                                     <div className="grid grid-cols-2 gap-3">
                                         <div className="space-y-1.5">
                                             <label className="mobile-label text-[12px] font-black text-blue-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Eye" size={14}/> Shot Types</label>
@@ -436,7 +473,6 @@
                                         </div>
                                     </div>
 
-                                    {/* 第四列：Lighting | Aspect Ratio (文字色彩同步) */}
                                     <div className="grid grid-cols-2 gap-3">
                                         <div className="space-y-1.5">
                                             <label className="mobile-label text-[12px] font-black text-yellow-500 uppercase flex items-center gap-1 tracking-wider"><Icon name="Sun" size={14}/> Lighting</label>
@@ -462,7 +498,7 @@
                                     <label className="text-[12px] font-black text-blue-500 uppercase tracking-widest flex items-center gap-2"><Icon name="Brain" size={12}/> Live Master Prompt</label>
                                     <button onClick={() => handleCopy(finalPrompt, 'live')} className="text-[9px] bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full hover:bg-blue-600/20 font-bold border border-blue-600/20 transition-all active:scale-90">{copyId === 'live' ? 'COPIED!' : 'COPY'}</button>
                                 </div>
-                                <div className="font-mono text-[10px] leading-relaxed text-gray-500 max-h-[140px] overflow-y-auto custom-scrollbar">{finalPrompt}</div>
+                                <div className="font-mono text-[10px] leading-relaxed text-gray-500 max-h-[140px] overflow-y-auto custom-scrollbar select-text">{finalPrompt}</div>
                             </div>
                         </div>
 
@@ -477,20 +513,31 @@
                                 </div>
                             </div>
                             <div className="bg-[#121214] border border-gray-800 rounded-3xl flex-1 overflow-hidden shadow-inner flex flex-col">
-                                <div className="overflow-y-auto max-h-[750px] custom-scrollbar">
-                                    <table className="w-full text-left text-xs">
-                                        <thead className="bg-[#18181b] text-[9px] text-gray-500 uppercase font-black border-b border-gray-800 sticky top-0 z-10">
-                                            <tr><th className="px-2 py-4 w-10 text-center">⇅</th><th className="px-5 py-4 w-12 text-center">#</th><th className="px-5 py-4">Visual Narrative</th><th className="px-5 py-4 w-44 text-right">Action</th></tr>
+                                <div ref={scrollContainerRef} className="overflow-y-auto max-h-[750px] custom-scrollbar">
+                                    <table className="w-full text-left text-xs border-separate border-spacing-0">
+                                        <thead className="bg-[#18181b] text-[9px] text-gray-500 uppercase font-black border-b border-gray-800 sticky top-0 z-[60]">
+                                            <tr><th className="px-2 py-4 w-10 text-center">⇅</th><th className="px-5 py-4 w-12 text-center">#</th><th className="px-5 py-4">Visual Narrative</th><th className="px-5 py-4 w-24 text-right pr-6">Action</th></tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-800/50">
                                             {shots.length === 0 ? (<tr><td colSpan="4" className="px-5 py-40 text-center text-gray-600 font-medium italic">尚未建立分鏡，請在左側輸入描述...</td></tr>) : (
                                                 shots.map((s, idx) => (
-                                                    <tr key={s.id} draggable onDragStart={() => (dragItemIndex.current = idx)} onDragEnter={() => (dragOverItemIndex.current = idx)} onDragEnd={handleSort} onDragOver={(e) => e.preventDefault()} className="hover:bg-blue-600/5 transition-colors group">
-                                                        <td className="px-2 py-6 text-center align-middle"><div className="drag-handle"><Icon name="Menu" size={16} /></div></td>
+                                                    <tr 
+                                                        key={s.id} 
+                                                        onPointerEnter={(e) => handlePointerMove(e, idx)}
+                                                        className={`hover:bg-blue-600/5 transition-all group ${dragIndex === idx ? 'row-dragging' : ''}`}
+                                                    >
+                                                        <td className="px-2 py-6 text-center align-middle">
+                                                            <div 
+                                                                className="drag-handle"
+                                                                onPointerDown={() => handlePointerDown(idx)}
+                                                                onPointerUp={handlePointerUp}
+                                                            >
+                                                                <Icon name="Menu" size={16} />
+                                                            </div>
+                                                        </td>
                                                         <td className="px-5 py-6 text-gray-600 font-bold text-center align-middle">{idx + 1}</td>
                                                         <td className="px-5 py-6">
-                                                            <div className="font-black text-gray-100 mb-1.5 leading-tight text-sm">{s.action}</div>
-                                                            {/* --- 全維度標籤系統：攝影機｜鏡頭｜焦距｜光圈｜色彩｜景別｜視角｜燈光｜比例 --- */}
+                                                            <div className="font-black text-gray-100 mb-1.5 leading-tight text-sm select-text">{s.action}</div>
                                                             <div className="flex flex-wrap gap-1.5 mb-2.5">
                                                                 <span className="text-[8px] bg-sky-900/10 text-sky-400 px-1.5 py-0.5 rounded-lg border border-sky-900/30 font-bold uppercase" title="Cameras系統">{config.cameras.find(c => c.id === s.camera)?.name.split('｜')[0].trim()}</span>
                                                                 <span className="text-[8px] bg-indigo-900/10 text-indigo-400 px-1.5 py-0.5 rounded-lg border border-indigo-900/30 font-bold uppercase" title="Lens Series">{config.lenses.find(l => l.id === s.lens)?.name.split('｜')[0].trim()}</span>
@@ -502,9 +549,9 @@
                                                                 <span className="text-[8px] bg-yellow-900/20 text-yellow-500 px-1.5 py-0.5 rounded-lg border border-yellow-900/30 font-bold uppercase" title="Lighting設定">{config.lighting.find(l => l.id === s.lighting)?.name.split('｜')[0].trim()}</span>
                                                                 <span className="text-[8px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded-lg border border-slate-700 font-bold uppercase" title="Aspect Ratio">{s.aspect}</span>
                                                             </div>
-                                                            <div className="text-[10px] text-blue-500/60 font-mono line-clamp-2 italic">{s.prompt}</div>
+                                                            <div className="text-[10px] text-blue-500/60 font-mono line-clamp-2 italic select-text">{s.prompt}</div>
                                                         </td>
-                                                        <td className="px-5 py-6 text-right align-middle">
+                                                        <td className="px-5 py-6 text-right align-middle pr-6">
                                                             <div className="flex justify-end gap-3 opacity-60 group-hover:opacity-100 transition-opacity">
                                                                 <button onClick={() => handleCopy(s.prompt, s.id)} className={`p-2.5 rounded-xl transition-all active:scale-90 ${copyId === s.id ? 'bg-green-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-blue-600'}`}>{copyId === s.id ? <Icon name="CheckCircle2" size={16} /> : <Icon name="Copy" size={16} />}</button>
                                                                 <button onClick={() => setShots(shots.filter(i => i.id !== s.id))} className="p-2.5 rounded-xl bg-gray-800 text-gray-400 hover:text-white hover:bg-red-600 transition-all active:scale-90"><Icon name="Trash2" size={16} /></button>
