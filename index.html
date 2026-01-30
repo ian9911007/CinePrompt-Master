@@ -24,17 +24,62 @@
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #27272a; border-radius: 20px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
-        select { -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 1rem; }
-        @media (max-width: 640px) { select, textarea, button { font-size: 16px !important; } }
+        
+        /* 優化選單樣式與字體大小 */
+        select { 
+            -webkit-appearance: none; 
+            appearance: none; 
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E"); 
+            background-repeat: no-repeat; 
+            background-position: right 0.75rem center; 
+            background-size: 1.1rem; 
+            padding-right: 2.5rem !important;
+            font-size: 13px !important; 
+            line-height: 1.5;
+        }
+
+        /* 勾選框優化 */
+        input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        /* 拖曳手勢 */
+        .drag-handle {
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8px;
+            color: #3f3f46;
+            transition: color 0.2s;
+        }
+        .drag-handle:active {
+            cursor: grabbing;
+        }
+        .drag-handle:hover {
+            color: #60a5fa;
+        }
+        
+        tr.dragging {
+            opacity: 0.5;
+            background-color: #1e1e2e;
+        }
+
+        @media (max-width: 640px) { 
+            select, textarea, button { font-size: 16px !important; } 
+            .mobile-label { font-size: 11px !important; }
+        }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useMemo, useEffect } = React;
+        const { useState, useMemo, useEffect, useRef } = React;
 
-        // 穩定的圖示渲染組件
         const Icon = ({ name, size = 16, className = "" }) => {
             useEffect(() => {
                 if (window.lucide) { window.lucide.createIcons(); }
@@ -57,8 +102,9 @@
                     { id: 'arri65', name: 'ARRI Alexa 65 ｜ 阿萊 65', desc: '電影系統：頂級電影感，極致動態範圍。', prompt: 'shot on ARRI Alexa 65, ALEV 3 A3X sensor, legendary cinematic dynamic range' },
                     { id: 'imax70', name: 'IMAX 15/70mm ｜ IMAX 底片', desc: '電影系統：巨大的畫幅，極致解析度與淺景深。', prompt: 'shot on IMAX 15/70mm film, massive 18k resolution, ultra-wide gate' },
                     { id: 'raptor', name: 'RED V-Raptor XL ｜ RED 猛禽', desc: '電影系統：極度銳利、高反差的現代商業質感。', prompt: 'shot on RED V-Raptor XL, 8K VistaVision, sharp modern commercial contrast' },
-                    { id: 'dxl2', name: 'Panavision Millennium DXL2 ｜ 帕那維申', desc: '電影系統：好萊塢大片質感，色彩科學獨特。', prompt: 'shot on Panavision Millennium DXL2, 8K Large Format, distinct Panavision color' },
+                    { id: 'dxl2', name: 'Panavision Millennium DXL2', desc: '電影系統：帕那維申 DXL2，好萊塢大片質感。', prompt: 'shot on Panavision Millennium DXL2, 8K Large Format, distinct Panavision color' },
                     { id: 'ursa12k', name: 'Blackmagic URSA 12K ｜ BMD', desc: '電影系統：極致數位細節，色彩科學偏膠片。', prompt: 'shot on Blackmagic URSA Mini Pro 12K, high resolution detail, filmic color' },
+                    { id: 'iphone', name: 'iPhone 16 Pro ｜ 蘋果手機', desc: '創意與特效：計算攝影感，高便攜性與影片色彩。', prompt: 'shot on iPhone 16 Pro, mobile cinematography, computational photography aesthetic, realistic lens texture' },
                     { id: 'arri16sr', name: 'Arriflex 16SR ｜ 傳奇 16mm', desc: '創意特效：經典紀錄片質感，有機顆粒與懷舊色彩。', prompt: 'shot on Arriflex 16SR 16mm film, organic celluloid grain, nostalgic vintage texture' },
                     { id: 'phantom', name: 'Phantom Flex4K ｜ 慢動作機', desc: '創意特效：觸發「液體凍結」、「慢動作」特效。', prompt: 'shot on Phantom Flex4K, high-speed photography, liquid splash freeze' },
                     { id: 'bolex', name: '16mm Bolex H16 ｜ 16釐米', desc: '創意特效：獨立電影感，邊緣柔和，顆粒明顯。', prompt: 'shot on 16mm Bolex H16, vintage 16mm film grain, soft edges' },
@@ -90,7 +136,7 @@
                     { id: 'zeisssup', name: 'Zeiss Supreme Prime ｜ 50mm', desc: '電影鏡：現代乾淨，科技感強。', prompt: 'Zeiss Supreme Prime, clean modern rendering' },
                     { id: 'k35', name: 'Canon K-35 Vintage ｜ 35mm', desc: '電影鏡：暖調低反差，經典復古光暈。', prompt: 'vintage Canon K-35 prime, nostalgic warm bloom' },
                     { id: 'angenieux', name: 'Angénieux Optimo ｜ 24-290mm', desc: '電影鏡：滑順變焦，工業級高品質質感。', prompt: 'Angénieux Optimo zoom, creamy cinema texture' },
-                    { id: 'nikon1700', name: 'Nikkor 1200-1700mm ｜ 1800mm', desc: '特殊鏡頭：極端望遠變焦，遠距離王者。', prompt: 'Nikkor 1200-1700mm f/5.6-8.0P ED IF lens, super telephoto zoom, extreme spatial flattening' },
+                    { id: 'nikon1700', name: 'Nikkor 1200-1700mm ｜ 1700mm', desc: '特殊鏡頭：1700mm：極端望遠變焦，遠距離王者。', prompt: 'Nikkor 1200-1700mm f/5.6-8.0P ED IF lens, super telephoto zoom, extreme spatial flattening' },
                     { id: 'canon800', name: 'Canon EF 800mm f/5.6L ｜ 800mm', desc: '特殊鏡頭：長焦之巔，極致背景分離。', prompt: 'Canon EF 800mm f/5.6L IS USM, maximum telephoto reach, ultra-sharp subject isolation' },
                     { id: 'canon1200', name: 'Canon EF 1200mm f/5.6L ｜ 1200mm', desc: '特殊鏡頭：衛星級空間感，極端壓縮。', prompt: 'Canon EF 1200mm f/5.6L USM, extreme telephoto compression, super distance' },
                     { id: 'canon5200', name: 'Canon 5200mm Mirror ｜ 5200mm', desc: '特殊鏡頭：地球極限望遠能力。', prompt: 'Canon 5200mm f/14 mirror lens, world largest prime, astronomical scale' },
@@ -102,33 +148,70 @@
                     { id: 'split', name: 'Split Diopter ｜ 雙焦鏡', desc: '特殊鏡頭：前後景同時清晰，超現實感。', prompt: 'split diopter shot, dual focus planes' },
                     { id: 'petzval', name: 'Petzval Art Lens ｜ 藝術鏡', desc: '特殊鏡頭：旋轉焦外，藝術美學。', prompt: 'Petzval art lens, swirly bokeh' },
                     { id: 'fisheye', name: 'Fisheye Lens ｜ 廣域魚眼', desc: '特殊鏡頭：180度畸變，主體突出。', prompt: 'extreme fisheye distortion' },
-                    { id: 'noct095', name: 'Noctilux f/0.95 ｜ 夜神', desc: '特殊鏡頭：極淺景深，夢幻氛圍。', prompt: 'Noctilux f/0.95 lens, paper-thin DoF' },
+                    { id: 'noct095', name: 'Noctilux f/0.95 ｜ 夜神', desc: '特殊鏡頭：極薄深焦，夢幻氛圍。', prompt: 'Noctilux f/0.95 lens, paper-thin DoF' },
                     { id: 'promist', name: 'Pro-Mist Filter ｜ 柔光', desc: '特殊鏡頭：降低銳利度，夢幻感。', prompt: '1/4 black pro-mist filter, highlight bloom' },
                     { id: 'lensbaby', name: 'Lensbaby Composer ｜ 創意鏡', desc: '特殊鏡頭：手動焦點，周圍拉伸模糊。', prompt: 'Lensbaby Composer, selective focus' }
                 ],
+                focals: [
+                    { id: 'none', name: 'None' },
+                    { id: '6mm', name: '6mm' }, { id: '8mm', name: '8mm' },
+                    { id: '12mm', name: '12mm' }, { id: '14mm', name: '14mm' },
+                    { id: '18mm', name: '18mm' }, { id: '24mm', name: '24mm' },
+                    { id: '35mm', name: '35mm' }, { id: '47mm', name: '47mm' },
+                    { id: '50mm', name: '50mm' }, { id: '55mm', name: '55mm' },
+                    { id: '85mm', name: '85mm' }, { id: '100mm', name: '100mm' },
+                    { id: '200mm', name: '200mm' }, { id: '400mm', name: '400mm' },
+                    { id: '600mm', name: '600mm' }, { id: '800mm', name: '800mm' },
+                    { id: '1200mm', name: '1200mm' }, { id: '1700mm', name: '1700mm' },
+                    { id: '5200mm', name: '5200mm' }
+                ],
+                apertures: [
+                    { id: 'none', name: 'None' },
+                    { id: '𝑓/0.95', name: '𝑓/0.95' }, { id: '𝑓/1.2', name: '𝑓/1.2' },
+                    { id: '𝑓/1.4', name: '𝑓/1.4' }, { id: '𝑓/1.8', name: '𝑓/1.8' },
+                    { id: '𝑓/2.0', name: '𝑓/2.0' }, { id: '𝑓/2.8', name: '𝑓/2.8' },
+                    { id: '𝑓/4.0', name: '𝑓/4.0' }, { id: '𝑓/5.6', name: '𝑓/5.6' },
+                    { id: '𝑓/8.0', name: '𝑓/8.0' }, { id: '𝑓/11', name: '𝑓/11' },
+                    { id: '𝑓/16', name: '𝑓/16' }, { id: '𝑓/22', name: '𝑓/22' },
+                    { id: '𝑓/32', name: '𝑓/32' }, { id: '𝑓/45', name: '𝑓/45' }
+                ],
+                shotTypes: [
+                    { id: 'EWS', name: 'EWS' }, { id: 'WS', name: 'WS' },
+                    { id: 'FS', name: 'Full Shot' }, { id: 'MLS', name: 'MLS' },
+                    { id: 'Cowboy', name: 'Cowboy' }, { id: 'MS', name: 'MS' },
+                    { id: 'MCU', name: 'MCU' }, { id: 'CU', name: 'CU' },
+                    { id: 'ECU', name: 'ECU' }, { id: 'Macro', name: 'Macro' }
+                ],
+                perspectives: [
+                    { id: 'eye', name: 'Eye-Level' }, { id: 'low', name: 'Low Angle' },
+                    { id: 'high', name: 'High Angle' }, { id: 'overhead', name: 'Overhead' },
+                    { id: 'worms', name: 'Worm’s Eye' }, { id: 'dutch', name: 'Dutch Angle' },
+                    { id: 'ots', name: 'OTS' }, { id: 'pov', name: 'POV' },
+                    { id: 'selfie', name: 'Selfie Angle' }, { id: 'ground', name: 'Ground Level' }
+                ],
                 lighting: [
                     { id: 'none', name: 'None ｜ 不指定', desc: '不指定燈光參數，保留空白。', prompt: '' },
-                    { id: 'threepoint', name: 'Three-Point Lighting ｜ 三點照明', desc: '商業打光：標準商攝架構，建立立體感。', prompt: 'professional three-point lighting (key, fill, back)' },
-                    { id: 'highkey', name: 'High-Key ｜ 高明調', desc: '商業打光：明亮少影，高端美妝風格。', prompt: 'high-key lighting, bright airy aesthetic, minimal shadows' },
-                    { id: 'softbox', name: 'Softbox Lighting ｜ 柔光箱', desc: '商業打光：均勻漫射，商攝標準柔光。', prompt: 'softbox diffused lighting, smooth gradients' },
-                    { id: 'specular', name: 'Specular ｜ 鏡面高光', desc: '商業打光：定義金屬與精密物件質感。', prompt: 'intense specular highlights' },
-                    { id: 'chiaroscuro', name: 'Chiaroscuro ｜ 明暗對照', desc: '創意燈光：劇性光影，模仿古典畫作。', prompt: 'chiaroscuro lighting, dramatic contrast' },
-                    { id: 'rembrandt', name: 'Rembrandt ｜ 林布蘭', desc: '創意燈光：最強肖像層次。', prompt: 'Rembrandt lighting, triangle cheek highlight' },
-                    { id: 'butterfly', name: 'Butterfly Lighting ｜ 蝴蝶光', desc: '創意燈光：鼻下蝶影，時尚攝影標配。', prompt: 'butterfly lighting, fashion style' },
-                    { id: 'lowkey', name: 'Low-Key ｜ 低暗調', desc: '創意燈光：暗色調高反差，營造神祕感。', prompt: 'low-key lighting, heavy shadows, high contrast drama' },
-                    { id: 'split_lit', name: 'Split Lighting ｜ 側向切光', desc: '創意燈光：戲劇感強烈。', prompt: 'split lighting setup, dramatic side light' },
-                    { id: 'rimlight', name: 'Rim Light ｜ 輪廓光', desc: '創意燈光：勾勒邊緣。', prompt: 'powerful rim lighting, glowing edges' },
-                    { id: 'gobo', name: 'Gobo Projection ｜ 遮光投影', desc: '創意燈光：投射百葉窗/樹葉陰影。', prompt: 'gobo lighting, shadow patterns' },
-                    { id: 'slash', name: 'Slash Lighting ｜ 條狀光', desc: '創意燈光：窄長硬光，定義焦點。', prompt: 'slash lighting, strip of hard light' },
-                    { id: 'negfill', name: 'Negative Fill ｜ 負補光', desc: '創意燈光：強化陰影。', prompt: 'negative fill, deep rich shadows' },
-                    { id: 'silhouette', name: 'Silhouette ｜ 剪影', desc: '創意燈光：強背光。', prompt: 'silhouette photography, strong backlight' },
-                    { id: 'natural_ambient', name: 'Natural Ambient ｜ 自然環境光', desc: '環境光：物理正確的環境反射採光。', prompt: 'natural environment ambient light, soft natural fill, realistic bounced light' },
+                    { id: 'threepoint', name: 'Three-Point Lighting ｜ 三點照明', desc: '標準商攝架構，建立立體感與深度。', prompt: 'professional three-point lighting (key, fill, back)' },
+                    { id: 'highkey', name: 'High-Key ｜ 高明調', desc: '明亮少影，高端美妝風格。', prompt: 'high-key lighting, bright airy aesthetic, minimal shadows' },
+                    { id: 'softbox', name: 'Softbox Lighting ｜ 柔光箱', desc: '均勻漫射，商攝標準柔光效果。', prompt: 'softbox diffused lighting, smooth gradients' },
+                    { id: 'specular', name: 'Specular ｜ 鏡面高光', desc: '定義金屬與精密物件質感。', prompt: 'intense specular highlights' },
+                    { id: 'chiaroscuro', name: 'Chiaroscuro ｜ 明暗對照', desc: '劇性光影，模仿古典畫作。', prompt: 'chiaroscuro lighting, dramatic contrast' },
+                    { id: 'rembrandt', name: 'Rembrandt ｜ 林布蘭光', desc: '專業肖像：最強光影層次感。', prompt: 'Rembrandt lighting, triangle cheek highlight, moody portrait' },
+                    { id: 'butterfly', name: 'Butterfly Lighting ｜ 蝴蝶光', desc: '時尚美妝標配，鼻下蝶影。', prompt: 'butterfly lighting, glamour shadow, fashion style' },
+                    { id: 'lowkey', name: 'Low-Key ｜ 低暗調', desc: '重陰影，營造神祕與戲劇感。', prompt: 'low-key lighting, heavy shadows, high contrast drama' },
+                    { id: 'split_lit', name: 'Split Lighting ｜ 側向切光', desc: '戲劇感強烈側向打光。', prompt: 'split lighting setup, dramatic side light' },
+                    { id: 'rimlight', name: 'Rim Light ｜ 輪廓光', desc: '勾勒邊緣，抽離背景。', prompt: 'powerful rim lighting, glowing edges' },
+                    { id: 'gobo', name: 'Gobo Projection ｜ 遮光投影', desc: '投射陰影圖案。', prompt: 'gobo lighting, shadow patterns' },
+                    { id: 'slash', name: 'Slash Lighting ｜ 條狀光', desc: '窄長硬光，定義焦點。', prompt: 'slash lighting, strip of hard light' },
+                    { id: 'negfill', name: 'Negative Fill ｜ 負補光', desc: '強化陰影，增加厚度。', prompt: 'negative fill, deep rich shadows' },
+                    { id: 'silhouette', name: 'Silhouette ｜ 剪影', desc: '強背光，純黑輪廓。', prompt: 'silhouette photography, strong backlight' },
+                    { id: 'natural_ambient', name: 'Natural Ambient ｜ 自然環境光', desc: '真實物理反射，自然柔和光感。', prompt: 'natural environment ambient light, soft natural fill, realistic bounced light' },
                     { id: 'volumetric', name: 'Volumetric ｜ 體積光', desc: '環境光：光束路徑可見，空氣感強。', prompt: 'volumetric lighting, visible light beams' },
                     { id: 'candle', name: 'Candlelight ｜ 燭光', desc: '環境光：暖色溫營造氛圍。', prompt: '1800K candlelight, warm amber glow' },
-                    { id: 'golden', name: 'Golden Hour ｜ 黃金時刻', desc: '環境光：日落暖金。', prompt: 'natural golden hour sun, warm glow' },
-                    { id: 'blue', name: 'Blue Hour ｜ 藍調時刻', desc: '環境光：日落冷藍。', prompt: 'cold blue hour lighting, sapphire reflection' },
-                    { id: 'neon', name: 'Neon Noir ｜ 霓虹黑色', desc: '環境光：霓虹未來感。', prompt: 'neon noir lighting, cyan and magenta color cast' },
-                    { id: 'tyndall', name: 'Tyndall Effect ｜ 丁達爾', desc: '環境光：神聖光束感。', prompt: 'Tyndall effect, divine god rays' }
+                    { id: 'golden', name: 'Golden Hour ｜ 黃金時刻', desc: '環境光：日落暖金。', prompt: 'natural golden hour sun, warm glow, 3500K backlighting' },
+                    { id: 'blue', name: 'Blue Hour ｜ 藍調時刻', desc: '日落冷藍。', prompt: 'cold blue hour lighting, sapphire reflection' },
+                    { id: 'neon', name: 'Neon Noir ｜ 霓虹黑色', desc: '高對比配色，科幻未來感。', prompt: 'neon noir lighting, cyan and magenta color cast' },
+                    { id: 'tyndall', name: 'Tyndall Effect ｜ 丁達爾', desc: '神聖光束感，大氣散射。', prompt: 'Tyndall effect, divine god rays' }
                 ],
                 luts: [
                     { id: 'none', name: 'None ｜ 不指定', desc: '不指定色彩風格，保留空白。', prompt: '' },
@@ -137,7 +220,7 @@
                     { id: 'provia', name: 'Fujifilm Provia 100F ｜ 準確正片', desc: '標準色彩：色彩還原最準的正片。', prompt: 'Fujifilm Provia 100F (RDPIII), accurate slide film colors' },
                     { id: 'reala', name: 'Fujifilm Reala 500D ｜ 自然膚色', desc: '標準色彩：寬容度高，呈現自然。', prompt: 'Fujifilm Reala 500D film stock, exceptional skin tones' },
                     { id: 'portra400', name: 'Kodak Portra 400 ｜ 柯達', desc: '創意風格：人像首選，溫潤細膩。', prompt: 'Kodak Portra 400 film stock emulation, natural skin tones' },
-                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調', desc: '創意風格：夜景首選紅色光暈。', prompt: 'CineStill 800T, red halation highlights' },
+                    { id: 'cinestill800', name: 'CineStill 800T ｜ 藍調', desc: '創意風格：夜景首選紅色光暈。', prompt: 'CineStill 800T, tungsten balanced, red halation highlights' },
                     { id: 'eterna', name: 'Fujifilm Eterna ｜ 富士電影', desc: '創意風格：低反差柔和質感。', prompt: 'Fujifilm Eterna film stock, soft look' },
                     { id: 'velvia', name: 'Fujifilm Velvia 50 ｜ 富士', desc: '創意風格：風景首選，極高飽和。', prompt: 'Fujifilm Velvia 50, vivid landscape' },
                     { id: 'lomo', name: 'LOMO ｜ 洛莫風格', desc: '創意風格：高飽和強暗角，膠片感。', prompt: 'Lomography aesthetic, high saturation' },
@@ -148,60 +231,23 @@
                     { id: 'hp5', name: 'Ilford HP5 Plus ｜ 經典黑白', desc: '黑白：紀實感強。', prompt: 'Ilford HP5 Plus black and white film' },
                     { id: 'tmax', name: 'Kodak T-MAX ｜ 紀錄黑白', desc: '黑白：細膩灰階層次。', prompt: 'Kodak T-MAX 400 film' }
                 ],
-                focals: [
-                    { id: 'none', name: 'None ｜ 不指定', desc: '不指定焦距。' },
-                    { id: '6mm', name: '6mm ｜ 極廣魚眼', desc: '220度魚眼。' }, { id: '8mm', name: '8mm ｜ 180魚眼', desc: '標準魚眼。' },
-                    { id: '12mm', name: '12mm ｜ 超級廣角', desc: '壯闊透視。' }, { id: '14mm', name: '14mm ｜ 超廣角', desc: '壯闊風景。' },
-                    { id: '18mm', name: '18mm ｜ 電影廣角', desc: '經典廣角。' }, { id: '24mm', name: '24mm ｜ 標準廣角', desc: '生活紀實。' },
-                    { id: '35mm', name: '35mm ｜ 人文視角', desc: '報導紀實焦段。' }, { id: '47mm', name: '47mm ｜ 自然視野', desc: '最自然比例。' },
-                    { id: '50mm', name: '50mm ｜ 視平焦段', desc: '人眼透視。' }, { id: '55mm', name: '55mm ｜ 精準焦段', desc: 'Otus 標準。' },
-                    { id: '85mm', name: '85mm ｜ 人像焦段', desc: '散景人像。' }, { id: '100mm', name: '100mm ｜ 微距特寫', desc: '細節捕捉。' },
-                    { id: '200mm', name: '200mm ｜ 長焦壓縮', desc: '背景壓縮。' }, { id: '400mm', name: '400mm ｜ 超長焦', desc: '遠距離特寫。' },
-                    { id: '600mm', name: '600mm ｜ 極望遠', desc: '野生動物捕捉。' }, { id: '800mm', name: '800mm ｜ 體育攝影', desc: '高清特寫。' },
-                    { id: '1200mm', name: '1200mm ｜ 衛星視角', desc: '極端壓縮。' }, { id: '1800mm', name: '1800mm ｜ 超遠視距', desc: '極致望遠能力。' },
-                    { id: '5200mm', name: '5200mm ｜ 地球極限', desc: '最強光學望遠。' }
-                ],
-                apertures: [
-                    { id: 'none', name: 'None ｜ 不指定', desc: '不指定光圈。' },
-                    { id: 'T0.95', name: 'T0.95 ｜ 夜神光圈', desc: '夢幻極淺景深。' }, { id: 'T1.2', name: 'T1.2 ｜ 極淺景深', desc: '人像分離。' },
-                    { id: 'T1.4', name: 'T1.4 ｜ 超大光圈', desc: '專業電影質感。' }, { id: 'T1.8', name: 'T1.8 ｜ 大光圈', desc: '淺景深分離。' },
-                    { id: 'T2.0', name: 'T2.0 ｜ 專業光圈', desc: '解析平衡。' }, { id: 'T2.8', name: 'T2.8 ｜ 商業標準', desc: '穩定畫質。' },
-                    { id: 'T4.0', name: 'T4.0 ｜ 中等光圈', desc: '主體清晰。' }, { id: 'T5.6', name: 'T5.6 ｜ 畫質頂點', desc: '全幅細節。' },
-                    { id: 'T8.0', name: 'T8.0 ｜ 風景光圈', desc: '深焦全景。' }, { id: 'T11', name: 'T11 ｜ 極致深焦', desc: '全對焦。' },
-                    { id: 'T16', name: 'T16 ｜ 縮小光圈', desc: '超深景深。' }, { id: 'T22', name: 'T22 ｜ 最小光圈', desc: '全畫面對焦。' }
-                ],
-                shotTypes: [
-                    { id: 'EWS', name: 'EWS ｜ 極大遠景', desc: '壯闊大環境。' }, { id: 'WS', name: 'WS ｜ 全景', desc: '環境主體。' },
-                    { id: 'FS', name: 'Full Shot ｜ 全身', desc: '完整身形。' }, { id: 'MLS', name: 'MLS ｜ 七分身', desc: '強調肢體。' },
-                    { id: 'Cowboy', name: 'Cowboy ｜ 牛仔', desc: '膝上構圖。' }, { id: 'MS', name: 'Medium Shot ｜ 中景', desc: '標準敘事。' },
-                    { id: 'MCU', name: 'MCU ｜ 中特寫', desc: '胸上親近。' }, { id: 'CU', name: 'Close-Up ｜ 特寫', desc: '面部表情。' },
-                    { id: 'ECU', name: 'ECU ｜ 極特寫', desc: '微觀五官。' }, { id: 'Macro', name: 'Macro Shot ｜ 微距', desc: '極致紋理。' }
-                ],
-                perspectives: [
-                    { id: 'eye', name: 'Eye-Level ｜ 平視', desc: '標準視線。' }, { id: 'low', name: 'Low Angle ｜ 仰視', desc: '英雄仰角。' },
-                    { id: 'high', name: 'High Angle ｜ 俯視', desc: '脆弱俯角。' }, { id: 'overhead', name: 'Overhead ｜ 鳥瞰', desc: '垂直向下。' },
-                    { id: 'worms', name: 'Worm’s Eye ｜ 蟲眼', desc: '貼地仰視。' }, { id: 'dutch', name: 'Dutch Angle ｜ 傾斜', desc: '不安視角。' },
-                    { id: 'ots', name: 'OTS ｜ 過肩視角', desc: '對面主體。' }, { id: 'pov', name: 'POV ｜ 第一人稱', desc: '眼球模擬。' },
-                    { id: 'selfie', name: 'Selfie Angle ｜ 自拍', desc: '手臂延伸。' }, { id: 'ground', name: 'Ground Level ｜ 地平', desc: '貼地平行。' }
-                ],
                 aspectRatios: ['1:1', '9:16', '16:9', '3:4', '4:3', '3:2', '2:3', '5:4', '4:5', '21:9']
             };
 
-            // --- 記憶狀態鍵值 ---
-            const KEY_SHOTS = 'cine_shots_v12_0';
-            const KEY_CONFIG = 'cine_config_v12_0';
-
-            const [shots, setShots] = useState(() => JSON.parse(localStorage.getItem(KEY_SHOTS) || '[]'));
-            const [current, setCurrent] = useState(() => JSON.parse(localStorage.getItem(KEY_CONFIG) || JSON.stringify({
-                action: '', camera: 'phaseone', focal: '35mm', aperture: 'T2.8', lens: 'otus55', 
-                perspective: 'eye', shotType: 'MCU', lighting: 'threepoint', lut: 'correct', aspect: '16:9'
+            const STORAGE_KEY = 'cine_v12_5_drag';
+            const [shots, setShots] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_list') || '[]'));
+            const [current, setCurrent] = useState(() => JSON.parse(localStorage.getItem(STORAGE_KEY + '_cfg') || JSON.stringify({
+                action: '', camera: 'phaseone', focal: '35mm', aperture: 'none', lens: 'otus55', 
+                perspective: 'eye', shotType: 'MCU', lighting: 'threepoint', lut: 'correct', aspect: '16:9',
+                refPerson: false, refProduct: false, refEnv: false
             })));
             const [copyId, setCopyId] = useState(null);
+            const dragItemIndex = useRef();
+            const dragOverItemIndex = useRef();
 
-            useEffect(() => localStorage.setItem(KEY_SHOTS, JSON.stringify(shots)), [shots]);
-            useEffect(() => localStorage.setItem(KEY_CONFIG, JSON.stringify(current)), [current]);
+            useEffect(() => localStorage.setItem(STORAGE_KEY + '_list', JSON.stringify(shots)), [shots]);
+            useEffect(() => localStorage.setItem(STORAGE_KEY + '_cfg', JSON.stringify(current)), [current]);
 
-            // --- 動態語意增強 (攝影級強化) ---
             const analyzeSubjectBoost = (text) => {
                 if (!text) return "";
                 const t = text.toLowerCase();
@@ -210,29 +256,33 @@
                     boosters.push("highly realistic skin textures and pores, natural skin subsurface scattering, detailed iris reflections, lifelike hair detail, masterful studio portrait lighting");
                 }
                 if (/(apple|fruit|bottle|product|glass|liquid|watch|jewelry|car|metal|object|gadget|iphone|phone|watch)/i.test(t)) {
-                    boosters.push("ultra-high fidelity surface textures, micro-scratches on material, authentic optical light refraction, caustic reflections on surfaces, premium commercial product photography");
-                }
-                if (/(street|city|forest|mountain|room|inside|outside|landscape|interior|exterior)/i.test(t)) {
-                    boosters.push("atmospheric optical depth, authentic environmental lighting, intricate organic textures, high dynamic range landscape photography");
+                    boosters.push("ultra-high fidelity surface textures, authentic optical light refraction, caustic reflections on material, premium commercial product photography");
                 }
                 return boosters.length > 0 ? boosters.join(", ") : "high-fidelity photographic detail, organic textures";
             };
 
             const finalPrompt = useMemo(() => {
-                if (!current.action) return "把你心中所想的寫出來...（啟用動態偵測技術）";
+                if (!current.action) return "把你心中所想的寫出來...（RAW 24-BIT 引擎已就緒）";
                 const findP = (cat, id) => {
                     if (id === 'none') return '';
                     const item = config[cat].find(i => i.id === id);
                     if (!item) return '';
                     if (cat === 'focals') return `focal length ${id}`;
-                    if (cat === 'apertures') return `aperture ${id}`;
+                    if (cat === 'apertures') return `aperture ${id.replace('𝑓/', 'f/')}`; // 輸出保持標準格式
                     return item.prompt || item.name;
                 };
+
+                const refBoosterStrings = [];
+                let refIndex = 1;
+                if (current.refPerson) { refBoosterStrings.push(`maintaining facial features and character identity from reference image ${refIndex}`); refIndex++; }
+                if (current.refProduct) { refBoosterStrings.push(`preserving exact structural details and material characteristics of the product from reference image ${refIndex}`); refIndex++; }
+                if (current.refEnv) { refBoosterStrings.push(`adopting the environmental atmosphere and lighting layout from reference image ${refIndex}`); refIndex++; }
 
                 const techChain = [
                     findP('shotTypes', current.shotType),
                     findP('perspectives', current.perspective),
                     current.action,
+                    ...refBoosterStrings,
                     findP('cameras', current.camera),
                     findP('lenses', current.lens),
                     findP('lighting', current.lighting),
@@ -242,15 +292,13 @@
                 ].filter(val => val && val.trim() !== '');
 
                 const boost = analyzeSubjectBoost(current.action);
-                
-                // --- 核心變更：移除 3D 渲染，改為極致攝影參數與 24-Bit RAW ---
                 const photographicQuality = "award-winning professional photography, ultra-realistic, 8K resolution, 24-Bit RAW Depth, raw format, optical excellence, sharp focus, intricate organic textures, masterful composition, cinematic lighting, depth of field";
                 const aspect = `--ar ${current.aspect.replace(':', ':')}`;
                 
                 return `${techChain.join(", ")}, ${boost}, ${photographicQuality} ${aspect}`;
             }, [current]);
 
-            const addShot = () => { if (current.action) { setShots([{ ...current, id: Date.now(), prompt: finalPrompt }, ...shots]); setCurrent({ ...current, action: '' }); } };
+            const addShot = () => { if (current.action) { setShots([...shots, { ...current, id: Date.now(), prompt: finalPrompt }]); setCurrent({ ...current, action: '', refPerson: false, refProduct: false, refEnv: false }); } };
 
             const handleCopy = (text, id) => {
                 const el = document.createElement('textarea');
@@ -261,20 +309,26 @@
             };
 
             const handleReset = () => {
-                if (window.confirm("確定要重置技術參數（攝影機、鏡頭、燈光等）至 None 嗎？")) {
+                if (window.confirm("確定要重置技術參數（含參考圖勾選）至 None 嗎？")) {
                     setCurrent(prev => ({
-                        ...prev, 
-                        camera: 'none',
-                        focal: 'none',
-                        aperture: 'none',
-                        lens: 'none',
-                        lut: 'none',
-                        lighting: 'none'
+                        ...prev,
+                        camera: 'none', focal: 'none', aperture: 'none', lens: 'none', lut: 'none', lighting: 'none',
+                        refPerson: false, refProduct: false, refEnv: false
                     }));
                 }
             };
 
             const handleClear = () => { if (window.confirm("確定要清除所有分鏡紀錄嗎？")) setShots([]); };
+
+            // --- 排序邏輯 ---
+            const handleSort = () => {
+                const newShots = [...shots];
+                const draggedItemContent = newShots.splice(dragItemIndex.current, 1)[0];
+                newShots.splice(dragOverItemIndex.current, 0, draggedItemContent);
+                dragItemIndex.current = null;
+                dragOverItemIndex.current = null;
+                setShots(newShots);
+            };
 
             return (
                 <div className="min-h-screen bg-[#070708] text-gray-200 font-sans p-2 md:p-6 pb-20">
@@ -283,100 +337,92 @@
                         <div className="xl:col-span-5 space-y-4">
                             <header className="flex items-center justify-between px-2 pt-2">
                                 <div className="flex items-center gap-3">
-                                    <div className="bg-blue-600 p-2 rounded-xl shadow-lg">
-                                        <Icon name="Smartphone" size={20} className="text-white" />
-                                    </div>
+                                    <div className="bg-blue-600 p-2 rounded-xl shadow-lg"><Icon name="Smartphone" size={20} className="text-white" /></div>
                                     <div>
                                         <h1 className="text-lg font-black tracking-tighter text-white uppercase leading-none">CinePrompt Master</h1>
-                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V12.0 | PHOTOGRAPHIC CORE</p>
+                                        <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold mt-1">V12.5 | DRAG & SORT EDITION</p>
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold">
-                                    <Icon name="Brain" size={10} /> RAW 24-BIT OPTIC ENGINE
-                                </div>
+                                <div className="flex items-center gap-1.5 text-[8px] text-green-400 bg-green-400/5 px-2 py-1 rounded-full border border-green-400/20 font-bold"><Icon name="Brain" size={10} /> RAW 24-BIT OPTIC ENGINE</div>
                             </header>
 
                             <div className="bg-[#121214] border border-gray-800 rounded-3xl p-4 md:p-6 shadow-2xl space-y-5">
                                 <div className="space-y-1.5">
-                                    <label className="text-[10px] font-black text-gray-500 uppercase flex items-center gap-2 tracking-widest">
-                                        <Icon name="ChevronRight" className="text-blue-500" size={14} /> Visual Beat 畫面描述
-                                    </label>
-                                    <textarea 
-                                        value={current.action}
-                                        onChange={(e) => setCurrent({...current, action: e.target.value})}
-                                        placeholder="把你心中所想的寫出來...（啟用動態偵測技術）"
-                                        className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none"
-                                    />
+                                    <label className="mobile-label text-[10px] font-black text-gray-500 uppercase flex items-center gap-2 tracking-widest"><Icon name="ChevronRight" className="text-blue-500" size={14} /> Visual Beat 畫面描述</label>
+                                    <textarea value={current.action} onChange={(e) => setCurrent({...current, action: e.target.value})} placeholder="例如：一位穿著西裝的男士，在雨後的東京街頭行走..." className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none" />
                                 </div>
 
-                                <div className="space-y-4">
-                                    {/* 第一列：攝影機 ｜ 焦距 ｜ 光圈 */}
+                                <div className="bg-[#18181b] border border-gray-800/50 rounded-2xl p-4 space-y-3 shadow-inner">
+                                    <label className="mobile-label text-[10px] font-black text-blue-400 uppercase flex items-center gap-2 tracking-widest mb-1"><Icon name="Layers" size={12} /> Ref Booster 參考圖增強 (Banana 專用)</label>
+                                    <div className="flex flex-wrap gap-6">
+                                        {['refPerson', 'refProduct', 'refEnv'].map((key, i) => (
+                                            <label key={key} className="flex items-center gap-2 cursor-pointer group">
+                                                <input type="checkbox" checked={current[key]} onChange={(e) => setCurrent({...current, [key]: e.target.checked})} className="rounded bg-gray-900 border-gray-700" />
+                                                <span className="text-[12px] font-bold text-gray-400 group-hover:text-blue-400 transition-colors">{['人物參考','產品參考','環境參考'][i]}</span>
+                                            </label>
+                                        ))}
+                                    </div>
+                                    <p className="text-[9px] text-gray-600 italic">系統將根據勾選順序自動分配 Ref Image 編號。</p>
+                                </div>
+
+                                <div className="space-y-5">
                                     <div className="grid grid-cols-3 gap-3">
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Camera" size={10}/> 攝影機</label>
-                                            <select value={current.camera} onChange={(e) => setCurrent({...current, camera: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Camera" size={10}/> 攝影機</label>
+                                            <select value={current.camera} onChange={(e) => setCurrent({...current, camera: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">
                                                 {config.cameras.map(c => <option key={c.id} value={c.id} title={c.desc}>{c.name}</option>)}
                                             </select>
                                         </div>
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Focus" size={10}/> 焦距</label>
-                                            <select value={current.focal} onChange={(e) => setCurrent({...current, focal: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.focals.map(f => <option key={f.id} value={f.id} title={f.desc}>{f.name}</option>)}
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Focus" size={10}/> 焦距</label>
+                                            <select value={current.focal} onChange={(e) => setCurrent({...current, focal: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">
+                                                {config.focals.map(f => <option key={f.id} value={f.id}>{f.name}</option>)}
                                             </select>
                                         </div>
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Zap" size={10}/> 光圈</label>
-                                            <select value={current.aperture} onChange={(e) => setCurrent({...current, aperture: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.apertures.map(a => <option key={a.id} value={a.id} title={a.desc}>{a.name}</option>)}
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Zap" size={10}/> 光圈</label>
+                                            <select value={current.aperture} onChange={(e) => setCurrent({...current, aperture: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer font-serif italic">
+                                                {config.apertures.map(a => <option key={a.id} value={a.id}>{a.name}</option>)}
                                             </select>
                                         </div>
                                     </div>
 
-                                    {/* 第二列：鏡頭系列 ｜ 色彩Lut */}
                                     <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Maximize" size={10}/> 鏡頭系列</label>
-                                            <select value={current.lens} onChange={(e) => setCurrent({...current, lens: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.lenses.map(l => <option key={l.id} value={l.id} title={l.desc}>{l.name}</option>)}
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Maximize" size={10}/> 鏡頭系列</label>
+                                            <select value={current.lens} onChange={(e) => setCurrent({...current, lens: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">
+                                                {config.lenses.map(l => <option key={l.id} value={l.id} title={l.desc}>{l.name} ｜ {l.desc.split('：')[0]}</option>)}
                                             </select>
                                         </div>
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Palette" size={10}/> 色彩 Lut</label>
-                                            <select value={current.lut} onChange={(e) => setCurrent({...current, lut: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Palette" size={10}/> 色彩 Lut</label>
+                                            <select value={current.lut} onChange={(e) => setCurrent({...current, lut: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">
                                                 {config.luts.map(u => <option key={u.id} value={u.id} title={u.desc}>{u.name} ｜ {u.desc.split('：')[0]}</option>)}
                                             </select>
                                         </div>
                                     </div>
 
-                                    {/* 第三列：景別 ｜ 拍攝視角 */}
                                     <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Eye" size={10}/> 景別</label>
-                                            <select value={current.shotType} onChange={(e) => setCurrent({...current, shotType: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.shotTypes.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
-                                            </select>
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Eye" size={10}/> 景別</label>
+                                            <select value={current.shotType} onChange={(e) => setCurrent({...current, shotType: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">{config.shotTypes.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}</select>
                                         </div>
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Layers" size={10}/> 拍攝視角</label>
-                                            <select value={current.perspective} onChange={(e) => setCurrent({...current, perspective: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.perspectives.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}
-                                            </select>
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Layers" size={10}/> 拍攝視角</label>
+                                            <select value={current.perspective} onChange={(e) => setCurrent({...current, perspective: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">{config.perspectives.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}</select>
                                         </div>
                                     </div>
 
-                                    {/* 第四列：燈光設定 ｜ 輸出比例 */}
                                     <div className="grid grid-cols-2 gap-3">
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-yellow-500 uppercase flex items-center gap-1"><Icon name="Sun" size={10}/> 燈光設定</label>
-                                            <select value={current.lighting} onChange={(e) => setCurrent({...current, lighting: e.target.value})} className="w-full bg-[#1c1c1e] border border-yellow-900/20 rounded-xl p-2 text-[10px] outline-none text-yellow-500/80 cursor-pointer">
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-yellow-500 uppercase flex items-center gap-1 tracking-wider"><Icon name="Sun" size={10}/> 燈光設定</label>
+                                            <select value={current.lighting} onChange={(e) => setCurrent({...current, lighting: e.target.value})} className="w-full bg-[#1c1c1e] border border-yellow-900/20 rounded-xl h-11 px-3 outline-none text-yellow-500/80 cursor-pointer">
                                                 {config.lighting.map(l => <option key={l.id} value={l.id} title={l.desc}>{l.name} ｜ {l.desc.split('：')[0]}</option>)}
                                             </select>
                                         </div>
-                                        <div className="space-y-1">
-                                            <label className="text-[9px] font-black text-gray-400 uppercase flex items-center gap-1"><Icon name="Monitor" size={10}/> 輸出比例</label>
-                                            <select value={current.aspect} onChange={(e) => setCurrent({...current, aspect: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl p-2 text-[10px] outline-none cursor-pointer">
-                                                {config.aspectRatios.map(r => <option key={r} value={r}>{r}</option>)}
-                                            </select>
+                                        <div className="space-y-1.5">
+                                            <label className="mobile-label text-[10px] font-black text-gray-400 uppercase flex items-center gap-1 tracking-wider"><Icon name="Monitor" size={10}/> 輸出比例</label>
+                                            <select value={current.aspect} onChange={(e) => setCurrent({...current, aspect: e.target.value})} className="w-full bg-[#1c1c1e] border border-gray-800 rounded-xl h-11 px-3 outline-none cursor-pointer">{config.aspectRatios.map(r => <option key={r} value={r}>{r}</option>)}</select>
                                         </div>
                                     </div>
                                 </div>
@@ -401,40 +447,47 @@
                                 <div className="flex gap-4">
                                     <button onClick={handleReset} className="text-[10px] font-bold text-gray-500 hover:text-white flex items-center gap-1 transition-colors"><Icon name="RotateCcw" size={14}/> RESET</button>
                                     <button onClick={handleClear} className="text-[10px] font-bold text-red-500/80 hover:text-red-500 flex items-center gap-1 transition-colors"><Icon name="Trash2" size={14}/> CLEAR</button>
-                                    <button onClick={() => { 
-                                        let csv = "Shot#,Action,Specs,Prompt\n";
-                                        shots.forEach((s, i) => csv += `${shots.length-i},"${s.action}","${s.camera}|${s.focal}","${s.prompt}"\n`);
-                                        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-                                        const url = URL.createObjectURL(blob);
-                                        const link = document.createElement("a");
-                                        link.href = url; link.download = `Ian_Production_ShotList.csv`; link.click();
-                                    }} className="text-[10px] font-bold text-blue-500 hover:text-blue-400 flex items-center gap-1 transition-colors"><Icon name="Download" size={14}/> EXPORT</button>
+                                    <button onClick={() => { let csv = "Shot#,Action,Specs,Prompt\n"; shots.forEach((s, i) => csv += `${i+1},"${s.action}","${s.camera}|${s.focal}","${s.prompt}"\n`); const blob = new Blob([csv], { type: 'text/csv' }); const url = URL.createObjectURL(blob); const link = document.createElement("a"); link.href = url; link.download = `Ian_Production_ShotList.csv`; link.click(); }} className="text-[10px] font-bold text-blue-500 hover:text-blue-400 flex items-center gap-1 transition-colors"><Icon name="Download" size={14}/> EXPORT</button>
                                 </div>
                             </div>
                             <div className="bg-[#121214] border border-gray-800 rounded-3xl flex-1 overflow-hidden shadow-inner flex flex-col">
                                 <div className="overflow-y-auto max-h-[750px] custom-scrollbar">
                                     <table className="w-full text-left text-xs">
                                         <thead className="bg-[#18181b] text-[9px] text-gray-500 uppercase font-black border-b border-gray-800 sticky top-0 z-10">
-                                            <tr><th className="px-5 py-4 w-12 text-center">#</th><th className="px-5 py-4">Visual Narrative</th><th className="px-5 py-4 w-44">Technical Specs</th><th className="px-5 py-4 w-24 text-right">Action</th></tr>
+                                            <tr>
+                                                <th className="px-2 py-4 w-10 text-center">⇅</th>
+                                                <th className="px-5 py-4 w-12 text-center">#</th>
+                                                <th className="px-5 py-4">Visual Narrative</th>
+                                                <th className="px-5 py-4 w-44 text-right">Action</th>
+                                            </tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-800/50">
                                             {shots.length === 0 ? (<tr><td colSpan="4" className="px-5 py-40 text-center text-gray-600 font-medium italic">尚未建立分鏡，請在左側輸入描述...</td></tr>) : (
                                                 shots.map((s, idx) => (
-                                                    <tr key={s.id} className="hover:bg-blue-600/5 transition-colors group">
-                                                        <td className="px-5 py-6 text-gray-600 font-bold text-center">{shots.length - idx}</td>
+                                                    <tr 
+                                                        key={s.id} 
+                                                        draggable 
+                                                        onDragStart={() => (dragItemIndex.current = idx)}
+                                                        onDragEnter={() => (dragOverItemIndex.current = idx)}
+                                                        onDragEnd={handleSort}
+                                                        onDragOver={(e) => e.preventDefault()}
+                                                        className="hover:bg-blue-600/5 transition-colors group"
+                                                    >
+                                                        <td className="px-2 py-6 text-center align-middle">
+                                                            <div className="drag-handle"><Icon name="Menu" size={16} /></div>
+                                                        </td>
+                                                        <td className="px-5 py-6 text-gray-600 font-bold text-center align-middle">{idx + 1}</td>
                                                         <td className="px-5 py-6">
                                                             <div className="font-black text-gray-100 mb-1.5 leading-tight text-sm">{s.action}</div>
-                                                            <div className="text-[10px] text-blue-500/60 font-mono line-clamp-2 italic">{s.prompt}</div>
-                                                        </td>
-                                                        <td className="px-5 py-6">
-                                                            <div className="flex flex-wrap gap-1.5">
+                                                            <div className="flex flex-wrap gap-1.5 mb-2">
                                                                 <span className="text-[8px] bg-blue-900/20 text-blue-400 px-1.5 py-0.5 rounded-lg border border-blue-900/30 font-bold uppercase">{s.shotType}</span>
                                                                 <span className="text-[8px] bg-gray-800 text-gray-400 px-1.5 py-0.5 rounded-lg font-bold uppercase">{s.focal}</span>
-                                                                <span className="text-[8px] bg-yellow-900/20 text-yellow-500 px-1.5 py-0.5 rounded-lg border border-yellow-900/30 font-bold uppercase">{config.luts.find(l => l.id === s.lut)?.name.split('｜')[0].trim().split(' ')[0]}</span>
+                                                                <span className="text-[8px] bg-yellow-900/20 text-yellow-500 px-1.5 py-0.5 rounded-lg border border-yellow-900/30 font-bold uppercase font-serif italic">{s.aperture}</span>
                                                                 <span className="text-[8px] bg-white/5 text-gray-500 px-1.5 py-0.5 rounded-lg border border-white/10 font-bold uppercase">{s.aspect}</span>
                                                             </div>
+                                                            <div className="text-[10px] text-blue-500/60 font-mono line-clamp-2 italic">{s.prompt}</div>
                                                         </td>
-                                                        <td className="px-5 py-6 text-right">
+                                                        <td className="px-5 py-6 text-right align-middle">
                                                             <div className="flex justify-end gap-3 opacity-60 group-hover:opacity-100 transition-opacity">
                                                                 <button onClick={() => handleCopy(s.prompt, s.id)} className={`p-2.5 rounded-xl transition-all active:scale-90 ${copyId === s.id ? 'bg-green-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-blue-600'}`}>{copyId === s.id ? <Icon name="CheckCircle2" size={16} /> : <Icon name="Copy" size={16} />}</button>
                                                                 <button onClick={() => setShots(shots.filter(i => i.id !== s.id))} className="p-2.5 rounded-xl bg-gray-800 text-gray-400 hover:text-white hover:bg-red-600 transition-all active:scale-90"><Icon name="Trash2" size={16} /></button>
