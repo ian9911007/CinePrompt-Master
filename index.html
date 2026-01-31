@@ -574,7 +574,7 @@
                 ].filter(val => val && val.trim() !== '');
 
                 const boost = analyzeSubjectBoost(current.action);
-                const quality = "Masterful photography, 16K hyper-resolution, extreme optical sharpness, 16-bit deep color RAW, 32-bit float HDR dynamic range. Intricate organic textures, physically accurate light rendering, zero chromatic aberration. Cinematic realism, elite visual fidelity, uncompromising image quality achievable across any photographic genre.";
+                const quality = "Masterful photography, 16K hyper-resolution, extreme optical sharpness, 16-bit deep color RAW, 32-bit float HDR dynamic range. Intricate organic textures, physically accurate light rendering, zero chromatic aberration. Cinematic realism, elite visual fidelity. Invisible camera and invisible lighting gear; strictly no camera, tripods, or technical equipment in frame. Clean lens-only perspective, unobstructed view through the glass, zero reflection of studio apparatus, focusing exclusively on subject matter and natural light physics.";
                 return `${techChain.join(", ")}, ${boost}, ${quality} --ar ${current.aspect.replace(':', ':')}`;
             }, [current]);
 
