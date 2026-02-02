@@ -92,7 +92,7 @@
 
         const config = {
             cameras: [
-      { id: 'none', name: 'None ｜ 不指定', desc: '預設值。', prompt: '' },
+      { id: 'none', name: 'Ｎ/A', desc: '預設值。', prompt: '' },
       // 頂級商業與人像
       { id: 'phaseone_xf', name: 'Phase One XF IQ4 ｜ 飛思一億', desc: '1.5億畫素、極致解析度、豐富細節、商業修圖級質感', prompt: 'shot on Phase One XF IQ4, 150MP digital back, extreme resolution, hyper-realistic skin texture, commercial studio lighting, 16K clarity, razor sharp focus, high frequency detail' },
       { id: 'hasselblad_h6d', name: 'Hasselblad H6D-100c ｜ 哈蘇 H6D', desc: '哈蘇色調、頂級膚色還原、棚拍感、立體感', prompt: 'shot on Hasselblad H6D-100c, 100MP, medium format, Hasselblad Natural Colour Solution (HNCS), rich tonal transition, commercial portrait, creamy falloff, studio strobe lighting' },
@@ -200,6 +200,7 @@
       { id: 'darkfield_micro', name: 'Darkfield Microscopy ｜ 暗視野顯微', desc: '背景全黑、僅物體邊緣發光、適合透明液體。', prompt: 'Darkfield microscopy, bright specimen edges against pitch black background, light scattering, high contrast organic structures, glowing translucency, plankton or cell details' },
       { id: 'sem', name: 'SEM (Scanning Electron) ｜ 電子顯微', desc: '掃描電子顯微、微觀世界、黑白極致細節、昆蟲/細胞紋理', prompt: 'Scanning Electron Microscope (SEM) image, greyscale micro photography, extreme magnification, insect eye or pollen grain, nanostructure texture, sharp depth of field' },
       { id: 'fluorescence', name: 'Fluorescence ｜ 螢光顯微', desc: '螢光顯微、霓虹發光細胞、暗背景高對比、生物發光', prompt: 'fluorescence microscopy aesthetic, confocal laser scanning microscopy (CLSM) style, vibrant bioluminescence, intricate biological architecture, subsurface scattering with physical transmission and refraction, glowing vascular textures, stained biological tissue, scientific art' },
+      { id: 'metallurgical_art', name: 'Metallurgical ｜ 金相顯微', desc: '偏光色彩、DIC立體浮雕感、絢麗金屬晶格', prompt: 'Artistic metallurgical microscope photography, polarized light and Differential Interference Contrast (DIC), vibrant multi-colored metal grain structure, complex dendritic patterns, pseudo-3D relief texture, abstract scientific aesthetic, highly polished alloy cross-section, hyper-realistic, 8k resolution, astonishing details, award-winning micrography' },
       { id: 'uv_imaging', name: 'UV Imaging ｜ 紫外線', desc: '紫外線感應、隱藏斑點顯現、膚質檢測視角、黑白高反差', prompt: 'reflected UV photography, ultraviolet imaging, reveals hidden skin damage/freckles, black and white high contrast, alien skin texture, scientific forensic analysis' },
       { id: 'schlieren', name: 'Schlieren Photography ｜ 紋影攝影', desc: '紋影攝影、捕捉氣流/衝擊波、空氣密度視覺化', prompt: 'Schlieren photography, visualizing shockwaves, air density changes, supersonic bullet flow, heat waves rising, physics experiment visualization, monochrome striations' },
       { id: 'kirlian', name: 'Kirlian Photography ｜ 克里安攝影', desc: '克里安攝影、物體周圍電暈放電、氣場光環、神秘學視覺', prompt: 'Kirlian photography, high voltage contact print, coronal discharge glow around object, aura effect, electrical sparks, violet/blue energy field, mysticism aesthetic' },
@@ -231,7 +232,7 @@
       { id: 'slit_scan', name: 'Slit-Scan ｜ 狹縫掃描', desc: '時間扭曲效果、物體被拉長或變形、超現實的流動感。', prompt: 'Slit-scan photography, time displacement effect, elongated distorted subjects, surreal flowing timeline, abstract digital art, warp speed visual.' },
     ],
     lenses: [
-      { id: 'none', name: 'None ｜ 不指定', desc: '預設值。', prompt: '' },
+      { id: 'none', name: 'Ｎ/A', desc: '預設值。', prompt: '' },
       // 現代商業
       { id: 'phaseone_back', name: 'Phase One IQ4 150MP ｜ 飛思數位機背', desc: '1.5億畫素級質感、極高動態範圍、16-bit 色深、極致商業棚拍感。', prompt: 'Phase One IQ4 150MP digital back, medium format aesthetic, 16-bit color depth, extreme dynamic range, ultra-high resolution, commercial studio lighting, pore-level skin texture, absolute clarity.' },
       { id: 'schneider_ls', name: 'Schneider Kreuznach LS ｜ 施奈德藍環', desc: '鏡間快門 (Leaf Shutter)、閃燈高速同步質感、德國工業銳度。', prompt: 'Schneider Kreuznach Blue Ring LS lens, leaf shutter aesthetic, studio strobe lighting look, hyper-realistic sharpness, high micro-contrast, commercial fashion photography, vibrant and punchy colors.' },
@@ -394,7 +395,7 @@
       { id: 'generic_fisheye', name: 'Generic Fisheye Lens ｜ 廣域魚眼', desc: '廣域變形、誇張透視。', prompt: 'Ultra-wide fisheye lens, action cam aesthetic, dynamic perspective, exaggerated foreground elements close to lens, significant barrel distortion, expansive environmental view, high clarity.' }
     ],
     luts: [
-      { id: 'none', name: 'None ｜ 不指定', desc: '預設值。', prompt: '' },
+      { id: 'none', name: 'Ｎ/A', desc: '預設值。', prompt: '' },
       // 頂級商業與色準
       { id: 'color_accurate', name: 'Color Accurate ｜ 色彩準確', desc: '標準校核,無底片偏色', prompt: 'Macbeth ColorChecker standard, Datacolor Spyder accurate, flat neutral lighting, no color cast, 16k resolution' },
       { id: 'hassy_hncs', name: 'Hasselblad HNCS ｜ 哈蘇色彩', desc: '極致色準,適合珠寶與精品商攝', prompt: 'Hasselblad HNCS color, medium format photography, true-to-life colors, extremely detailed' },
@@ -467,7 +468,7 @@
       { id: 'wet_plate_lut', name: 'Wet Plate ｜ 濕版攝影', desc: '極具化學質感與歷史邊緣痕跡', prompt: 'Wet Plate Collodion, ambrotype, chemical stains, rough edges, shallow depth of field, 19th century portrait' }
     ],
     lighting: [
-      { id: 'none', name: 'None ｜ 不指定', desc: '預設值。', prompt: '' },
+      { id: 'none', name: 'Ｎ/A', desc: '預設值。', prompt: '' },
       // 商業 Commercial (Studio, Modifiers, Patterns)
       { id: 'threepoint', name: 'Three-Point Lighting ｜ 三點照明', desc: '業界標準佈光法(主光+補光+背光),確保立體感與細節', prompt: 'professional three-point lighting' },
       { id: 'rembrandt_l', name: 'Rembrandt Lighting ｜ 林布蘭光', desc: '經典人像光,在臉頰暗面形成倒三角形光斑,具戲劇質感', prompt: 'Rembrandt lighting' },
@@ -535,7 +536,7 @@
       { id: 'cyberpunk_bicolor', name: 'Cyberpunk Bi-Color ｜ 賽博雙色', desc: '經典的青色(Cyan)與洋紅(Magenta)對比光', prompt: 'cyberpunk bi-color lighting' }
     ],
     shotTypes: [
-      { id: 'none', name: 'NONE', desc: '不指定。' },
+      { id: 'none', name: 'Ｎ/A', desc: '不指定。' },
       { id: 'Aerial', name: 'AERIAL SHOT', desc: '航拍/空拍' },
       { id: 'Establishing', name: 'ESTABLISHING SHOT', desc: '定場鏡頭' },
       { id: 'EWS', name: 'EWS', desc: '極廣角全景' },
@@ -559,7 +560,7 @@
       { id: 'Macro', name: 'MACRO', desc: '微距鏡頭' }
     ],
     perspectives: [
-      { id: 'none', name: 'NONE', desc: '不指定。' },
+      { id: 'none', name: 'Ｎ/A', desc: '不指定。' },
       { id: 'god', name: 'GOD\'S EYE VIEW', desc: '上帝視角' },
       { id: 'overhead', name: 'OVERHEAD', desc: '正上方俯視' },
       { id: 'flatlay', name: 'FLAT LAY', desc: '平鋪視角(Knolling)' },
@@ -587,7 +588,7 @@
       { id: 'oblique', name: 'OBLIQUE ANGLE', desc: '斜角視角' }
     ],
     focals: [
-      { id: 'none', name: 'None' }, { id: '6mm', name: '6mm' }, { id: '8mm', name: '8mm' },
+      { id: 'none', name: 'Ｎ/A' }, { id: '6mm', name: '6mm' }, { id: '8mm', name: '8mm' },
       { id: '11mm', name: '11mm' }, { id: '12mm', name: '12mm' }, { id: '14mm', name: '14mm' },
       { id: '18mm', name: '18mm' }, { id: '24mm', name: '24mm' }, { id: '35mm', name: '35mm' },
       { id: '47mm', name: '47mm' }, { id: '50mm', name: '50mm' }, { id: '55mm', name: '55mm' },
@@ -598,7 +599,7 @@
       { id: '5200mm', name: '5200mm' }
     ],
     apertures: [
-      { id: 'none', name: 'None' }, { id: 'f/0.7', name: 'f/0.7' }, { id: 'f/0.85', name: 'f/0.85' },
+      { id: 'none', name: 'Ｎ/A' }, { id: 'f/0.7', name: 'f/0.7' }, { id: 'f/0.85', name: 'f/0.85' },
       { id: 'f/0.95', name: 'f/0.95' }, { id: 'f/1.2', name: 'f/1.2' }, { id: 'f/1.4', name: 'f/1.4' },
       { id: 'f/1.8', name: 'f/1.8' }, { id: 'f/2.0', name: 'f/2.0' }, { id: 'f/2.8', name: 'f/2.8' },
       { id: 'f/4.0', name: 'f/4.0' }, { id: 'f/5.6', name: 'f/5.6' }, { id: 'f/8.0', name: 'f/8.0' },
