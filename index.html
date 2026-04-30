@@ -919,6 +919,20 @@
                                     <textarea value={current.action} onChange={(e) => setCurrent({ ...current, action: e.target.value })} placeholder="把你心中的畫面寫下來... （已啟用動態偵測技術）" className="w-full bg-[#18181b] border border-gray-800 rounded-2xl p-4 text-sm focus:ring-1 focus:ring-blue-500 outline-none h-28 transition-all resize-none shadow-inner select-text" />
                                 </div>
 
+                                <div className="bg-[#18181b] border border-blue-900/20 rounded-2xl p-4 group italic">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <label className="text-[11px] font-black text-blue-500 uppercase tracking-widest flex items-center gap-2"><Icon name="Brain" size={12} /> Live Master Prompt</label>
+                                        <div className="flex items-center gap-2">
+                                            <button onClick={addShot} disabled={!current.action} className="text-[9px] bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-500 font-bold shadow-lg shadow-blue-900/30 active:scale-90 disabled:bg-gray-800 disabled:text-gray-600 flex items-center gap-1 transition-all">
+                                                <Icon name="Plus" size={10} /> ADD SHOT
+                                            </button>
+                                            <button onClick={() => handleCopy(finalPrompt, 'live')} className="text-[9px] bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full hover:bg-blue-600/20 font-bold border border-blue-600/20 active:scale-90">{copyId === 'live' ? 'COPIED!' : 'COPY'}</button>
+                                        </div>
+                                    </div>
+                                    <div className="font-mono text-[10px] leading-relaxed text-gray-500 max-h-[140px] overflow-y-auto custom-scrollbar select-text">{finalPrompt}</div>
+                                </div>
+
+
                                 <div className="bg-[#18181b] border border-gray-800/50 rounded-2xl p-4 space-y-3 shadow-inner">
                                     <label className="mobile-label text-[11px] font-black text-blue-400 uppercase flex items-center gap-2 tracking-widest mb-1"><Icon name="Layers" size={14} /> Ref Booster (Banana)</label>
                                     <div className="grid grid-cols-2 gap-y-3 gap-x-6">
@@ -996,14 +1010,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button onClick={addShot} disabled={!current.action} className="w-full py-4 rounded-2xl font-bold text-xs uppercase tracking-widest transition-all shadow-lg active:scale-95 bg-blue-600 hover:bg-blue-500 text-white shadow-blue-900/30 disabled:bg-gray-800 disabled:text-gray-600 disabled:cursor-not-allowed">Add Shot to Timeline</button>
-                            </div>
-                            <div className="bg-[#121214] border border-blue-900/20 rounded-3xl p-4 group italic">
-                                <div className="flex justify-between items-center mb-2">
-                                    <label className="text-[11px] font-black text-blue-500 uppercase tracking-widest flex items-center gap-2"><Icon name="Brain" size={12} /> Live Master Prompt</label>
-                                    <button onClick={() => handleCopy(finalPrompt, 'live')} className="text-[9px] bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full hover:bg-blue-600/20 font-bold border border-blue-600/20 active:scale-90">{copyId === 'live' ? 'COPIED!' : 'COPY'}</button>
-                                </div>
-                                <div className="font-mono text-[10px] leading-relaxed text-gray-500 max-h-[140px] overflow-y-auto custom-scrollbar select-text">{finalPrompt}</div>
                             </div>
                         </div>
 
