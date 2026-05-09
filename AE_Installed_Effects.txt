@@ -1,0 +1,6113 @@
+=== AE Installed Effects Match Name Registry ===
+Generated: Thu May 07 2026 10:52:32 GMT+0800
+AE Version: 26.2.1x2
+Total Effects: 1904
+================================================
+
+───────────────────────────────────
+📂 Cinema 4D
+───────────────────────────────────
+  Display: Cineware
+  Match:   CINEMA 4D Effect
+
+───────────────────────────────────
+📂 3D Channel
+───────────────────────────────────
+  Display: Cryptomatte
+  Match:   Cryptomatte
+
+  Display: EXtractoR
+  Match:   EXtractoR
+
+  Display: IDentifier
+  Match:   IDentifier
+
+  Display: 3D Channel Extract
+  Match:   ADBE AUX CHANNEL EXTRACT
+
+  Display: Depth of Field
+  Match:   ADBE DEPTH FIELD
+
+  Display: Depth Matte
+  Match:   ADBE DEPTH MATTE
+
+  Display: Fog 3D
+  Match:   ADBE FOG_3D
+
+  Display: ID Matte
+  Match:   ADBE ID MATTE
+
+───────────────────────────────────
+📂 Simulation
+───────────────────────────────────
+  Display: CC Ball Action
+  Match:   CC Ball Action
+
+  Display: CC Bubbles
+  Match:   CC Bubbles
+
+  Display: CC Drizzle
+  Match:   CC Drizzle
+
+  Display: CC Hair
+  Match:   CC Hair
+
+  Display: CC Mr. Mercury
+  Match:   CC Mr. Mercury
+
+  Display: CC Particle Systems II
+  Match:   CC Particle Systems II
+
+  Display: CC Particle World
+  Match:   CC Particle World
+
+  Display: CC Pixel Polly
+  Match:   CC Pixel Polly
+
+  Display: CC Rainfall
+  Match:   CSRainfall
+
+  Display: CC Scatterize
+  Match:   CC Scatterize
+
+  Display: CC Snowfall
+  Match:   CSSnowfall
+
+  Display: CC Star Burst
+  Match:   CC Star Burst
+
+  Display: Fluxion
+  Match:   Grape_Fluxion
+
+  Display: Pixion
+  Match:   Grape_Pixion
+
+  Display: Card Dance
+  Match:   APC CardDanceCam
+
+  Display: Caustics
+  Match:   APC Caustics
+
+  Display: Foam
+  Match:   APC Foam
+
+  Display: Particle Playground
+  Match:   ADBE Playgnd
+
+  Display: Shatter
+  Match:   APC Shatter
+
+  Display: Wave World
+  Match:   APC Wave World
+
+───────────────────────────────────
+📂 Distort
+───────────────────────────────────
+  Display: CC Bend It
+  Match:   CC Bend It
+
+  Display: CC Bender
+  Match:   CC Bender
+
+  Display: CC Blobbylize
+  Match:   CC Blobbylize
+
+  Display: CC Flo Motion
+  Match:   CC Flo Motion
+
+  Display: CC Griddler
+  Match:   CC Griddler
+
+  Display: CC Lens
+  Match:   CC Lens
+
+  Display: CC Page Turn
+  Match:   CC Page Turn
+
+  Display: CC Power Pin
+  Match:   CC Power Pin
+
+  Display: CC Ripple Pulse
+  Match:   CC Ripple Pulse
+
+  Display: CC Slant
+  Match:   CC Slant
+
+  Display: CC Smear
+  Match:   CC Smear
+
+  Display: CC Split
+  Match:   CC Split
+
+  Display: CC Split 2
+  Match:   CC Split 2
+
+  Display: CC Tiler
+  Match:   CC Tiler
+
+  Display: Bezier Warp
+  Match:   ADBE BEZMESH
+
+  Display: Bulge
+  Match:   ADBE Bulge
+
+  Display: Warp
+  Match:   ADBE WRPMESH
+
+  Display: Corner Pin
+  Match:   ADBE Corner Pin
+
+  Display: Displacement Map
+  Match:   ADBE Displacement Map
+
+  Display: Liquify
+  Match:   ADBE LIQUIFY
+
+  Display: Magnify
+  Match:   ADBE Magnify
+
+  Display: Mirror
+  Match:   ADBE Mirror
+
+  Display: Mesh Warp
+  Match:   ADBE MESH WARP
+
+  Display: Offset
+  Match:   ADBE Offset
+
+  Display: Optics Compensation
+  Match:   ADBE Optics Compensation
+
+  Display: Polar Coordinates
+  Match:   ADBE Polar Coordinates
+
+  Display: Reshape
+  Match:   ADBE RESHAPE
+
+  Display: Ripple
+  Match:   ADBE Ripple
+
+  Display: Rolling Shutter Repair
+  Match:   ADBE Rolling Shutter
+
+  Display: Smear
+  Match:   ADBE SCHMEAR
+
+  Display: Spherize
+  Match:   ADBE Spherize
+
+  Display: Warp Stabilizer
+  Match:   ADBE SubspaceStabilizer
+
+  Display: Transform
+  Match:   ADBE Geometry2
+
+  Display: Turbulent Displace
+  Match:   ADBE Turbulent Displace
+
+  Display: Twirl
+  Match:   ADBE Twirl
+
+  Display: Detail-preserving Upscale
+  Match:   ADBE Upscale
+
+  Display: Wave Warp
+  Match:   ADBE Wave Warp
+
+───────────────────────────────────
+📂 Stylize
+───────────────────────────────────
+  Display: CC Block Load
+  Match:   CS BlockLoad
+
+  Display: CC Burn Film
+  Match:   CC Burn Film
+
+  Display: CC Glass
+  Match:   CC Glass
+
+  Display: CC HexTile
+  Match:   CS HexTile
+
+  Display: CC Kaleida
+  Match:   CC Kaleida
+
+  Display: CC Mr. Smoothie
+  Match:   CC Mr. Smoothie
+
+  Display: CC Plastic
+  Match:   CC Plastic
+
+  Display: CC RepeTile
+  Match:   CC RepeTile
+
+  Display: CC Threshold
+  Match:   CC Threshold
+
+  Display: CC Threshold RGB
+  Match:   CC Threshold RGB
+
+  Display: CC Vignette
+  Match:   CS Vignette
+
+  Display: Torn Paper
+  Match:   TORN_PAPER
+
+  Display: Brush Strokes
+  Match:   ADBE Brush Strokes
+
+  Display: Cartoon
+  Match:   ADBE Cartoonify
+
+  Display: Color Emboss
+  Match:   ADBE Color Emboss
+
+  Display: Emboss
+  Match:   ADBE Emboss
+
+  Display: Find Edges
+  Match:   ADBE Find Edges
+
+  Display: Glow
+  Match:   ADBE Glo2
+
+  Display: Mosaic
+  Match:   ADBE Mosaic
+
+  Display: Posterize
+  Match:   ADBE Posterize
+
+  Display: Roughen Edges
+  Match:   ADBE Roughen Edges
+
+  Display: Scatter
+  Match:   ADBE Scatter
+
+  Display: Strobe Light
+  Match:   ADBE Strobe
+
+  Display: Texturize
+  Match:   ADBE Texturize
+
+  Display: Threshold
+  Match:   ADBE Threshold2
+
+  Display: Motion Tile
+  Match:   ADBE Tile
+
+───────────────────────────────────
+📂 Color Correction
+───────────────────────────────────
+  Display: CC Color Neutralizer
+  Match:   CS Color Neutralizer
+
+  Display: CC Color Offset
+  Match:   CC Color Offset
+
+  Display: CC Kernel
+  Match:   CS Kernel
+
+  Display: CC Toner
+  Match:   CC Toner
+
+  Display: Auto Color
+  Match:   ADBE AutoColor
+
+  Display: Auto Contrast
+  Match:   ADBE AutoContrast
+
+  Display: Auto Levels
+  Match:   ADBE AutoLevels
+
+  Display: Broadcast Colors
+  Match:   ADBE Broadcast Colors
+
+  Display: Change to Color
+  Match:   ADBE Change To Color
+
+  Display: Change Color
+  Match:   ADBE Change Color
+
+  Display: Channel Mixer
+  Match:   ADBE CHANNEL MIXER
+
+  Display: Color Link
+  Match:   ADBE Color Link
+
+  Display: Color Balance
+  Match:   ADBE Color Balance 2
+
+  Display: Color Balance (HLS)
+  Match:   ADBE Color Balance (HLS)
+
+  Display: Colorama
+  Match:   APC Colorama
+
+  Display: Curves
+  Match:   ADBE CurvesCustom
+
+  Display: Color Stabilizer
+  Match:   ADBE Deflicker
+
+  Display: Equalize
+  Match:   ADBE Equalize
+
+  Display: Exposure
+  Match:   ADBE Exposure2
+
+  Display: Gamma/Pedestal/Gain
+  Match:   ADBE Gamma/Pedestal/Gain2
+
+  Display: Hue/Saturation
+  Match:   ADBE HUE SATURATION
+
+  Display: Leave Color
+  Match:   ADBE Leave Color
+
+  Display: Levels
+  Match:   ADBE Easy Levels2
+
+  Display: Levels (Individual Controls)
+  Match:   ADBE Pro Levels2
+
+  Display: Lumetri Color
+  Match:   ADBE Lumetri
+
+  Display: OCIO CDL Transform
+  Match:   ADBE OCIO CDL Transform
+
+  Display: OCIO Color Space Transform
+  Match:   ADBE OCIO Color Space Transform
+
+  Display: OCIO Display Transform
+  Match:   ADBE OCIO Display Transform
+
+  Display: OCIO File Transform
+  Match:   ADBE OCIO FILE Transform
+
+  Display: OCIO Look Transform
+  Match:   ADBE OCIO Look Transform
+
+  Display: Photo Filter
+  Match:   ADBE PhotoFilterPS
+
+  Display: Selective Color
+  Match:   ADBE SelectiveColor
+
+  Display: Vibrance
+  Match:   ADBE Vibrance
+
+  Display: Brightness & Contrast
+  Match:   ADBE Brightness & Contrast 2
+
+  Display: Black & White
+  Match:   ADBE Black&White
+
+  Display: PS Arbitrary Map
+  Match:   ADBE PS Arbitrary Map
+
+  Display: Shadow/Highlight
+  Match:   ADBE ShadowHighlight
+
+  Display: Tint
+  Match:   ADBE Tint
+
+  Display: Tritone
+  Match:   ADBE Tritone
+
+  Display: Video Limiter
+  Match:   ADBE DigitalVideoLimiter
+
+───────────────────────────────────
+📂 Channel
+───────────────────────────────────
+  Display: CC Composite
+  Match:   CS Composite
+
+  Display: Arithmetic
+  Match:   ADBE Arithmetic
+
+  Display: Blend
+  Match:   ADBE Blend
+
+  Display: Calculations
+  Match:   ADBE Calculations
+
+  Display: Channel Combiner
+  Match:   ADBE Channel Combiner
+
+  Display: Compound Arithmetic
+  Match:   ADBE Compound Arithmetic
+
+  Display: Invert
+  Match:   ADBE Invert
+
+  Display: Minimax
+  Match:   ADBE Minimax
+
+  Display: Set Channels
+  Match:   ADBE Set Channels
+
+  Display: Set Matte
+  Match:   ADBE Set Matte3
+
+  Display: Shift Channels
+  Match:   ADBE Shift Channels
+
+  Display: Solid Composite
+  Match:   ADBE Solid Composite
+
+  Display: Remove Color Matting
+  Match:   ADBE Remove Color Matting
+
+───────────────────────────────────
+📂 _Obsolete
+───────────────────────────────────
+  Display: CC Composite (obsolete)
+  Match:   CC Composite
+
+  Display: CC PS Classic (obsolete)
+  Match:   CC PS Classic
+
+  Display: CC PS LE Classic (obsolete)
+  Match:   CC PS LE Classic
+
+  Display: CC Rain (obsolete)
+  Match:   CC Rain
+
+  Display: CC Snow (obsolete)
+  Match:   CC Snow
+
+  Display: CC Time Blend
+  Match:   CC Time Blend
+
+  Display: CC Time Blend FX
+  Match:   CC Time Blend FX
+
+  Display: Bendio Attach Point
+  Match:   bendio_attach_001
+
+  Display: SynthEyes Legacy Distortion
+  Match:   SSONTECH SyAFXLens
+
+  Display: BCC Blobs Wipe
+  Match:   BCC Blobs WipePrTr
+
+  Display: BCC Blur (Obsolete)
+  Match:   BCC3Blur
+
+  Display: BCC Blur Dissolve OBSOLETE
+  Match:   BCC Blur DissolvePrTr
+
+  Display: BCC Burnt Film
+  Match:   BCC Burnt FilmPrTr
+
+  Display: BCC Checker Wipe
+  Match:   BCCChecker WipePrTr
+
+  Display: BCC Colorize Glow Dissolve
+  Match:   BCC Colorize Glow DissolvePrTr
+
+  Display: BCC Composite Dissolve
+  Match:   BCC Composite DissolvePrTr
+
+  Display: BCC Crash Zoom Dissolve OBSOLETE
+  Match:   BCC Crash Zoom DissolvePrTr
+
+  Display: BCC Criss-Cross Wipe
+  Match:   BCC Criss-Cross WipePrTr
+
+  Display: BCC Cross Glitch OBSOLETE
+  Match:   BCC Cross GlitchPrTr
+
+  Display: BCC Cross Melt
+  Match:   BCC Cross MeltPrTr
+
+  Display: BCC Cross Zoom OBSOLETE
+  Match:   BCC Cross ZoomPrTr
+
+  Display: BCC Curl Dissolve
+  Match:   BCC Curl DissolvePrTr
+
+  Display: BCC Damaged TV Dissolve
+  Match:   BCC Damaged TV DissolvePrTr
+
+  Display: BCC Fast Film Glow Dissolve OBSOLETE
+  Match:   BCC Fast Film Glow DissolvePrTr
+
+  Display: BCC Film Glow Dissolve OBS
+  Match:   BCC Film Glow DissolvePrTr
+
+  Display: BCC Flutter Cut OBSOLETE
+  Match:   BCCFlutterPrTr
+
+  Display: BCC Grid Wipe
+  Match:   BCC Grid WipePrTr
+
+  Display: BCC Kaleida Dissolve
+  Match:   BCC Kaleida DissolvePrTr
+
+  Display: BCC Lens Blur Dissolve
+  Match:   BCC Lens Blur DissolvePrTr
+
+  Display: BCC Lens Distortion Wipe
+  Match:   BCC Lens Distortion WipePrTr
+
+  Display: BCC Lens Flare Dissolve
+  Match:   BCC Lens Flare DissolvePrTr
+
+  Display: BCC Lens Flare Round
+  Match:   BCC Lens Flare RoundPrTr
+
+  Display: BCC Lens Flare Spiked
+  Match:   BCC Lens Flare SpikedPrTr
+
+  Display: BCC Lens Flash
+  Match:   BCC Lens FlashPrTr
+
+  Display: BCC Lens Transition OBS
+  Match:   BCC LensTransitionPrTr
+
+  Display: BCC Light Leaks Dissolve OBSOLETE
+  Match:   BCCLightLeakDslvPrTr
+
+  Display: BCC Light Wipe
+  Match:   BCC Light WipePrTr
+
+  Display: BCC Linear Wipe OBSOLETE
+  Match:   BCC Linear WipePrTr
+
+  Display: BCC Multi Stretch Wipe
+  Match:   BCC Multi Stretch WipePrTr
+
+  Display: BCC Multi Stripe Wipe
+  Match:   BCC Multi Stripe WipePrTr
+
+  Display: BCC Particle Illusion Dissolve
+  Match:   BCC PI DissolvePrTr
+
+  Display: BCC Pencil Sketch (Obsolete)
+  Match:   BCC6PencilSketch
+
+  Display: BCC Prism Dissolve OBSOLETE
+  Match:   BCC Prism DissolvePrTr
+
+  Display: BCC RGB Blur Dissolve OBSOLETE
+  Match:   BCC RGB Blur DissolvePrTr
+
+  Display: BCC RGB Displacement Dissolve
+  Match:   BCC RGB Dspl DissolvePrTr
+
+  Display: BCC Radial Wipe OBSOLETE
+  Match:   BCC Radial WipePrTr
+
+  Display: BCC Rays Dissolve OBSOLETE
+  Match:   BCC Rays DissolvePrTr
+
+  Display: BCC Rectangular Wipe OBSOLETE
+  Match:   BCC Rectangular WipePrTr
+
+  Display: BCC Ribbon Wipe
+  Match:   BCC Ribbon WipePrTr
+
+  Display: BCC Rings Wipe
+  Match:   BCC Rings WipePrTr
+
+  Display: BCC Ripple Dissolve
+  Match:   BCC Ripple DissolvePrTr
+
+  Display: BCC Spin Blur Dissolve OBSOLETE
+  Match:   BCC Spin Blur DissolvePrTr
+
+  Display: BCC Swish Pan OBSOLETE
+  Match:   BCC Swish PanPrTr
+
+  Display: BCC Textured Wipe OBSOLETE
+  Match:   BCC Textured WipePrTr
+
+  Display: BCC Tile Wipe
+  Match:   BCC Tile WipePrTr
+
+  Display: BCC Tritone Dissolve
+  Match:   BCC Tritone DissolvePrTr
+
+  Display: BCC Twister
+  Match:   BCC TwisterPrTr
+
+  Display: BCC Vector Blur Dissolve
+  Match:   BCC Vector Blur DissolvePrTr
+
+  Display: BCC Vignette Wipe OBSOLETE
+  Match:   BCCVignette WipePrTr
+
+  Display: BCC Water Waves Dissolve
+  Match:   BCC Water Waves DissolvePrTr
+
+  Display: Connect Layers Pro - Styles
+  Match:   MB ConnectLayersProStyles
+
+  Display: Photo Montage 3 (Obsolete)
+  Match:   S1fN7MZ2QhWtO2sgzA7W/g==
+
+  Display: Pan and Zoom (Accelerated)
+  Match:   uplOFCX2Ra+0fYKpbcFb/Q==
+
+  Display: Pan and Zoom (Basic)
+  Match:   ugPZcBydR2SzZfzyOm8lkg==
+
+  Display: Pan and Zoom (Obsolete)
+  Match:   NpCO8PfWQT+istVKfjyExg==
+
+  Display: CMYK Halftone (Obsolete)
+  Match:   RzRQYMz5RwSpXTswiskL/A==
+
+  Display: Circular Screen (Obsolete)
+  Match:   P+/YK+NOTR65YrF+nKq2sA==
+
+  Display: Dot Screen (Obsolete)
+  Match:   OxLw+gv8QBq2wUllo7s6kw==
+
+  Display: Hatched Screen (Obsolete)
+  Match:   b6S3RegwSw+o2rtx5qTlnA==
+
+  Display: Line Screen (Obsolete)
+  Match:   lY9u18+8Qr6fewnMk8d8Sg==
+
+  Display: Crystallize (Obsolete)
+  Match:   RXE1CXJdRfG810rqRn2JrQ==
+
+  Display: Pixellate (Obsolete)
+  Match:   /VJ6BtNLRsyaf00jgVkDxA==
+
+  Display: Pointillize (Obsolete)
+  Match:   x55k/LlTTLuU8IVPCWES1A==
+
+  Display: Spot Light (Single)
+  Match:   P00qkerwSS+Gxls0y/iBWQ==
+
+  Display: Dots (Obsolete)
+  Match:   V6VHPSfzRhqIWCee+is+0A==
+
+  Display: LED Lights (Obsolete)
+  Match:   vtGKYQ2gQsesjljszGpKcQ==
+
+  Display: Add Noise (Obsolete)
+  Match:   +SThKc4VQIOiZ7mNqIwfdg==
+
+  Display: Hexagons (Obsolete)
+  Match:   DxXwnSkWR4C7HABrLcAXaA==
+
+  Display: Zebra (Obsolete)
+  Match:   J0+76b0nRIyxQDnGl1Xynw==
+
+  Display: Spot Light (Multiple)
+  Match:   yPC2NlmARC6Zdp0PpKTw7Q==
+
+  Display: Threshold With Colors (Obsolete
+  Match:   K53eBkY5QyqCDZlLASWkbw==
+
+  Display: Threshold RGB (Obsolete)
+  Match:   DKL6Odh+SxCjsuOAJh4xTg==
+
+  Display: Crush Color (Obsolete)
+  Match:   jlF1K4HXRfef7lSfd3MA0w==
+
+  Display: Channel Swap (Obsolete)
+  Match:   mdUXOlgVQpKVQk4neU7R8w==
+
+  Display: Luminance To Alpha (Obsolete)
+  Match:   zi1EDm5FRR2oGBKBprQlKA==
+
+  Display: Color Fill (Obsolete)
+  Match:   Q8vs9rxERoK82K5+H3bppw==
+
+  Display: Replace Range (Obsolete)
+  Match:   MY9QsMgaSK+H8OVAbuFZYg==
+
+  Display: Mask From Color (Obsolete)
+  Match:   xVCFNoUURFSHiT9X72m5Rg==
+
+  Display: Color Accent (Obsolete)
+  Match:   PO8xhjAIRliRQYzXLBNY0Q==
+
+  Display: Alpha Merger (Obsolete)
+  Match:   bWqpZ12eQZ6UZYYg25obPw==
+
+  Display: Vignette (Obsolete)
+  Match:   v6+MAsbhQWq0m7YysyIpkw==
+
+  Display: Bleach Bypass (Obsolete)
+  Match:   ja8G6+clTfWdQZtHeOVZyQ==
+
+  Display: Film Process (Obsolete)
+  Match:   aHnhA4DMT0CHMhQYq0OLEw==
+
+  Display: Output Levels (Obsolete)
+  Match:   ns3Z7ok6TFC3uLAgl2RFDQ==
+
+  Display: Erode/Dilate (Obsolete)
+  Match:   xK3yjPGxSEaJl/wLKCsfKQ==
+
+  Display: Local Contrast (Obsolete)
+  Match:   Q0TzEZgbSLG5z4n2FbdgBw==
+
+  Display: Vibrance (Obsolete)
+  Match:   Q9BNxH3uSGOIl9oe0hBEcg==
+
+  Display: Vignette (Obsolete)
+  Match:   3TE7fWydQQubDs2CzD4eUg==
+
+  Display: Noise Reduction (Obsolete)
+  Match:   VC1EHpr4QrS2HNQ1oMd3Qw==
+
+  Display: Sharpen Chroma (Obsolete)
+  Match:   PJTOl08PSK+E+5atVRIolA==
+
+  Display: Sharpen Luminance (Obsolete)
+  Match:   DyhMZ7yYQGi0t9GfG3p1/w==
+
+  Display: Sharpen RGB (Obsolete)
+  Match:   rymn3inCQNqBNHOVhiLzkA==
+
+  Display: Despeckle (Obsolete)
+  Match:   vBlRXv92ROy60EqCVp6FnQ==
+
+  Display: Sharpen Edges (Obsolete)
+  Match:   hNxjthe1T8+MpJxO3QO5Wg==
+
+  Display: Sharpen Range (Obsolete)
+  Match:   3poqd/3iRhKZ/M1Dow4cTA==
+
+  Display: Circle Splash (Obsolete)
+  Match:   S/exmVWLSX+nSfBWJObaEQ==
+
+  Display: Circular Wrap (Obsolete)
+  Match:   72w3OOPWQdqkinDeekrlWA==
+
+  Display: Hole (Obsolete)
+  Match:   +pyY2cxsRS2TFXU6k/IKmQ==
+
+  Display: Glass Lozenge (Obsolete)
+  Match:   seY4cLcSS4iyoT8dgr4kcg==
+
+  Display: Pinch (Obsolete)
+  Match:   j31wKM7/T0eYtp3i0Z+mhg==
+
+  Display: Torus Lens (Obsolete)
+  Match:   bDcawCrqSxu+W7zgI48RjA==
+
+  Display: Vortex (Obsolete)
+  Match:   i0M2WkyGSRO/PWujhkEdKQ==
+
+  Display: Perspective Reflection (Obsolet
+  Match:   2FXKoFacQ2G0G1wwGldfVA==
+
+  Display: Chromatic Aberration (Obsolete)
+  Match:   ZGjqRQQqRdypCOlx3YyQ0g==
+
+  Display: Channel Geometry (Obsolete)
+  Match:   Ny1R/aoVTJGzPR8/IHeRxg==
+
+  Display: Mask With Geometry (Obsolete)
+  Match:   NY1wWNm1QgSgvio2WhqiKQ==
+
+  Display: Free Distort (Obsolete)
+  Match:   eJm2rotvSCusw4v6v6VgSQ==
+
+  Display: Clone (Obsolete)
+  Match:   X5+k8svhQIOopjV9Zk2ThA==
+
+  Display: Random Crop (Obsolete)
+  Match:   lKlnXZ6CSi6yVx6IeEcf3A==
+
+  Display: Perspective Reflection (Obsolet
+  Match:   Km4XaNw5TN68PRxam21zqQ==
+
+  Display: Clone (Obsolete)
+  Match:   gzQC3rGQTOi563evrmNDQQ==
+
+  Display: Funhouse Mirror (Obsolete)
+  Match:   hhHlD6FmRkuEHi/F103TSw==
+
+  Display: Random Close-Up (Obsolete)
+  Match:   EwvEmm0sRSOHxsEwZTHW4g==
+
+  Display: Rounded Corners (Obsolete)
+  Match:   qKESpX67TCSnRtlDvNBBFQ==
+
+  Display: Genie (Obsolete)
+  Match:   +GVhm15QTlKygZgAJa0cMg==
+
+  Display: Camera Shake (Obsolete)
+  Match:   gC5TsLqtTcGo4J9kmzgIFg==
+
+  Display: Analog TV (Obsolete)
+  Match:   E5XWCiylQ1W7KKvi3VUeTw==
+
+  Display: Bezier Distort (Obsolete)
+  Match:   3wW9d9y8S1CPOpf5JzIXyA==
+
+  Display: Bloom (Obsolete)
+  Match:   oOqpIY19S2SrGB7Y8gBYYA==
+
+  Display: Bloom With Threshold (Obsolete)
+  Match:   0kfUE5R4REqG98VQQJUH3A==
+
+  Display: Glow (Obsolete)
+  Match:   llvV/kUDR6Gfs/Hhmrc4LA==
+
+  Display: Stars (Obsolete)
+  Match:   VQh2DRPLQkivsRnkpDFjOw==
+
+  Display: Glow Edges (Obsolete)
+  Match:   LgOclUpOTFSjWmQNaoxW5Q==
+
+  Display: Light Rays (Obsolete)
+  Match:   dIEzvLp3SKC1RKamANdApA==
+
+  Display: Stars Edges (Obsolete)
+  Match:   n/RKqX57R4mZy71nsZX/OQ==
+
+  Display: Light Rays Edges (Obsolete)
+  Match:   F3G/eI+ITMa9Jo/H/oxfdw==
+
+  Display: Glow (Disc-shaped)
+  Match:   TxjInPleQv+zhOKN7YCFww==
+
+  Display: Glow (Box-shaped)
+  Match:   Jp+izmftSmahsVUHvrHq7Q==
+
+  Display: Light Streaks (Obsolete)
+  Match:   Vd2cS6HITbaW3UXoyzjaDw==
+
+  Display: Glow Text (Obsolete)
+  Match:   a0b1ph6hRkKk7OuGU/ZmLg==
+
+  Display: Light Rays Text (Obsolete)
+  Match:   k9MidwSeRbSS8YBbpe6aHQ==
+
+  Display: Sun Rays (Obsolete)
+  Match:   uGqjfO/6ShWjt30t8FgyIA==
+
+  Display: Zoom Blur Chroma (Obsolete)
+  Match:   N0whfcsQRt29dHlmvUNU6A==
+
+  Display: Zoom Blur Luminance (Obsolete)
+  Match:   7/Ups1SVRiGxlmCz4X7RYg==
+
+  Display: Blur RGB (Obsolete)
+  Match:   OGpQbN+HQmSvPnz2oHrZ3Q==
+
+  Display: Blur Chroma (Obsolete)
+  Match:   Fujeczm0Q3yzp1ui6/CMWg==
+
+  Display: Blur Luminance (Obsolete)
+  Match:   z6CJ6L6wQ5ytvmRzalTjxw==
+
+  Display: Blur (Obsolete)
+  Match:   c+G8vlTHTJe0Xzv6/IM8Ug==
+
+  Display: Blur Edges (Obsolete)
+  Match:   EBx9V7MCR1KPm/zwxtGVbQ==
+
+  Display: Zoom Blur RGB (Obsolete)
+  Match:   9NggTSo5TE2taP6m05aWwA==
+
+  Display: Blur (Box-shaped)
+  Match:   bI2cpmkSSzeI1buDGuKv2g==
+
+  Display: Blur (Disc-shaped)
+  Match:   iDOz8xb1R1W7VVZGmxlyRQ==
+
+  Display: Soften Frame (Obsolete)
+  Match:   Ettkw0OWRHyYQ94m3pPF0w==
+
+  Display: Blur Two Axes (Obsolete)
+  Match:   anGD31NKS5G3DuBEDChpPw==
+
+  Display: Depth Blur (Obsolete)
+  Match:   cNDFyXneRcmhzfyunhXFeQ==
+
+  Display: Zoom Blur (Obsolete)
+  Match:   +9NTUATUSlGlrpyEFc+V8Q==
+
+  Display: Depth Blur (Obsolete)
+  Match:   GA3yxBq7SfWVA+e76PFaqA==
+
+  Display: Reflected Tile (Eightfold)
+  Match:   LotKelRmRUKL9EPcKrkoDQ==
+
+  Display: Reflected Tile (Fourfold)
+  Match:   TJb3arotTwmXoK4snvpTmA==
+
+  Display: Rotated Tile (Fourfold)
+  Match:   aQYZAboFQ+KRyZ0lATOsGw==
+
+  Display: Translated Tile (Obsolete)
+  Match:   r8n7AlUKSiyCWwjUdYHODQ==
+
+  Display: Glide Reflection (Obsolete)
+  Match:   on5XvljLSBud84Ew5AZEPQ==
+
+  Display: Op Tile (Obsolete)
+  Match:   g19lKsKASmCp/osJgvIqXg==
+
+  Display: Reflected Tile (Sixfold)
+  Match:   cGtyy9N8TLeqMzH5ryiH9g==
+
+  Display: Rotated Tile (Sixfold)
+  Match:   QrUF01dLQa+3f3wyoIyIOg==
+
+  Display: Reflected Tile (Twelvefold)
+  Match:   7T+7ALW/QeSd6yCIy3UlsA==
+
+  Display: Triangle Tile (Obsolete)
+  Match:   h1pW4lGlTX20T13uTZbxrA==
+
+  Display: Kaleidoscope (Obsolete)
+  Match:   +H7dP0BCR3WluljbOcoRsg==
+
+  Display: Frame Info (Obsolete)
+  Match:   QOi0U+XSQ5asPqw2yq9mFw==
+
+  Display: Upscale (Obsolete)
+  Match:   ms19UTfaRXa9lCvI39PAXw==
+
+  Display: Banding-free Gradient (Obsolete
+  Match:   NjsL3chbTj6721gTxcpK1g==
+
+  Display: Checkerboard (Obsolete)
+  Match:   ucUIJW7sTQeWi+3Ldmubnw==
+
+  Display: Circle (Obsolete)
+  Match:   d8DZFimmTZegmiHeKFjI5Q==
+
+  Display: Dots Pattern (Obsolete)
+  Match:   CoBGqIZXRWK5K2l4oId7dA==
+
+  Display: Frame Overlay (Obsolete)
+  Match:   uMbwUXvKSrm3sDU0yI/Keg==
+
+  Display: Lenticular Halo (Obsolete)
+  Match:   JTIM5l/GRWC5r/3okgoNtw==
+
+  Display: Particle System (Obsolete)
+  Match:   tBmw9DpIRNqA6rRXbk49tQ==
+
+  Display: PDF Animator (Obsolete)
+  Match:   qD5Nm9ewRrOkF6QYyiNkSw==
+
+  Display: Perlin Noise (Obsolete)
+  Match:   ngRB6bMlQJysri0UI2Pjnw==
+
+  Display: Random Noise (Obsolete)
+  Match:   X8+2JTV4RpO/k8USSxRBQQ==
+
+  Display: Rounded Rectangle (Obsolete)
+  Match:   Hq/tm5nETI+g+dPztnTa9w==
+
+  Display: Slideshow (Obsolete)
+  Match:   As6eLhTUTXG5bplwjwnVAg==
+
+  Display: Star Shine (Obsolete)
+  Match:   r85cmEa6T6++vAFMpVlX/A==
+
+  Display: Stripes (Obsolete)
+  Match:   d+gSxeUwSOOhzCUyfn9rHw==
+
+  Display: Sun (Obsolete)
+  Match:   LbI8spKlQFaTmVle1sQSgQ==
+
+  Display: Three Color Gradient (Obsolete)
+  Match:   em8EhRamQ7utIeO2tbhllQ==
+
+  Display: Timecode (Obsolete)
+  Match:   VGwdaUKtQt6/2xyN9tSlbQ==
+
+  Display: 3D Glasses (Obsolete)
+  Match:   ADBE 3D Glasses
+
+  Display: Alpha Levels
+  Match:   ADBE Alpha Levels2
+
+  Display: Alpha Levels
+  Match:   ADBE Alpha Levels3
+
+  Display: Apply Color LUT
+  Match:   ADBE Apply Color LUT
+
+  Display: Brightness & Contrast
+  Match:   ADBE Brightness & Contrast
+
+  Display: Box Blur
+  Match:   ADBE Box Blur
+
+  Display: Cineon Converter
+  Match:   ADBE Cineon Converter
+
+  Display: Color Balance
+  Match:   ADBE Color Balance
+
+  Display: Exposure
+  Match:   ADBE Exposure
+
+  Display: Fast Blur (Legacy)
+  Match:   ADBE Fast Blur
+
+  Display: Levels
+  Match:   ADBE Easy Levels
+
+  Display: Levels (Individual Controls)
+  Match:   ADBE Pro Levels
+
+  Display: Noise
+  Match:   ADBE Noise
+
+  Display: Noise Alpha
+  Match:   ADBE Noise Alpha
+
+  Display: Noise HLS
+  Match:   ADBE Noise HLS
+
+  Display: Noise HLS Auto
+  Match:   ADBE Noise HLS Auto
+
+  Display: Photoshop Bevel And Emboss
+  Match:   ADBE PSL Bevel Emboss
+
+  Display: Photoshop Drop Shadow
+  Match:   ADBE PSL Drop Shadow
+
+  Display: Photoshop Inner Glow
+  Match:   ADBE PSL Inner Glow
+
+  Display: Photoshop Inner Shadow
+  Match:   ADBE PSL Inner Shadow
+
+  Display: Photoshop Outer Glow
+  Match:   ADBE PSL Outer Glow
+
+  Display: Photoshop Solid Fill
+  Match:   ADBE PSL Solid Fill
+
+  Display: Photo Filter
+  Match:   ADBE Photo Filter
+
+  Display: Set Matte
+  Match:   ADBE Set Matte2
+
+  Display: Three-Way Color Corrector
+  Match:   ADBE Three-Way Color Corrector
+
+  Display: Threshold
+  Match:   ADBE Threshold
+
+  Display: Transform
+  Match:   ADBE Geometry
+
+  Display: Unsharp Mask
+  Match:   ADBE Unsharp Mask
+
+  Display: Roto Brush & Refine Edge
+  Match:   ADBE Samurai
+
+  Display: Paint
+  Match:   ADBE Paint
+
+  Display: Puppet
+  Match:   ADBE FreePin3
+
+  Display: Refine Matte
+  Match:   ADBE RefineMatte
+
+───────────────────────────────────
+📂 Blur & Sharpen
+───────────────────────────────────
+  Display: CC Cross Blur
+  Match:   CS CrossBlur
+
+  Display: CC Radial Blur
+  Match:   CC Radial Blur
+
+  Display: CC Radial Fast Blur
+  Match:   CC Radial Fast Blur
+
+  Display: CC Vector Blur
+  Match:   CC Vector Blur
+
+  Display: PathBlurFX
+  Match:   Grape_PathBlurFX
+
+  Display: Bilateral Blur
+  Match:   ADBE Bilateral
+
+  Display: Fast Box Blur
+  Match:   ADBE Box Blur2
+
+  Display: Channel Blur
+  Match:   ADBE Channel Blur
+
+  Display: Compound Blur
+  Match:   ADBE Compound Blur
+
+  Display: Camera-Shake Deblur
+  Match:   ADBE CameraShakeDeblur
+
+  Display: Directional Blur
+  Match:   ADBE Motion Blur
+
+  Display: Gaussian Blur
+  Match:   ADBE Gaussian Blur 2
+
+  Display: Radial Blur
+  Match:   ADBE Radial Blur
+
+  Display: Camera Lens Blur
+  Match:   ADBE Camera Lens Blur
+
+  Display: Sharpen
+  Match:   ADBE Sharpen
+
+  Display: Smart Blur
+  Match:   ADBE Smart Blur
+
+  Display: Unsharp Mask
+  Match:   ADBE Unsharp Mask2
+
+───────────────────────────────────
+📂 Perspective
+───────────────────────────────────
+  Display: CC Cylinder
+  Match:   CC Cylinder
+
+  Display: CC Environment
+  Match:   CC Environment
+
+  Display: CC Sphere
+  Match:   CC Sphere
+
+  Display: CC Spotlight
+  Match:   CC Spotlight
+
+  Display: 3D Camera Tracker
+  Match:   ADBE 3D Tracker
+
+  Display: 3D Glasses
+  Match:   ADBE 3D Glasses2
+
+  Display: Bevel Alpha
+  Match:   ADBE Bevel Alpha
+
+  Display: Bevel Edges
+  Match:   ADBE Bevel Edges
+
+  Display: Drop Shadow
+  Match:   ADBE Drop Shadow
+
+  Display: Radial Shadow
+  Match:   ADBE Radial Shadow
+
+───────────────────────────────────
+📂 Time
+───────────────────────────────────
+  Display: CC Force Motion Blur
+  Match:   CC Force Motion Blur
+
+  Display: CC Wide Time
+  Match:   CC Wide Time
+
+  Display: Time Difference
+  Match:   ADBE Difference
+
+  Display: Echo
+  Match:   ADBE Echo
+
+  Display: Posterize Time
+  Match:   ADBE Posterize Time
+
+  Display: Pixel Motion Blur
+  Match:   ADBE OFMotionBlur
+
+  Display: Timewarp
+  Match:   ADBE Timewarp
+
+  Display: Time Displacement
+  Match:   ADBE Time Displacement
+
+───────────────────────────────────
+📂 Transition
+───────────────────────────────────
+  Display: CC Glass Wipe
+  Match:   CC Glass Wipe
+
+  Display: CC Grid Wipe
+  Match:   CC Grid Wipe
+
+  Display: CC Image Wipe
+  Match:   CC Image Wipe
+
+  Display: CC Jaws
+  Match:   CC Jaws
+
+  Display: CC Light Wipe
+  Match:   CC Light Wipe
+
+  Display: CC Line Sweep
+  Match:   CS LineSweep
+
+  Display: CC Radial ScaleWipe
+  Match:   CC Radial ScaleWipe
+
+  Display: CC Scale Wipe
+  Match:   CC Scale Wipe
+
+  Display: CC Twister
+  Match:   CC Twister
+
+  Display: CC WarpoMatic
+  Match:   CC WarpoMatic
+
+  Display: Block Dissolve
+  Match:   ADBE Block Dissolve
+
+  Display: Card Wipe
+  Match:   APC CardWipeCam
+
+  Display: Gradient Wipe
+  Match:   ADBE Gradient Wipe
+
+  Display: Iris Wipe
+  Match:   ADBE IRIS_WIPE
+
+  Display: Linear Wipe
+  Match:   ADBE Linear Wipe
+
+  Display: Radial Wipe
+  Match:   ADBE Radial Wipe
+
+  Display: Venetian Blinds
+  Match:   ADBE Venetian Blinds
+
+───────────────────────────────────
+📂 Generate
+───────────────────────────────────
+  Display: CC Glue Gun
+  Match:   CC Glue Gun
+
+  Display: CC Light Burst 2.5
+  Match:   CC Light Burst 2.5
+
+  Display: CC Light Rays
+  Match:   CC Light Rays
+
+  Display: CC Light Sweep
+  Match:   CC Light Sweep
+
+  Display: CC Threads
+  Match:   CS Threads
+
+  Display: Colume
+  Match:   Grape_Colume
+
+  Display: Gradient8
+  Match:   Grape_Gradient8
+
+  Display: Holora
+  Match:   Grape_Holora
+
+  Display: InkBloom
+  Match:   Grape_InkBloom
+
+  Display: NatuRamp
+  Match:   Grape_NatuRamp
+
+  Display: Audio Spectrum
+  Match:   ADBE AudSpect
+
+  Display: Audio Waveform
+  Match:   ADBE AudWave
+
+  Display: Beam
+  Match:   ADBE Laser
+
+  Display: Cell Pattern
+  Match:   ADBE Cell Pattern
+
+  Display: Checkerboard
+  Match:   ADBE Checkerboard
+
+  Display: Circle
+  Match:   ADBE Circle
+
+  Display: 4-Color Gradient
+  Match:   ADBE 4ColorGradient
+
+  Display: Ellipse
+  Match:   ADBE ELLIPSE
+
+  Display: Eyedropper Fill
+  Match:   ADBE Eyedropper Fill
+
+  Display: Fill
+  Match:   ADBE Fill
+
+  Display: Fractal
+  Match:   ADBE Fractal
+
+  Display: Grid
+  Match:   ADBE Grid
+
+  Display: Lens Flare
+  Match:   ADBE Lens Flare
+
+  Display: Advanced Lightning
+  Match:   ADBE Lightning 2
+
+  Display: Paint Bucket
+  Match:   ADBE Paint Bucket
+
+  Display: Radio Waves
+  Match:   APC Radio Waves
+
+  Display: Gradient Ramp
+  Match:   ADBE Ramp
+
+  Display: Scribble
+  Match:   ADBE Scribble Fill
+
+  Display: Stroke
+  Match:   ADBE Stroke
+
+  Display: Vegas
+  Match:   APC Vegas
+
+  Display: Write-on
+  Match:   ADBE Write-on
+
+───────────────────────────────────
+📂 Utility
+───────────────────────────────────
+  Display: CC Overbrights
+  Match:   CC Overbrights
+
+  Display: Apply Color LUT
+  Match:   ADBE Apply Color LUT2
+
+  Display: Cineon Converter
+  Match:   ADBE Cineon Converter2
+
+  Display: HDR Compander
+  Match:   ADBE Compander
+
+  Display: Grow Bounds
+  Match:   ADBE GROW BOUNDS
+
+  Display: Color Profile Converter
+  Match:   ADBE ProfileToProfile
+
+  Display: HDR Highlight Compression
+  Match:   ADBE HDR ToneMap
+
+───────────────────────────────────
+📂 Keying
+───────────────────────────────────
+  Display: CC Simple Wire Removal
+  Match:   CC Simple Wire Removal
+
+  Display: Keylight (1.2)
+  Match:   Keylight 906
+
+  Display: Color Difference Key
+  Match:   ADBE Color Difference Key
+
+  Display: Color Range
+  Match:   ADBE Color Range
+
+  Display: Difference Matte
+  Match:   ADBE Difference Matte2
+
+  Display: Extract
+  Match:   ADBE Extract
+
+  Display: Inner/Outer Key
+  Match:   ADBE ATG Extract
+
+  Display: Key Cleaner
+  Match:   ADBE KeyCleaner
+
+  Display: Linear Color Key
+  Match:   ADBE Linear Color Key2
+
+  Display: Advanced Spill Suppressor
+  Match:   ADBE Spill2
+
+  Display: Unmult
+  Match:   ADBE Unmult
+
+───────────────────────────────────
+📂 Obsolete
+───────────────────────────────────
+  Display: mocha shape
+  Match:   ISL MochaShapeImporter
+
+  Display: Basic 3D
+  Match:   ADBE Basic 3D
+
+  Display: Basic Text
+  Match:   ADBE Basic Text2
+
+  Display: Color Key
+  Match:   ADBE Color Key
+
+  Display: Reduce Interlace Flicker
+  Match:   ADBE Reduce Interlace Flicker
+
+  Display: Gaussian Blur (Legacy)
+  Match:   ADBE Gaussian Blur
+
+  Display: Lightning
+  Match:   ADBE Lightning
+
+  Display: Luma Key
+  Match:   ADBE Luma Key
+
+  Display: Path Text
+  Match:   ADBE Path Text
+
+  Display: Spill Suppressor
+  Match:   ADBE Spill Suppressor
+
+───────────────────────────────────
+📂 Boris FX Mocha
+───────────────────────────────────
+  Display: Mocha AE
+  Match:   mochaAECC
+
+  Display: Mocha Pro
+  Match:   mochaProAE
+
+  Display: Mocha VR (legacy)
+  Match:   mochaVRAE
+
+───────────────────────────────────
+📂 Video Copilot
+───────────────────────────────────
+  Display: Element
+  Match:   VIDEOCOPILOT 3DArray
+
+  Display: Heat Distortion
+  Match:   VIDEOCOPILOT HeatDistortion
+
+  Display: Optical Flares
+  Match:   VIDEOCOPILOT OpticalFlares
+
+  Display: Saber
+  Match:   VIDEOCOPILOT LightSaber
+
+  Display: VC Orb
+  Match:   VIDEOCOPILOT Sphere
+
+  Display: VC Color Vibrance
+  Match:   VIDEOCOPILOT VIBRANCE
+
+  Display: VCReflect
+  Match:   VIDEOCOPILOT VCReflect
+
+───────────────────────────────────
+📂 Animatable
+───────────────────────────────────
+  Display: Bendio
+  Match:   bendio_001
+
+───────────────────────────────────
+📂 YCraft
+───────────────────────────────────
+  Display: Aurum
+  Match:   YCraft Aurum
+
+  Display: Fluid
+  Match:   YCraft Fluid
+
+───────────────────────────────────
+📂 Plugin Everything
+───────────────────────────────────
+  Display: AutoFill
+  Match:   PEAF
+
+  Display: Deep Glow 2
+  Match:   PEDG2
+
+  Display: Bezier Node
+  Match:   PEBN
+
+  Display: Cartoon Moblur
+  Match:   PECMBS
+
+  Display: Digit Fiddler
+  Match:   PEDF
+
+  Display: Discotext
+  Match:   PETP
+
+  Display: Displacer Pro
+  Match:   PEDX
+
+  Display: Effect Matte
+  Match:   PEEM
+
+  Display: Extrude
+  Match:   PEMUEXTRUDE
+
+  Display: HandyCam
+  Match:   PEHC
+
+  Display: Monospacer
+  Match:   PEMS
+
+  Display: Odometer
+  Match:   PEODOMFR
+
+  Display: Path Visualizer
+  Match:   PEPV
+
+  Display: Quick Chromatic Aberration 3
+  Match:   PEQCAGL
+
+  Display: Repeater
+  Match:   PERP
+
+  Display: TextBorder
+  Match:   PE TextBorder
+
+  Display: TextBox 2
+  Match:   PETB2
+
+  Display: TextDelay 1.8
+  Match:   PETD2
+
+  Display: Shadow Studio 3
+  Match:   PESS3
+
+  Display: Thicc Stroke
+  Match:   PEVS
+
+───────────────────────────────────
+📂 BGRA
+───────────────────────────────────
+  Display: L3tt3rM4pp3r2
+  Match:   BGRA L3tt3rM4pp3r2
+
+  Display: LongShadow2
+  Match:   BGRA LongShadow2
+
+───────────────────────────────────
+📂 BSKL
+───────────────────────────────────
+  Display: AI Color Match
+  Match:   BSKLAIColorMatch
+
+  Display: Diffusae 2
+  Match:   BSKLdiffusae
+
+  Display: Quick Matte
+  Match:   BSKLQMT
+
+───────────────────────────────────
+📂 BAO
+───────────────────────────────────
+  Display: Boa
+  Match:   BAO_Boa
+
+  Display: Joint
+  Match:   BAO_Joint
+
+  Display: Mask_Avenger
+  Match:   BAO Mask_Avenger
+
+  Display: Mask_Brush
+  Match:   BAO Mask_Brush
+
+  Display: Mask_Brush_Fill
+  Match:   BAO Mask_Brush_Fill
+
+  Display: Mask_Reader
+  Match:   BAO Mask_Reader
+
+───────────────────────────────────
+📂 Boris FX SynthEyes
+───────────────────────────────────
+  Display: SynthEyes Advanced Distortion
+  Match:   BorisFX SyAFXAdvLens
+
+  Display: SynthEyes Image Mapper
+  Match:   SSONTECH SyAFXMapper
+
+───────────────────────────────────
+📂 BCC Lights
+───────────────────────────────────
+  Display:  BCC+Ambient Light
+  Match:   BCC_AMBIENTLIGHT
+
+  Display: BCC Edge Lighting
+  Match:   BCC3Edge Lighting
+
+  Display: BCC Laser Beam
+  Match:   BCC Laser Beam
+
+  Display: BCC Lens Flare 3D
+  Match:   BCC3Lens Flare 3D
+
+  Display: BCC Light Sweep
+  Match:   BCC3Light Sweep
+
+  Display: BCC Lightning
+  Match:   BCC3Lightning
+
+  Display: BCC Rays Puffy
+  Match:   BCC3Rays Puffy
+
+  Display: BCC Rays Radiant Edges
+  Match:   BCC3Rays Radiant Edges
+
+  Display: BCC Reverse Spotlight
+  Match:   BCC3Reverse Spotlight
+
+  Display: BCC Spotlight
+  Match:   BCC3Spotlight
+
+  Display: BCC Stage Light
+  Match:   BCC3Stage Light
+
+  Display:  BCC+Chroma Bands
+  Match:   BCC_CHROMABANDS
+
+  Display:  BCC+Eye Light
+  Match:   BCC_EYELIGHT
+
+  Display:  BCC+Glow Darks
+  Match:   BCC_GLOWDARKS
+
+  Display:  BCC+Glow Edges
+  Match:   BCC_GLOWEDGES
+
+  Display:  BCC+Glow
+  Match:   BCC_GLOW
+
+  Display:  BCC+Ice Halos
+  Match:   BCC_ICEHALOS
+
+  Display:  BCC+Key Light
+  Match:   BCC_KEYLIGHT
+
+  Display:  BCC+Lens Flare
+  Match:   BCC_LENSFLARE
+
+  Display:  BCC+Light Leaks
+  Match:   BCC_LIGHTLEAKS
+
+  Display:  BCC+Light
+  Match:   BCC_LIGHT
+
+  Display:  BCC+Multi-Star
+  Match:   BCC_MULTISTAR
+
+  Display:  BCC+Overexpose
+  Match:   BCC_OVEREXPOSE
+
+  Display:  BCC+Rays
+  Match:   BCC_RAYS
+
+  Display:  BCC+ReLight
+  Match:   BCC_RELIGHT
+
+  Display:  BCC+Reflector
+  Match:   BCC_REFLECTOR
+
+  Display:  BCC+Streaks
+  Match:   BCC_STREAKS
+
+───────────────────────────────────
+📂 BCC Transitions
+───────────────────────────────────
+  Display:  BCC+Atmospheric Glow Dissolve
+  Match:   BCC_ATMOSPHERICGLOWDISSOLVE
+
+  Display: BCC Blobs Wipe
+  Match:   BCC Blobs Wipe
+
+  Display: BCC Burnt Film
+  Match:   BCC3Burnt Film
+
+  Display: BCC Checker Wipe
+  Match:   BCCChecker Wipe
+
+  Display: BCC Colorize Glow Dissolve
+  Match:   BCC Colorize Glow Dissolve
+
+  Display: BCC Composite Dissolve
+  Match:   BCC Composite Dissolve
+
+  Display: BCC Criss-Cross Wipe
+  Match:   BCC3Criss-Cross Wipe
+
+  Display: BCC Cross Melt
+  Match:   BCC Cross Melt
+
+  Display: BCC Curl Dissolve
+  Match:   BCC Curl Dissolve
+
+  Display: BCC Damaged TV Dissolve
+  Match:   BCC Damaged TV Dissolve
+
+  Display: BCC Grid Wipe
+  Match:   BCC Grid Wipe
+
+  Display: BCC Kaleida Dissolve
+  Match:   BCC Kaleida Dissolve
+
+  Display: BCC Lens Blur Dissolve
+  Match:   BCC Lens Blur Dissolve
+
+  Display: BCC Lens Distortion Wipe
+  Match:   BCC Lens Distortion Wipe
+
+  Display: BCC Lens Flare Dissolve
+  Match:   BCC Lens Flare Dissolve
+
+  Display: BCC Lens Flare Round
+  Match:   BCC Lens Flare Round
+
+  Display: BCC Lens Flare Spiked
+  Match:   BCC Lens Flare Spiked
+
+  Display: BCC Lens Flash
+  Match:   BCC Lens Flash
+
+  Display: BCC Light Wipe
+  Match:   BCC Light Wipe
+
+  Display: BCC Multi Stretch Wipe
+  Match:   BCC3Multi Stretch Wipe
+
+  Display: BCC Multi Stripe Wipe
+  Match:   BCC3Multi Stripe Wipe
+
+  Display: BCC Particle Illusion Dissolve
+  Match:   BCC PI Dissolve
+
+  Display: BCC RGB Displacement Dissolve
+  Match:   BCC RGB Dspl Dissolve
+
+  Display: BCC Ribbon Wipe
+  Match:   BCC Ribbon Wipe
+
+  Display: BCC Rings Wipe
+  Match:   BCC Rings Wipe
+
+  Display: BCC Ripple Dissolve
+  Match:   BCC Ripple Dissolve
+
+  Display: BCC Tile Wipe
+  Match:   BCC Tile Wipe
+
+  Display: BCC Tritone Dissolve
+  Match:   BCC Tritone Dissolve
+
+  Display: BCC Twister
+  Match:   BCC Twister
+
+  Display: BCC Vector Blur Dissolve
+  Match:   BCC Vector Blur Dissolve
+
+  Display: BCC Water Waves Dissolve
+  Match:   BCC Water Waves Dissolve
+
+  Display:  BCC+Blur Dissolve
+  Match:   BCC_BLURDISSOLVE
+
+  Display:  BCC+Camera Shake Dissolve
+  Match:   BCC_CAMERASHAKEDISSOLVE
+
+  Display:  BCC+Channel Blur Dissolve
+  Match:   BCC_CHANNELBLURDISSOLVE
+
+  Display:  BCC+Crash Zoom Dissolve
+  Match:   BCC_CRASHZOOMDISSOLVE
+
+  Display:  BCC+Cross Zoom Dissolve
+  Match:   BCC_CROSSZOOMDISSOLVE
+
+  Display:  BCC+Depth Wipe ML
+  Match:   BCC_MLDEPTHWIPE
+
+  Display:  BCC+Directional Blur Dissolve
+  Match:   BCC_DIRECTIONALBLURDISSOLVE
+
+  Display:  BCC+Dissolve
+  Match:   BCC_DISSOLVE
+
+  Display:  BCC+Film Glow Dissolve
+  Match:   BCC_FILMGLOWDISSOLVE
+
+  Display:  BCC+Film Roll
+  Match:   BCC_FILMROLL
+
+  Display:  BCC+Flutter Cut
+  Match:   BCC_FLUTTERCUT
+
+  Display:  BCC+Jump Cut Fixer ML
+  Match:   BCC_MLJUMPCUT
+
+  Display:  BCC+Light Leaks Dissolve
+  Match:   BCC_LIGHTLEAKSDISSOLVE
+
+  Display:  BCC+Linear Wipe
+  Match:   BCC_LINEARWIPE
+
+  Display:  BCC+Mosaic Dissolve
+  Match:   BCC_MOSAICDISSOLVE
+
+  Display:  BCC+Multi-Star Dissolve
+  Match:   BCC_MULTISTARDISSOLVE
+
+  Display:  BCC+Orbs Dissolve
+  Match:   BCC_ORBSDISSOLVE
+
+  Display:  BCC+Prism Dissolve
+  Match:   BCC_PRISMDISSOLVE
+
+  Display:  BCC+Rack Focus Dissolve
+  Match:   BCC_RACKFOCUSDISSOLVE
+
+  Display:  BCC+Radial Wipe
+  Match:   BCC_RADIALWIPE
+
+  Display:  BCC+Rays Dissolve
+  Match:   BCC_RAYSDISSOLVE
+
+  Display:  BCC+Rectangular Wipe
+  Match:   BCC_RECTANGULARWIPE
+
+  Display:  BCC+Smoke Wipe
+  Match:   BCC_SMOKEWIPE
+
+  Display:  BCC+Smoke and Fog Dissolve
+  Match:   BCC_SMOKEANDFOGDISSOLVE
+
+  Display:  BCC+Spin Blur Dissolve
+  Match:   BCC_SPINBLURDISSOLVE
+
+  Display:  BCC+Swish Glow
+  Match:   BCC_SWISHGLOW
+
+  Display:  BCC+Swish Pan
+  Match:   BCC_SWISH
+
+  Display:  BCC+Swish Prism
+  Match:   BCC_SWISHPRISM
+
+  Display:  BCC+Swish Warp
+  Match:   BCC_SWISHWARP
+
+  Display:  BCC+Texture Wipe
+  Match:   BCC_TEXTUREWIPE
+
+  Display:  BCC+Video Glitch Dissolve
+  Match:   BCC_VIDEOGLITCHDISSOLVE
+
+  Display:  BCC+Vignette Wipe
+  Match:   BCC_VIGNETTEWIPE
+
+───────────────────────────────────
+📂 BCC Film Style
+───────────────────────────────────
+  Display:  BCC+Atmospheric Glow
+  Match:   BCC_ATMOSPHERICGLOW
+
+  Display: BCC Deinterlace
+  Match:   BCC3Deinterlace
+
+  Display: BCC Match Grain
+  Match:   BCC3Match Grain
+
+  Display:  BCC+Bleach Bypass
+  Match:   BCC_BLEACHBYPASS
+
+  Display:  BCC+Cross Processing
+  Match:   BCC_CROSSPROCESSING
+
+  Display:  BCC+Day for Night
+  Match:   BCC_DAYFORNIGHT
+
+  Display:  BCC+Film Glow
+  Match:   BCC_FILMGLOW
+
+  Display:  BCC+Film Grunge
+  Match:   BCC_FILMGRUNGE
+
+  Display:  BCC+Film Stocks
+  Match:   BCC_FILMSTOCKS
+
+  Display:  BCC+Flashing
+  Match:   BCC_FLASHING
+
+  Display:  BCC+Grain
+  Match:   BCC_GRAIN
+
+  Display:  BCC+Light Flicker
+  Match:   BCC_LIGHTFLICKER
+
+  Display:  BCC+Looks
+  Match:   BCC_LOOKS
+
+  Display:  BCC+Orbs
+  Match:   BCC_ORBS
+
+  Display:  BCC+Smoke and Fog
+  Match:   BCC_SMOKEANDFOG
+
+  Display:  BCC+Three Strip
+  Match:   BCC_THREESTRIP
+
+  Display:  BCC+Two Strip
+  Match:   BCC_TWOSTRIP
+
+  Display:  BCC+Vignette
+  Match:   BCC_VIGNETTE
+
+───────────────────────────────────
+📂 BCC Time
+───────────────────────────────────
+  Display:  BCC+Audio Visualizer
+  Match:   BCC_AUDIOVISUALIZER
+
+  Display: BCC Beat Reactor
+  Match:   BCC Beat Reactor
+
+  Display: BCC Jitter
+  Match:   BCC3Jitter
+
+  Display: BCC Jitter Basic
+  Match:   BCC3Jitter Basic
+
+  Display: BCC Looper
+  Match:   BCC3Looper
+
+  Display: BCC Posterize Time
+  Match:   BCC3Posterize Time
+
+  Display: BCC Temporal Blur
+  Match:   BCC3Temporal Blur
+
+  Display: BCC Time Displacement
+  Match:   BCC3Time Displacement
+
+  Display: BCC Trails
+  Match:   BCC3Trails
+
+  Display: BCC Trails Basic
+  Match:   BCC3Trails Basic
+
+  Display:  BCC+Retimer ML
+  Match:   BCC_MLRETIMER
+
+───────────────────────────────────
+📂 BCC Particles
+───────────────────────────────────
+  Display: BCC 2D Particles
+  Match:   BCC32D Particles
+
+  Display: BCC Organic Strands
+  Match:   BCC Organic Strands
+
+  Display: BCC Particle Array 3D
+  Match:   BCC Particle Array 3D
+
+  Display: BCC Particle Emitter 3D
+  Match:   BCC Particle Emitter 3D
+
+  Display: BCC Particle Illusion
+  Match:   BCC Particle Illusion
+
+  Display: BCC Pin Art 3D
+  Match:   BCC Pin Art 3D
+
+  Display: BCC Rain
+  Match:   BCC3Rain
+
+  Display: BCC Snow
+  Match:   BCC3Snow
+
+  Display: BCC Wild Cards
+  Match:   BCC Card Array
+
+───────────────────────────────────
+📂 BCC Perspective
+───────────────────────────────────
+  Display: BCC 3D Extruded Image Shatter
+  Match:   BCC 3D Extruded Image Shatter
+
+  Display: BCC 3D Image Shatter
+  Match:   BCC33D Image Shatter
+
+  Display: BCC Cube
+  Match:   BCC3Cube
+
+  Display: BCC Cylinder
+  Match:   BCC3Cylinder
+
+  Display: BCC Fast Flipper
+  Match:   BCC3Fast Flipper
+
+  Display: BCC Page Turn
+  Match:   BCC3Page Turn
+
+  Display: BCC Pan and Zoom
+  Match:   BCC Pan and Zoom
+
+  Display: BCC Sphere
+  Match:   BCC3Sphere
+
+  Display: BCC Sphere Transition
+  Match:   BCC3Sphere Transition
+
+  Display:  BCC+Transform
+  Match:   BCC_TRANSFORM
+
+───────────────────────────────────
+📂 BCC Color & Tone
+───────────────────────────────────
+  Display: BCC 3 Way Color Grade
+  Match:   BCC6ThreeWayCC
+
+  Display: BCC Brightness-Contrast
+  Match:   BCC3Brightness-Contrast
+
+  Display: BCC Color Balance
+  Match:   BCC3Color Balance
+
+  Display: BCC Color Correction
+  Match:   BCC3Color Correction
+
+  Display: BCC Color Match
+  Match:   BCC3Color Match
+
+  Display: BCC Colorize
+  Match:   BCC3Colorize
+
+  Display: BCC Correct Selected Color
+  Match:   BCC3Correct Selected Color
+
+  Display: BCC Hue-Sat-Lightness
+  Match:   BCC3Hue-Sat-Lightness
+
+  Display: BCC Invert Solarize
+  Match:   BCC3Invert Solarize
+
+  Display: BCC Levels Gamma
+  Match:   BCC3Levels Gamma
+
+  Display: BCC MultiTone Mix
+  Match:   BCC3MultiTone Mix
+
+  Display: BCC Tritone
+  Match:   BCC3Tritone
+
+  Display: BCC Videoscope
+  Match:   BCC6Videoscope
+
+  Display:  BCC+Black and White
+  Match:   BCC_BLACKANDWHITE
+
+  Display:  BCC+Color Link
+  Match:   BCC_COLORLINK
+
+  Display:  BCC+DeFog
+  Match:   BCC_DEFOG
+
+  Display:  BCC+Develop
+  Match:   BCC_DEVELOP
+
+  Display:  BCC+Enhancing
+  Match:   BCC_ENHANCING
+
+  Display:  BCC+F-Stop
+  Match:   BCC_FSTOP
+
+  Display:  BCC+Fluorescent
+  Match:   BCC_FLUORESCENT
+
+  Display:  BCC+Grade
+  Match:   BCC_GRADE
+
+  Display:  BCC+Haze
+  Match:   BCC_HAZE
+
+  Display:  BCC+High Contrast
+  Match:   BCC_HIGHCONTRAST
+
+  Display:  BCC+Kelvin
+  Match:   BCC_KELVIN
+
+  Display:  BCC+Low Contrast
+  Match:   BCC_LOWCONTRAST
+
+  Display:  BCC+Polarizer
+  Match:   BCC_POLARIZER
+
+  Display:  BCC+Selective Saturation
+  Match:   BCC_SELECTIVESATURATION
+
+  Display:  BCC+Shadows/Highlights
+  Match:   BCC_SHADOWSHIGHLIGHTS
+
+───────────────────────────────────
+📂 BCC Obsolete
+───────────────────────────────────
+  Display: BCC Alpha Pixel Noise OBS
+  Match:   BCC3Alpha Pixel Noise
+
+  Display: BCC Alpha Spotlight OBS
+  Match:   BCC3Alpha Spotlight
+
+  Display: BCC Beauty Studio OBSOLETE
+  Match:   BCC Beauty Studio
+
+  Display: BCC Blur Dissolve OBSOLETE
+  Match:   BCC Blur Dissolve
+
+  Display: BCC Boost Blend OBS
+  Match:   BCC3Boost Blend
+
+  Display: BCC Brick OBSOLETE
+  Match:   BCC3Brick
+
+  Display: BCC Cloth OBSOLETE
+  Match:   BCC3Cloth
+
+  Display: BCC Clouds OBSOLETE
+  Match:   BCC3Clouds
+
+  Display: BCC Color Palette OBS
+  Match:   BCC3Color Palette
+
+  Display: BCC Comet OBSOLETE
+  Match:   BCC3Comet
+
+  Display: BCC Corner Pin OBS
+  Match:   BCC3CornerPin
+
+  Display: BCC Crash Zoom Dissolve OBSOLETE
+  Match:   BCC Crash Zoom Dissolve
+
+  Display: BCC Cross Glitch OBSOLETE
+  Match:   BCC Cross Glitch
+
+  Display: BCC Cross Zoom OBSOLETE
+  Match:   BCC Cross Zoom
+
+  Display: BCC DVE OBSOLETE
+  Match:   BCC3DVE
+
+  Display: BCC DVE Basic OBSOLETE
+  Match:   BCC3DVE Basic
+
+  Display: BCC DV Fixer OBSOLETE
+  Match:   BCC6DV Fixer
+
+  Display: BCC DeGrain OBS
+  Match:   BCC3DeGrain
+
+  Display: BCC DeNoise OBS
+  Match:   BCC3DeNoise
+
+  Display: BCC Directional Blur OBSOLETE
+  Match:   BCC3Directional Blur
+
+  Display: BCC Edge Cleaner OBSOLETE
+  Match:   BCC Edge Cleaner
+
+  Display: BCC Fast Film Glow OBSOLETE
+  Match:   BCC Fast Film Glow
+
+  Display: BCC Fast Film Glow Dissolve OBSOLETE
+  Match:   BCC Fast Film Glow Dissolve
+
+  Display: BCC Fast Film Process OBSOLETE
+  Match:   BCC Fast Film Process
+
+  Display: BCC Fast Lens Blur OBSOLETE
+  Match:   BCC Fast Lens Blur
+
+  Display: BCC Film Damage OBSOLETE
+  Match:   BCC3Film Damage
+
+  Display: BCC Film Glow OBS
+  Match:   BCC3Ultra Glow
+
+  Display: BCC Film Glow Dissolve OBS
+  Match:   BCC Film Glow Dissolve
+
+  Display: BCC Film Grain OBSOLETE
+  Match:   BCC3Film Grain
+
+  Display: BCC Film Process OBS
+  Match:   BCC3Film Process
+
+  Display: BCC Fire OBS
+  Match:   BCC3Fire
+
+  Display: BCC Flutter Cut OBSOLETE
+  Match:   BCCFlutter
+
+  Display: BCC Fractal Noise OBSOLETE
+  Match:   BCC3Fractal Noise
+
+  Display: BCC Gaussian Blur OBSOLETE
+  Match:   BCC3Gaussian Blur
+
+  Display: BCC Glare OBSOLETE
+  Match:   BCC3Glare
+
+  Display: BCC Glint OBSOLETE
+  Match:   BCC3Glint
+
+  Display: BCC Glitter OBSOLETE
+  Match:   BCC3Glitter
+
+  Display: BCC Glow OBS
+  Match:   BCC3Glow
+
+  Display: BCC Glow Matte OBS
+  Match:   BCC3Glow Matte
+
+  Display: BCC Granite OBSOLETE
+  Match:   BCC3Granite
+
+  Display: BCC LED OBSOLETE
+  Match:   BCC4LED
+
+  Display: BCC Lens Blur OBS
+  Match:   BCC6LensBlur
+
+  Display: BCC Lens Flare OBS
+  Match:   BCC3Lens Flare
+
+  Display: BCC Lens Flare Adv OBS
+  Match:   BCC3Lens Flare Adv
+
+  Display: BCC Lens Transition OBS
+  Match:   BCC6LensTransition
+
+  Display: BCC Light Leaks OBSOLETE
+  Match:   BCC Light Leaks
+
+  Display: BCC Light Leaks Dissolve OBSOLETE
+  Match:   BCCLightLeakDslv
+
+  Display: BCC Light Matte OBS
+  Match:   BCC3Light Matte
+
+  Display: BCC Light Wrap OBSOLETE
+  Match:   BCC3Light Wrap
+
+  Display: BCC Light Zoom OBS
+  Match:   BCC3Light Zoom
+
+  Display: BCC Linear Color Key OBSOLETE
+  Match:   BCC3Linear Color Key
+
+  Display: BCC Linear Luma Key OBSOLETE
+  Match:   BCC3Linear Luma Key
+
+  Display: BCC Linear Wipe OBSOLETE
+  Match:   BCC3Linear Wipe
+
+  Display: BCC Magic Sharp OBSOLETE
+  Match:   BCC Magic Sharp
+
+  Display: BCC Mosaic OBSOLETE
+  Match:   Boris3Pixelate
+
+  Display: BCC Motion Blur OBSOLETE
+  Match:   BCC3Motion Blur
+
+  Display: BCC Motion Key OBSOLETE
+  Match:   BCC3MotionKey
+
+  Display: BCC Noise Map OBS
+  Match:   BCC3Noise Map
+
+  Display: BCC Noise Reduction OBSOLETE
+  Match:   BCC6Noise Reduction
+
+  Display: BCC Optical Flow OBSOLETE
+  Match:   BCC3Optical Flow
+
+  Display: BCC Particle System OBSOLETE
+  Match:   BCC3Particle System
+
+  Display: BCC Pixel Chooser OBSOLETE
+  Match:   BCC3Pixel Chooser
+
+  Display: BCC Primatte Studio OBSOLETE
+  Match:   BCC Primatte Studio
+
+  Display: BCC Prism OBSOLETE
+  Match:   BCC4Prism
+
+  Display: BCC Prism Dissolve OBSOLETE
+  Match:   BCC Prism Dissolve
+
+  Display: BCC Pyramid Blur OBSOLETE
+  Match:   BCC3Pyramid Blur
+
+  Display: BCC RGB Blur Dissolve OBSOLETE
+  Match:   BCC RGB Blur Dissolve
+
+  Display: BCC Radial Blur OBSOLETE
+  Match:   BCC3Radial Blur
+
+  Display: BCC Radial Wipe OBSOLETE
+  Match:   BCC3Radial Wipe
+
+  Display: BCC Rays OBSOLETE
+  Match:   BCC3Rays
+
+  Display: BCC Rays Cartoon OBSOLETE
+  Match:   BCC3Rays Cartoon
+
+  Display: BCC Rays Dissolve OBSOLETE
+  Match:   BCC Rays Dissolve
+
+  Display: BCC Rays Radiant Spotlight OBSOLETE
+  Match:   BCC3Rays Radiant Spotlight
+
+  Display: BCC Rays Ring OBSOLETE
+  Match:   BCC3Rays Ring
+
+  Display: BCC Rays Ripply OBSOLETE
+  Match:   BCC3Rays Ripply
+
+  Display: BCC Rays Streaky OBSOLETE
+  Match:   BCC3Rays Streaky
+
+  Display: BCC Rays Textured OBSOLETE
+  Match:   BCC3Rays Textured
+
+  Display: BCC Rays Wedge OBSOLETE
+  Match:   BCC3Rays Wedge
+
+  Display: BCC Rectangular Wipe OBSOLETE
+  Match:   BCC3Rectangular Wipe
+
+  Display: BCC Reptilian OBSOLETE
+  Match:   BCC3Reptilian
+
+  Display: BCC Rock OBSOLETE
+  Match:   BCC3Rock
+
+  Display: BCC Rough Glow OBS
+  Match:   BCC3Rough Glow
+
+  Display: BCC Safe Colors OBS
+  Match:   BCC3Safe Colors
+
+  Display: BCC Scanline OBSOLETE
+  Match:   BCC4Scanline
+
+  Display: BCC Sequencer OBS
+  Match:   BCC3Sequencer
+
+  Display: BCC Smooth Tone OBS
+  Match:   BCC6Smooth Tone
+
+  Display: BCC Sparks OBSOLETE
+  Match:   BCC3Sparks
+
+  Display: BCC Spill Remover OBSOLETE
+  Match:   BCC Spill Remover
+
+  Display: BCC Spin Blur Dissolve OBSOLETE
+  Match:   BCC Spin Blur Dissolve
+
+  Display: BCC Spiral Blur OBSOLETE
+  Match:   BCC3Spiral Blur
+
+  Display: BCC Star Matte OBS
+  Match:   BCC3Star Matte
+
+  Display: BCC Stars OBSOLETE
+  Match:   BCC3Stars
+
+  Display: BCC Steel Plate OBSOLETE
+  Match:   BCC3Steel Plate
+
+  Display: BCC Super Blend OBS
+  Match:   BCC3Super Blend
+
+  Display: BCC Swish Pan OBSOLETE
+  Match:   BCC6Swish Pan
+
+  Display: BCC Textured Wipe OBSOLETE
+  Match:   BCC3Textured Wipe
+
+  Display: BCC Two Strip Color OBSOLETE
+  Match:   BCC Two Strip Color
+
+  Display: BCC Two Way Key OBSOLETE
+  Match:   BCC3Two Way Key
+
+  Display: BCC UpRez OBSOLETE
+  Match:   BCC UpRez
+
+  Display: BCC Veined Marble OBSOLETE
+  Match:   BCC3Veined Marble
+
+  Display: BCC Velocity Remap OBSOLETE
+  Match:   BCC3Velocity Remap
+
+  Display: BCC Video Glitch OBSOLETE
+  Match:   BCC Video Glitch
+
+  Display: BCC Vignette OBSOLETE
+  Match:   BCCVignette
+
+  Display: BCC Vignette Wipe OBSOLETE
+  Match:   BCCVignette Wipe
+
+  Display: BCC Weave OBSOLETE
+  Match:   BCC3Weave
+
+  Display: BCC WitnessProtection OBSOLETE
+  Match:   Boris3WitnessProtection
+
+  Display: BCC Wood Grain OBSOLETE
+  Match:   BCC3Wood Grain
+
+  Display: BCC Wooden Planks OBSOLETE
+  Match:   BCC3Wooden Planks
+
+  Display: BCC Z Space I OBS
+  Match:   BCC3Z Space I
+
+  Display: BCC Z Space II OBS
+  Match:   BCC3Z Space II
+
+  Display: BCC Z Space III OBS
+  Match:   BCC3Z Space III
+
+───────────────────────────────────
+📂 BCC Key & Blend
+───────────────────────────────────
+  Display: BCC Alpha Process
+  Match:   BCC3Alpha Process
+
+  Display: BCC Chroma Key
+  Match:   BCC3Chroma Key
+
+  Display: BCC Chroma Key Studio
+  Match:   BCC Chroma Key Studio
+
+  Display: BCC Composite
+  Match:   BCC3Composite
+
+  Display: BCC Composite Choker
+  Match:   BCC3Composite Choker
+
+  Display: BCC Make Alpha Key
+  Match:   BCC3Make Alpha Key
+
+  Display: BCC Matte Choker
+  Match:   BCC3Matte Choker
+
+  Display: BCC Matte Cleanup
+  Match:   BCC3Matte Cleanup
+
+  Display: BCC Premult
+  Match:   BCC3Premult
+
+  Display: BCC RGB Blend
+  Match:   BCC3RGB Blend
+
+  Display:  BCC+Color Paste
+  Match:   BCC_COLORPASTE
+
+  Display:  BCC+Composite
+  Match:   BCC_COMPOSITE
+
+  Display:  BCC+Depth Map ML
+  Match:   BCC_MLDEPTHESTIMATION
+
+  Display:  BCC+Edge Cleaner
+  Match:   BCC_EDGECLEANER
+
+  Display:  BCC+Edge Composite
+  Match:   BCC_EDGECOMPOSITE
+
+  Display:  BCC+Face ML
+  Match:   BCC_MLFACESEGMENTATION
+
+  Display:  BCC+Holdout Composite
+  Match:   BCC_HOLDOUTCOMPOSITE
+
+  Display:  BCC+Light Wrap
+  Match:   BCC_LIGHTWRAP
+
+  Display:  BCC+Linear Color Key
+  Match:   BCC_LINEARCOLORKEY
+
+  Display:  BCC+Linear Luma Key
+  Match:   BCC_LINEARLUMAKEY
+
+  Display:  BCC+Math Composite
+  Match:   BCC_MATHCOMPOSITE
+
+  Display:  BCC+Matte Refine ML
+  Match:   BCC_MLMATTEREFINE
+
+  Display:  BCC+Non-Additive Mix
+  Match:   BCC_NONADDITIVEMIX
+
+  Display:  BCC+Optical Dissolve
+  Match:   BCC_OPTICALDISSOLVE
+
+  Display:  BCC+Pixel Chooser
+  Match:   BCC_PIXELCHOOSER
+
+  Display:  BCC+Primatte Studio
+  Match:   BCC_PRIMATTESTUDIO
+
+  Display:  BCC+Spill Remover
+  Match:   BCC_SPILLREMOVER
+
+  Display:  BCC+Two Way Key
+  Match:   BCC_TWOWAYKEY
+
+───────────────────────────────────
+📂 BCC Art Looks
+───────────────────────────────────
+  Display: BCC Artist's Poster
+  Match:   BCC3Artists Poster
+
+  Display: BCC Bump Map
+  Match:   BCC3Bump Map
+
+  Display: BCC Cartoon Look
+  Match:   BCC6Cartoon2Look
+
+  Display: BCC Cartooner
+  Match:   BCC3Cartooner
+
+  Display: BCC Charcoal Sketch
+  Match:   BCC6Charcoal Sketch
+
+  Display: BCC Halftone
+  Match:   BCC Halftone
+
+  Display: BCC Median
+  Match:   BCC3Median
+
+  Display: BCC Pencil Sketch
+  Match:   BCC6Pencil Sketch
+
+  Display: BCC Posterize
+  Match:   BCC3Posterize
+
+  Display: BCC Spray Paint Noise
+  Match:   BCC3Spray Paint Noise
+
+  Display: BCC Tile Mosaic
+  Match:   BCC4Tile Mosaic
+
+  Display: BCC Water Color
+  Match:   BCC6Water Color
+
+  Display:  BCC+Borders
+  Match:   BCC_BORDERS
+
+  Display:  BCC+Color Infrared
+  Match:   BCC_COLORINFRARED
+
+  Display:  BCC+Color Shadow
+  Match:   BCC_COLORSHADOW
+
+  Display:  BCC+Harris Shutter
+  Match:   BCC_HARRISSHUTTER
+
+  Display:  BCC+Infrared
+  Match:   BCC_INFRARED
+
+  Display:  BCC+Night Vision
+  Match:   BCC_NIGHTVISION
+
+  Display:  BCC+X-Ray
+  Match:   BCC_XRAY
+
+───────────────────────────────────
+📂 BCC VR
+───────────────────────────────────
+  Display: BCC VR Blur
+  Match:   BCC VR Blur
+
+  Display: BCC VR Reorient
+  Match:   BCC VR Reorient
+
+  Display: BCC VR Insert
+  Match:   BCC VR Insert
+
+  Display: BCC VR Flicker Fixer
+  Match:   BCC VR Flicker Fixer
+
+  Display: BCC VR Sharpen
+  Match:   BCC VR Sharpen
+
+───────────────────────────────────
+📂 BCC Image Restoration
+───────────────────────────────────
+  Display: BCC Broadcast Safe
+  Match:   BCC Broadcast Safe
+
+  Display: BCC Dropout Fixer
+  Match:   BCC Dropout Fixer
+
+  Display: BCC Dust and Scratches
+  Match:   BCC3Dust and Scratches
+
+  Display: BCC Flicker Fixer
+  Match:   BCC3Flicker Fixer
+
+  Display: BCC Lens Correction
+  Match:   BCC Lens Correction
+
+  Display: BCC Optical Stabilizer
+  Match:   BCC3Stabilizer
+
+  Display: BCC Pixel Fixer
+  Match:   BCC6Pixel Fixer
+
+  Display: BCC Reframer
+  Match:   BCC Reframer
+
+  Display: BCC Remover
+  Match:   BCC Remover
+
+  Display: BCC Wire Remover
+  Match:   BCC3Wire Remover
+
+  Display:  BCC+Beauty Studio
+  Match:   BCC_BEAUTYSTUDIO
+
+  Display:  BCC+DeBand
+  Match:   BCC_DEBAND
+
+  Display:  BCC+DeBlock
+  Match:   BCC_DEBLOCK
+
+  Display:  BCC+DeNoise ML
+  Match:   BCC_MLDENOISE
+
+  Display:  BCC+Frame Fixer ML
+  Match:   BCC_MLFRAMEFIXER
+
+  Display:  BCC+Magic Sharp
+  Match:   BCC_MAGICSHARP
+
+  Display:  BCC+UpRes ML
+  Match:   BCC_UPRESML
+
+───────────────────────────────────
+📂 BCC Warp
+───────────────────────────────────
+  Display: BCC Bulge
+  Match:   BCC3Bulge
+
+  Display: BCC Curl
+  Match:   BCC Curl
+
+  Display: BCC Displacement Map
+  Match:   BCC3Displacement Map
+
+  Display: BCC Morph
+  Match:   BCC4Morph
+
+  Display: BCC Polar Displacement
+  Match:   BCC3Polar Displacement
+
+  Display: BCC Ripple
+  Match:   BCC3Ripple
+
+  Display: BCC Turbulence
+  Match:   BCC4Turbulence
+
+  Display: BCC Twirl
+  Match:   BCC3Twirl
+
+  Display: BCC Vector Displacement
+  Match:   BCC3Vector Displacement
+
+  Display: BCC Video Morph
+  Match:   BCC4Video Morph
+
+  Display: BCC Warp
+  Match:   BCC4Warp
+
+  Display: BCC Wave
+  Match:   BCC3Wave
+
+  Display:  BCC+Polar Warp
+  Match:   BCC_POLARWARP
+
+  Display:  BCC+ST Map
+  Match:   BCC_STMAP
+
+───────────────────────────────────
+📂 BCC Textures
+───────────────────────────────────
+  Display: BCC Caustics
+  Match:   BCC3Caustics
+
+  Display: BCC Mixed Colors
+  Match:   BCC3Mixed Colors
+
+  Display: BCC Noise Map 2
+  Match:   BCC4Noise Map 2
+
+  Display:  BCC+Textures
+  Match:   BCC_TEXTURES
+
+───────────────────────────────────
+📂 BCC Stylize
+───────────────────────────────────
+  Display: BCC Color Choker
+  Match:   BCC4Color Choker
+
+  Display: BCC Colorize Glow
+  Match:   BCC3Colorize Glow
+
+  Display: BCC Damaged TV
+  Match:   BCC4Damaged TV
+
+  Display: BCC Drop Shadow
+  Match:   BCC3Drop Shadow
+
+  Display: BCC Edge Grunge
+  Match:   BCC Edge Grunge
+
+  Display: BCC Emboss
+  Match:   BCC3Emboss
+
+  Display: BCC Glow Alpha Edges
+  Match:   BCC3Glow Alpha Edges
+
+  Display: BCC Grunge
+  Match:   BCC Grunge
+
+  Display: BCC Misalignment
+  Match:   BCC3Misalignment
+
+  Display: BCC Multi Shadow
+  Match:   BCC3Multi Shadow
+
+  Display: BCC RGB Edges
+  Match:   BCC3RGB Edges
+
+  Display: BCC RGB Pixel Noise
+  Match:   BCC3RGB Pixel Noise
+
+  Display: BCC Reflection
+  Match:   BCC Reflection
+
+  Display: BCC Scatterize
+  Match:   BCC3Scatterize
+
+  Display: BCC Cast Shadow
+  Match:   BCC Cast Shadow
+
+  Display:  BCC+Mosaic
+  Match:   BCC_MOSAIC
+
+  Display:  BCC+Prism
+  Match:   BCC_PRISMBLUR
+
+  Display:  BCC+Scanline
+  Match:   BCC_SCANLINE
+
+  Display:  BCC+Super LED
+  Match:   BCC_SUPERLED
+
+  Display:  BCC+Video Glitch
+  Match:   BCC_VIDEOGLITCH
+
+───────────────────────────────────
+📂 BCC Match Move
+───────────────────────────────────
+  Display: BCC Corner Pin Studio
+  Match:   BCC Corner Pin Studio
+
+  Display: BCC Match Move
+  Match:   BCC3MatchMove
+
+  Display:  BCC+License Plate ML
+  Match:   BCC_LICENSEPLATEML
+
+  Display:  BCC+Witness Protection ML
+  Match:   BCC_WITNESSPROTECTIONML
+
+───────────────────────────────────
+📂 BCC 3D Objects
+───────────────────────────────────
+  Display: BCC Extruded EPS
+  Match:   ScriptEP
+
+  Display: BCC Extruded Spline
+  Match:   ScriptSP
+
+  Display: BCC Extruded Text
+  Match:   ScriptET
+
+  Display: BCC Layer Deformer
+  Match:   ScriptLD
+
+  Display: BCC Title Studio
+  Match:   BCCTS
+
+  Display: BCC Type On Text
+  Match:   ScriptTO
+
+───────────────────────────────────
+📂 BCC Browser
+───────────────────────────────────
+  Display: BCC FX Browser
+  Match:   BCCFXBrowser
+
+───────────────────────────────────
+📂 BCC Blur
+───────────────────────────────────
+  Display: BCC Lens Shape
+  Match:   BCC6LensShape
+
+  Display: BCC Unsharp Mask
+  Match:   BCC3Unsharp Mask
+
+  Display: BCC Z-Blur
+  Match:   BCC3Z-Blur
+
+  Display:  BCC+Blur
+  Match:   BCC_BLUR
+
+  Display:  BCC+Channel Blur YUV
+  Match:   BCC_CHANNELYUVBLUR
+
+  Display:  BCC+Channel Blur
+  Match:   BCC_CHANNELBLUR
+
+  Display:  BCC+Detail
+  Match:   BCC_DETAIL
+
+  Display:  BCC+Directional Blur
+  Match:   BCC_DIRECTIONALBLUR
+
+  Display:  BCC+Lens Blur
+  Match:   BCC_LENSBLUR
+
+  Display:  BCC+Motion Blur ML
+  Match:   BCC_MOTIONBLURML
+
+  Display:  BCC+Radial Blur
+  Match:   BCC_RADIALBLUR
+
+  Display:  BCC+Smear Blur
+  Match:   BCC_SMEARBLUR
+
+───────────────────────────────────
+📂 BCC Lens
+───────────────────────────────────
+  Display:  BCC+Camera Shake
+  Match:   BCC_CAMERASHAKE
+
+  Display:  BCC+Chromatic Aberration
+  Match:   BCC_CHROMATICABERRATION
+
+  Display:  BCC+DeFringe
+  Match:   BCC_DEFRINGE
+
+  Display:  BCC+Lens Distortion
+  Match:   BCC_LENSDISTORTION
+
+  Display:  BCC+Radial Exposure
+  Match:   BCC_RADIALEXPOSURE
+
+  Display:  BCC+Wide Angle Lens
+  Match:   BCC_WIDEANGLELENS
+
+───────────────────────────────────
+📂 BCC Optical Diffusion
+───────────────────────────────────
+  Display:  BCC+Center Spot
+  Match:   BCC_CENTERSPOT
+
+  Display:  BCC+Depth of Field
+  Match:   BCC_DEPTHOFFIELD
+
+  Display:  BCC+Diffusion
+  Match:   BCC_DIFFUSION
+
+  Display:  BCC+Double Fog
+  Match:   BCC_DOUBLEFOG
+
+  Display:  BCC+Fog
+  Match:   BCC_FOG
+
+  Display:  BCC+Frost
+  Match:   BCC_FROST
+
+  Display:  BCC+Halo
+  Match:   BCC_HALO
+
+  Display:  BCC+Mist
+  Match:   BCC_MIST
+
+  Display:  BCC+Net
+  Match:   BCC_NET
+
+  Display:  BCC+Rack Focus
+  Match:   BCC_RACKFOCUS
+
+  Display:  BCC+Silk
+  Match:   BCC_SILK
+
+  Display:  BCC+Split Field
+  Match:   BCC_SPLITFIELD
+
+───────────────────────────────────
+📂 BCC Grads & Tints
+───────────────────────────────────
+  Display:  BCC+Color Gradient
+  Match:   BCC_COLORGRADIENT
+
+  Display:  BCC+Color Spot
+  Match:   BCC_COLORSPOT
+
+  Display:  BCC+Colorize Gradient
+  Match:   BCC_COLORIZEGRADIENT
+
+  Display:  BCC+Dual Gradient
+  Match:   BCC_DUALGRADIENT
+
+  Display:  BCC+Gels
+  Match:   BCC_GELS
+
+  Display:  BCC+ND Gradient
+  Match:   BCC_NDGRADIENT
+
+  Display:  BCC+Photographic
+  Match:   BCC_PHOTOGRAPHIC
+
+  Display:  BCC+Radial Tint
+  Match:   BCC_RADIALTINT
+
+  Display:  BCC+Sepia
+  Match:   BCC_SEPIA
+
+  Display:  BCC+Skin Tone
+  Match:   BCC_SKINTONE
+
+  Display:  BCC+Split Tone
+  Match:   BCC_SPLITTONE
+
+  Display:  BCC+Sunset
+  Match:   BCC_SUNSET
+
+  Display:  BCC+Tint
+  Match:   BCC_TINT
+
+───────────────────────────────────
+📂 Sapphire Adjust
+───────────────────────────────────
+  Display: S_ChannelSwitcher
+  Match:   S_ChannelSwitcher
+
+  Display: S_ClampChroma
+  Match:   S_ClampChroma
+
+  Display: S_DuoTone
+  Match:   S_DuoTone
+
+  Display: S_Gamma
+  Match:   S_Gamma
+
+  Display: S_Hotspots
+  Match:   S_Hotspots
+
+  Display: S_HueSatBright
+  Match:   S_HueSatBright
+
+  Display: S_Invert
+  Match:   S_Invert
+
+  Display: S_Monochrome
+  Match:   S_Monochrome
+
+  Display: S_OCIOTransform
+  Match:   S_OCIOTransform
+
+  Display: S_QuadTone
+  Match:   S_QuadTone
+
+  Display: S_ShowBadColors
+  Match:   S_ShowBadColors
+
+  Display: S_Threshold
+  Match:   S_Threshold
+
+  Display: S_Tint
+  Match:   S_Tint
+
+  Display: S_TriTone
+  Match:   S_TriTone
+
+───────────────────────────────────
+📂 Sapphire Blur+Sharpen
+───────────────────────────────────
+  Display: S_Beauty
+  Match:   S_Beauty
+
+  Display: S_Blur
+  Match:   S_Blur
+
+  Display: S_BlurChannels
+  Match:   S_BlurChannels
+
+  Display: S_BlurChroma
+  Match:   S_BlurChroma
+
+  Display: S_BlurDirectional
+  Match:   S_BlurDirectional
+
+  Display: S_BlurMoCurves
+  Match:   S_BlurMoCurves
+
+  Display: S_BlurMotion
+  Match:   S_BlurMotion
+
+  Display: S_Convolve
+  Match:   S_Convolve
+
+  Display: S_ConvolveComp
+  Match:   S_ConvolveComp
+
+  Display: S_Deband
+  Match:   S_Deband
+
+  Display: S_DefocusPrism
+  Match:   S_DefocusPrism
+
+  Display: S_EdgeAwareBlur
+  Match:   S_EdgeAwareBlur
+
+  Display: S_EdgeBlur
+  Match:   S_EdgeBlur
+
+  Display: S_FreeLens
+  Match:   S_FreeLens
+
+  Display: S_GrainRemove
+  Match:   S_GrainRemove
+
+  Display: S_Median
+  Match:   S_Median
+
+  Display: S_RackDefocus
+  Match:   S_RackDefocus
+
+  Display: S_RackDfComp
+  Match:   S_RackDfComp
+
+  Display: S_Sharpen
+  Match:   S_Sharpen
+
+  Display: S_SoftFocus
+  Match:   S_SoftFocus
+
+  Display: S_ZBlur
+  Match:   S_ZBlur
+
+  Display: S_ZConvolve
+  Match:   S_ZConvolve
+
+  Display: S_ZDefocus
+  Match:   S_ZDefocus
+
+───────────────────────────────────
+📂 Sapphire Builder
+───────────────────────────────────
+  Display: S_Effect
+  Match:   S_Effect
+
+  Display: S_Transition
+  Match:   S_Transition
+
+───────────────────────────────────
+📂 Sapphire Composite
+───────────────────────────────────
+  Display: S_EdgeFlash
+  Match:   S_EdgeFlash
+
+  Display: S_Layer
+  Match:   S_Layer
+
+  Display: S_MathOps
+  Match:   S_MathOps
+
+  Display: S_MatteOps
+  Match:   S_MatteOps
+
+  Display: S_MatteOpsComp
+  Match:   S_MatteOpsComp
+
+  Display: S_ZComp
+  Match:   S_ZComp
+
+───────────────────────────────────
+📂 Sapphire Distort
+───────────────────────────────────
+  Display: S_Distort
+  Match:   S_Distort
+
+  Display: S_DistortBlur
+  Match:   S_DistortBlur
+
+  Display: S_DistortChroma
+  Match:   S_DistortChroma
+
+  Display: S_DistortRGB
+  Match:   S_DistortRGB
+
+  Display: S_InfiniteZoom
+  Match:   S_InfiniteZoom
+
+  Display: S_ParallaxStrips
+  Match:   S_ParallaxStrips
+
+  Display: S_Shake
+  Match:   S_Shake
+
+  Display: S_StretchFrameEdges
+  Match:   S_StretchFrameEdges
+
+  Display: S_WarpBubble
+  Match:   S_WarpBubble
+
+  Display: S_WarpBubble2
+  Match:   S_WarpBubble2
+
+  Display: S_WarpChroma
+  Match:   S_WarpChroma
+
+  Display: S_WarpCornerPin
+  Match:   S_WarpCornerPin
+
+  Display: S_WarpDrops
+  Match:   S_WarpDrops
+
+  Display: S_WarpFishEye
+  Match:   S_WarpFishEye
+
+  Display: S_WarpMagnify
+  Match:   S_WarpMagnify
+
+  Display: S_WarpPerspective
+  Match:   S_WarpPerspective
+
+  Display: S_WarpPolar
+  Match:   S_WarpPolar
+
+  Display: S_WarpPuddle
+  Match:   S_WarpPuddle
+
+  Display: S_WarpPuff
+  Match:   S_WarpPuff
+
+  Display: S_WarpRepeat
+  Match:   S_WarpRepeat
+
+  Display: S_WarpTransform
+  Match:   S_WarpTransform
+
+  Display: S_WarpVortex
+  Match:   S_WarpVortex
+
+  Display: S_WarpWaves
+  Match:   S_WarpWaves
+
+  Display: S_WarpWaves2
+  Match:   S_WarpWaves2
+
+───────────────────────────────────
+📂 Sapphire Lighting
+───────────────────────────────────
+  Display: S_BokehLights
+  Match:   S_BokehLights
+
+  Display: S_DropShadow
+  Match:   S_DropShadow
+
+  Display: S_EdgeRays
+  Match:   S_EdgeRays
+
+  Display: S_Flashbulbs
+  Match:   S_Flashbulbs
+
+  Display: S_Glare
+  Match:   S_Glare
+
+  Display: S_Glint
+  Match:   S_Glint
+
+  Display: S_GlintRainbow
+  Match:   S_GlintRainbow
+
+  Display: S_Glow
+  Match:   S_Glow
+
+  Display: S_GlowAura
+  Match:   S_GlowAura
+
+  Display: S_GlowDarks
+  Match:   S_GlowDarks
+
+  Display: S_GlowDist
+  Match:   S_GlowDist
+
+  Display: S_GlowEdges
+  Match:   S_GlowEdges
+
+  Display: S_GlowNoise
+  Match:   S_GlowNoise
+
+  Display: S_GlowOrthicon
+  Match:   S_GlowOrthicon
+
+  Display: S_GlowRainbow
+  Match:   S_GlowRainbow
+
+  Display: S_GlowRings
+  Match:   S_GlowRings
+
+  Display: S_LensFlare
+  Match:   S_LensFlare
+
+  Display: S_LensFlareAutoTrack
+  Match:   S_LensFlareAutoTrack
+
+  Display: S_Light3D
+  Match:   S_Light3D
+
+  Display: S_LightLeak
+  Match:   S_LightLeak
+
+  Display: S_Rays
+  Match:   S_Rays
+
+  Display: S_SpotLight
+  Match:   S_SpotLight
+
+  Display: S_Streaks
+  Match:   S_Streaks
+
+  Display: S_UltraGlow
+  Match:   S_UltraGlow
+
+  Display: S_ZGlow
+  Match:   S_ZGlow
+
+───────────────────────────────────
+📂 Sapphire Render
+───────────────────────────────────
+  Display: S_Aurora
+  Match:   S_Aurora
+
+  Display: S_Caustics
+  Match:   S_Caustics
+
+  Display: S_Clouds
+  Match:   S_Clouds
+
+  Display: S_CloudsColorSmooth
+  Match:   S_CloudsColorSmooth
+
+  Display: S_CloudsMultColor
+  Match:   S_CloudsMultColor
+
+  Display: S_CloudsPerspective
+  Match:   S_CloudsPerspective
+
+  Display: S_CloudsPsyko
+  Match:   S_CloudsPsyko
+
+  Display: S_CloudsVortex
+  Match:   S_CloudsVortex
+
+  Display: S_Dust
+  Match:   S_Dust
+
+  Display: S_Gradient
+  Match:   S_Gradient
+
+  Display: S_GradientMulti
+  Match:   S_GradientMulti
+
+  Display: S_GradientRadial
+  Match:   S_GradientRadial
+
+  Display: S_Grid
+  Match:   S_Grid
+
+  Display: S_Grunge
+  Match:   S_Grunge
+
+  Display: S_LaserBeam
+  Match:   S_LaserBeam
+
+  Display: S_Luna
+  Match:   S_Luna
+
+  Display: S_MuzzleFlash
+  Match:   S_MuzzleFlash
+
+  Display: S_NightSky
+  Match:   S_NightSky
+
+  Display: S_Shape
+  Match:   S_Shape
+
+  Display: S_Sparkles
+  Match:   S_Sparkles
+
+  Display: S_SparklesColor
+  Match:   S_SparklesColor
+
+  Display: S_TextureCells
+  Match:   S_TextureCells
+
+  Display: S_TextureChromaSpiral
+  Match:   S_TextureChromaSpiral
+
+  Display: S_TextureFlux
+  Match:   S_TextureFlux
+
+  Display: S_TextureFolded
+  Match:   S_TextureFolded
+
+  Display: S_TextureLoops
+  Match:   S_TextureLoops
+
+  Display: S_TextureMicro
+  Match:   S_TextureMicro
+
+  Display: S_TextureMoire
+  Match:   S_TextureMoire
+
+  Display: S_TextureNeurons
+  Match:   S_TextureNeurons
+
+  Display: S_TextureNoiseEmboss
+  Match:   S_TextureNoiseEmboss
+
+  Display: S_TextureNoisePaint
+  Match:   S_TextureNoisePaint
+
+  Display: S_TexturePlasma
+  Match:   S_TexturePlasma
+
+  Display: S_TextureSpots
+  Match:   S_TextureSpots
+
+  Display: S_TextureTiles
+  Match:   S_TextureTiles
+
+  Display: S_TextureWeave
+  Match:   S_TextureWeave
+
+  Display: S_UltraZap
+  Match:   S_UltraZap
+
+  Display: S_Zap
+  Match:   S_Zap
+
+  Display: S_ZapFrom
+  Match:   S_ZapFrom
+
+  Display: S_ZapTo
+  Match:   S_ZapTo
+
+───────────────────────────────────
+📂 Sapphire Stylize
+───────────────────────────────────
+  Display: S_AutoPaint
+  Match:   S_AutoPaint
+
+  Display: S_BandPass
+  Match:   S_BandPass
+
+  Display: S_BleachBypass
+  Match:   S_BleachBypass
+
+  Display: S_Brush
+  Match:   S_Brush
+
+  Display: S_Cartoon
+  Match:   S_Cartoon
+
+  Display: S_CartoonPaint
+  Match:   S_CartoonPaint
+
+  Display: S_ColorFuse
+  Match:   S_ColorFuse
+
+  Display: S_Crosshatch
+  Match:   S_Crosshatch
+
+  Display: S_Diffuse
+  Match:   S_Diffuse
+
+  Display: S_DigitalDamage
+  Match:   S_DigitalDamage
+
+  Display: S_DogVision
+  Match:   S_DogVision
+
+  Display: S_EdgeColorize
+  Match:   S_EdgeColorize
+
+  Display: S_EdgeDetect
+  Match:   S_EdgeDetect
+
+  Display: S_EdgeDetectDouble
+  Match:   S_EdgeDetectDouble
+
+  Display: S_EdgesInDirection
+  Match:   S_EdgesInDirection
+
+  Display: S_Emboss
+  Match:   S_Emboss
+
+  Display: S_EmbossDistort
+  Match:   S_EmbossDistort
+
+  Display: S_EmbossGlass
+  Match:   S_EmbossGlass
+
+  Display: S_EmbossShiny
+  Match:   S_EmbossShiny
+
+  Display: S_Etching
+  Match:   S_Etching
+
+  Display: S_FilmBurn
+  Match:   S_FilmBurn
+
+  Display: S_FilmDamage
+  Match:   S_FilmDamage
+
+  Display: S_FilmEffect
+  Match:   S_FilmEffect
+
+  Display: S_FlysEyeCircles
+  Match:   S_FlysEyeCircles
+
+  Display: S_FlysEyeHex
+  Match:   S_FlysEyeHex
+
+  Display: S_FlysEyeRect
+  Match:   S_FlysEyeRect
+
+  Display: S_Grain
+  Match:   S_Grain
+
+  Display: S_GrainStatic
+  Match:   S_GrainStatic
+
+  Display: S_HalfTone
+  Match:   S_HalfTone
+
+  Display: S_HalfToneColor
+  Match:   S_HalfToneColor
+
+  Display: S_HalfToneRings
+  Match:   S_HalfToneRings
+
+  Display: S_JpegDamage
+  Match:   S_JpegDamage
+
+  Display: S_Kaleido
+  Match:   S_Kaleido
+
+  Display: S_KaleidoPolar
+  Match:   S_KaleidoPolar
+
+  Display: S_KaleidoRadial
+  Match:   S_KaleidoRadial
+
+  Display: S_Mosaic
+  Match:   S_Mosaic
+
+  Display: S_PixelMosh
+  Match:   S_PixelMosh
+
+  Display: S_PixelSort
+  Match:   S_PixelSort
+
+  Display: S_Posterize
+  Match:   S_Posterize
+
+  Display: S_PrismLens
+  Match:   S_PrismLens
+
+  Display: S_PseudoColor
+  Match:   S_PseudoColor
+
+  Display: S_PsykoBlobs
+  Match:   S_PsykoBlobs
+
+  Display: S_PsykoStripes
+  Match:   S_PsykoStripes
+
+  Display: S_RomanTile
+  Match:   S_RomanTile
+
+  Display: S_ScanLines
+  Match:   S_ScanLines
+
+  Display: S_ScanLinesMono
+  Match:   S_ScanLinesMono
+
+  Display: S_Sketch
+  Match:   S_Sketch
+
+  Display: S_Solarize
+  Match:   S_Solarize
+
+  Display: S_StripSlide
+  Match:   S_StripSlide
+
+  Display: S_TVDamage
+  Match:   S_TVDamage
+
+  Display: S_TileScramble
+  Match:   S_TileScramble
+
+  Display: S_UltraGrain
+  Match:   S_UltraGrain
+
+  Display: S_VHSDamage
+  Match:   S_VHSDamage
+
+  Display: S_Vignette
+  Match:   S_Vignette
+
+  Display: S_VintageColor2Strip
+  Match:   S_VintageColor2Strip
+
+  Display: S_VintageColor3Strip
+  Match:   S_VintageColor3Strip
+
+  Display: S_ZFogExponential
+  Match:   S_ZFogExponential
+
+  Display: S_ZFogLinear
+  Match:   S_ZFogLinear
+
+  Display: S_Zebrafy
+  Match:   S_Zebrafy
+
+  Display: S_ZebrafyColor
+  Match:   S_ZebrafyColor
+
+───────────────────────────────────
+📂 Sapphire Time
+───────────────────────────────────
+  Display: S_CutToDissolve
+  Match:   S_CutToDissolve
+
+  Display: S_Feedback
+  Match:   S_Feedback
+
+  Display: S_FeedbackBubble
+  Match:   S_FeedbackBubble
+
+  Display: S_FeedbackDistort
+  Match:   S_FeedbackDistort
+
+  Display: S_FieldRemove
+  Match:   S_FieldRemove
+
+  Display: S_Flicker
+  Match:   S_Flicker
+
+  Display: S_FlickerMatch
+  Match:   S_FlickerMatch
+
+  Display: S_FlickerMatchColor
+  Match:   S_FlickerMatchColor
+
+  Display: S_FlickerMatchMatte
+  Match:   S_FlickerMatchMatte
+
+  Display: S_FlickerMchMatteColor
+  Match:   S_FlickerMchMatteColor
+
+  Display: S_FlickerRemove
+  Match:   S_FlickerRemove
+
+  Display: S_FlickerRemoveColor
+  Match:   S_FlickerRemoveColor
+
+  Display: S_FlickerRemoveMatte
+  Match:   S_FlickerRemoveMatte
+
+  Display: S_FlickerRmMatteColor
+  Match:   S_FlickerRmMatteColor
+
+  Display: S_FreezeFrame
+  Match:   S_FreezeFrame
+
+  Display: S_GetFrame
+  Match:   S_GetFrame
+
+  Display: S_JitterFrames
+  Match:   S_JitterFrames
+
+  Display: S_MotionDetect
+  Match:   S_MotionDetect
+
+  Display: S_NearestColor
+  Match:   S_NearestColor
+
+  Display: S_RandomEdits
+  Match:   S_RandomEdits
+
+  Display: S_RepairFrames
+  Match:   S_RepairFrames
+
+  Display: S_Retime
+  Match:   S_Retime
+
+  Display: S_ReverseClip
+  Match:   S_ReverseClip
+
+  Display: S_ReverseEdits
+  Match:   S_ReverseEdits
+
+  Display: S_TimeAverage
+  Match:   S_TimeAverage
+
+  Display: S_TimeDisplace
+  Match:   S_TimeDisplace
+
+  Display: S_TimeSlice
+  Match:   S_TimeSlice
+
+  Display: S_TimeWarpRGB
+  Match:   S_TimeWarpRGB
+
+  Display: S_Trails
+  Match:   S_Trails
+
+  Display: S_TrailsDiffuse
+  Match:   S_TrailsDiffuse
+
+───────────────────────────────────
+📂 Sapphire Transitions
+───────────────────────────────────
+  Display: S_CardFlip
+  Match:   S_CardFlip
+
+  Display: S_Dissolve
+  Match:   S_Dissolve
+
+  Display: S_DissolveAutoPaint
+  Match:   S_DissolveAutoPaint
+
+  Display: S_DissolveBlur
+  Match:   S_DissolveBlur
+
+  Display: S_DissolveBubble
+  Match:   S_DissolveBubble
+
+  Display: S_DissolveDefocus
+  Match:   S_DissolveDefocus
+
+  Display: S_DissolveDiffuse
+  Match:   S_DissolveDiffuse
+
+  Display: S_DissolveDigitalDamage
+  Match:   S_DissolveDigitalDamage
+
+  Display: S_DissolveDistort
+  Match:   S_DissolveDistort
+
+  Display: S_DissolveEdgeRays
+  Match:   S_DissolveEdgeRays
+
+  Display: S_DissolveFilm
+  Match:   S_DissolveFilm
+
+  Display: S_DissolveFlashbulbs
+  Match:   S_DissolveFlashbulbs
+
+  Display: S_DissolveGlare
+  Match:   S_DissolveGlare
+
+  Display: S_DissolveGlint
+  Match:   S_DissolveGlint
+
+  Display: S_DissolveGlintRainbow
+  Match:   S_DissolveGlintRainbow
+
+  Display: S_DissolveGlow
+  Match:   S_DissolveGlow
+
+  Display: S_DissolveLensFlare
+  Match:   S_DissolveLensFlare
+
+  Display: S_DissolveLightLeak
+  Match:   S_DissolveLightLeak
+
+  Display: S_DissolveLuma
+  Match:   S_DissolveLuma
+
+  Display: S_DissolvePixelMosh
+  Match:   S_DissolvePixelMosh
+
+  Display: S_DissolvePixelSort
+  Match:   S_DissolvePixelSort
+
+  Display: S_DissolvePuddle
+  Match:   S_DissolvePuddle
+
+  Display: S_DissolveRays
+  Match:   S_DissolveRays
+
+  Display: S_DissolveShake
+  Match:   S_DissolveShake
+
+  Display: S_DissolveSpeckle
+  Match:   S_DissolveSpeckle
+
+  Display: S_DissolveStatic
+  Match:   S_DissolveStatic
+
+  Display: S_DissolveTiles
+  Match:   S_DissolveTiles
+
+  Display: S_DissolveUltraGlow
+  Match:   S_DissolveUltraGlow
+
+  Display: S_DissolveVortex
+  Match:   S_DissolveVortex
+
+  Display: S_DissolveWaves
+  Match:   S_DissolveWaves
+
+  Display: S_DissolveZap
+  Match:   S_DissolveZap
+
+  Display: S_FilmBurnTransition
+  Match:   S_FilmBurnTransition
+
+  Display: S_FilmRoll
+  Match:   S_FilmRoll
+
+  Display: S_FlutterCut
+  Match:   S_FlutterCut
+
+  Display: S_HyperPull
+  Match:   S_HyperPull
+
+  Display: S_HyperPush
+  Match:   S_HyperPush
+
+  Display: S_MochaWhip
+  Match:   S_MochaWhip
+
+  Display: S_ParallaxStripsTransition
+  Match:   S_ParallaxStripsTransition
+
+  Display: S_StripSlideTransition
+  Match:   S_StripSlideTransition
+
+  Display: S_Swish3D
+  Match:   S_Swish3D
+
+  Display: S_SwishPan
+  Match:   S_SwishPan
+
+  Display: S_TVChannelChange
+  Match:   S_TVChannelChange
+
+  Display: S_WhipLash
+  Match:   S_WhipLash
+
+  Display: S_WipeBlobs
+  Match:   S_WipeBlobs
+
+  Display: S_WipeBubble
+  Match:   S_WipeBubble
+
+  Display: S_WipeCells
+  Match:   S_WipeCells
+
+  Display: S_WipeChecker
+  Match:   S_WipeChecker
+
+  Display: S_WipeCircle
+  Match:   S_WipeCircle
+
+  Display: S_WipeClock
+  Match:   S_WipeClock
+
+  Display: S_WipeClouds
+  Match:   S_WipeClouds
+
+  Display: S_WipeDiffuse
+  Match:   S_WipeDiffuse
+
+  Display: S_WipeDots
+  Match:   S_WipeDots
+
+  Display: S_WipeDoubleWedge
+  Match:   S_WipeDoubleWedge
+
+  Display: S_WipeFlux
+  Match:   S_WipeFlux
+
+  Display: S_WipeFourWedges
+  Match:   S_WipeFourWedges
+
+  Display: S_WipeLine
+  Match:   S_WipeLine
+
+  Display: S_WipeMoire
+  Match:   S_WipeMoire
+
+  Display: S_WipePixelate
+  Match:   S_WipePixelate
+
+  Display: S_WipePlasma
+  Match:   S_WipePlasma
+
+  Display: S_WipePointalize
+  Match:   S_WipePointalize
+
+  Display: S_WipeRectangle
+  Match:   S_WipeRectangle
+
+  Display: S_WipeRings
+  Match:   S_WipeRings
+
+  Display: S_WipeStar
+  Match:   S_WipeStar
+
+  Display: S_WipeStripes
+  Match:   S_WipeStripes
+
+  Display: S_WipeTiles
+  Match:   S_WipeTiles
+
+  Display: S_WipeWeave
+  Match:   S_WipeWeave
+
+  Display: S_WipeWedge
+  Match:   S_WipeWedge
+
+───────────────────────────────────
+📂 Boris FX Silhouette
+───────────────────────────────────
+  Display: Silhouette
+  Match:   BFX_SILHOUETTE
+
+───────────────────────────────────
+📂 Braindot Design
+───────────────────────────────────
+  Display: VariFont
+  Match:   BDVF
+
+───────────────────────────────────
+📂 Blace Plugins
+───────────────────────────────────
+  Display: Bullet Time
+  Match:   ADBE Bullet Time
+
+  Display: Color Grade Prompter
+  Match:   ADBE Color Grade Prompter
+
+  Display: Depth Scanner Lite
+  Match:   ADBE DepthScannerLite
+
+  Display: Goodbye Greenscreen
+  Match:   ADBE Goodbye Greenscreen
+
+  Display: I Ate Mushrooms
+  Match:   ADBE I Ate Mushrooms
+
+───────────────────────────────────
+📂 CROSSPHERE
+───────────────────────────────────
+  Display: Bokeh
+  Match:   CROSSPHERE_Bokeh
+
+  Display: Power Droste
+  Match:   CROSSPHERE_DrosteSpiralDeform
+
+───────────────────────────────────
+📂 TiM
+───────────────────────────────────
+  Display: Chromabba
+  Match:   ADBE TMR_Chromabba
+
+  Display: Dropletee
+  Match:   TiMDropletee
+
+───────────────────────────────────
+📂 Haligonian
+───────────────────────────────────
+  Display: Color Shift
+  Match:   HaligonianColorShift
+
+  Display: Pixelfan
+  Match:   HaligonianPixelfan
+
+───────────────────────────────────
+📂 RE:Vision Plug-ins
+───────────────────────────────────
+  Display: Color Genius
+  Match:   ColorGeniusGrade
+
+  Display: DEFlicker Auto Levels
+  Match:   DE:Fluctuate
+
+  Display: DEFlicker High Speed
+  Match:   DE:Flicker
+
+  Display: DEFlicker Rolling Bands
+  Match:   DE:FlickerRollingBands
+
+  Display: DEFlicker Time Lapse
+  Match:   DEFlickerTimeLapse
+
+  Display: DE:Noise
+  Match:   DE:Noise
+
+  Display: DE:Noise Frame Average
+  Match:   DE:Noise_FrameAverage
+
+  Display: FieldsKit Deinterlacer
+  Match:   ReelSmart Deinterlacer
+
+  Display: FieldsKit Pulldown
+  Match:   ReelSmart Pulldown
+
+  Display: FieldsKit Reinterlacer
+  Match:   ReelSmart Reinterlacer
+
+  Display: RE:FILL Seamless Blend
+  Match:   RE:Fill Blend
+
+  Display: RE:FILL Alpha
+  Match:   REFill Alpha
+
+  Display: RE:FILL Area Fill
+  Match:   ReFill AreaFill
+
+  Display: RE:FILL Frame Borders
+  Match:   RE:Fill FrameBorder
+
+  Display: RE:FILL Choke
+  Match:   RE:FILL Choke
+
+  Display: RE:FILL GrowShrink
+  Match:   RE:FILL GrowShrink
+
+  Display: RE:FILL Offset
+  Match:   RE:Fill Offset
+
+  Display: RE:Flex Morph
+  Match:   ReelSmart Morph2
+
+  Display: RE:Flex Motion Morph
+  Match:   ReelSmart Moving Morph
+
+  Display: RE:Flex Warp
+  Match:   ReelSmart Morph
+
+  Display: RE:Grade Contrast Enhance
+  Match:   GradeContrast
+
+  Display: RE:Grade Correct
+  Match:   ColorAwesome
+
+  Display: RE:Grade Fringes
+  Match:   RE:Match Defringe
+
+  Display: RE:Grade HDR Merge
+  Match:   ColorContrast
+
+  Display: RE:Grade Color Admin
+  Match:   HaldClutGen
+
+  Display: RE:Grade Normalize
+  Match:   ColorNormalize
+
+  Display: RE:Map Displace
+  Match:   RE:Map Displace
+
+  Display: RE:Map Distort
+  Match:   RE:Map Distort
+
+  Display: RE:Map Inverse UV
+  Match:   UV Inverse Mapper
+
+  Display: RE:Map Planar
+  Match:   RE:Map Planar
+
+  Display: RE:Map Transform
+  Match:   RE:Map Transform
+
+  Display: RE:Map UV 
+  Match:   UV Mapper Pete
+
+  Display: RE:Match Basic
+  Match:   ColorUnmanaged
+
+  Display: RE:Match Color
+  Match:   ColorSelective
+
+  Display: RE:Match Stereo
+  Match:   ColorStereoMatch
+
+  Display: REZUP Enhance
+  Match:   REZUP
+
+  Display: REZUP Resize
+  Match:   REZUPresize
+
+  Display: RSMB
+  Match:   Smart Motion Blur 3.x
+
+  Display: RSMB Pro
+  Match:   RS Motion Blur Pro A 3.x
+
+  Display: RSMB Pro Vectors
+  Match:   RS Motion Blur Pro Vectors 3.x
+
+  Display: Shade Normals 5.1
+  Match:   Shade Normals
+
+  Display: Shade Shape 5.1
+  Match:   SHAdE SHApE
+
+  Display: SK Diffusion
+  Match:   SKSmoother
+
+  Display: SK Directional With Splines
+  Match:   SK Directional Splines
+
+  Display: SK Directional Per Pixel
+  Match:   SKDirectional
+
+  Display: SK Frame Accumulate
+  Match:   SKFrameAccumulate
+
+  Display: SK Gaussian Per Pixel
+  Match:   SKGaussianPerPixel
+
+  Display: SK Sharpen
+  Match:   SKSharpen
+
+  Display: SK Gaussian
+  Match:   SKGaussian
+
+  Display: SK Staircase Suppress
+  Match:   SKSmoothAliasing
+
+  Display: SK ZBlur
+  Match:   SKZBlur
+
+  Display: Motion Vectors: Create
+  Match:   Create Motion Vectors 3.x
+
+  Display: Twixtor Pro
+  Match:   Twixtor 45
+
+  Display: Twixtor
+  Match:   Twixtor 45 Lite
+
+  Display: Twixtor Pro, Vectors In
+  Match:   Twixtor 4 Vectors In
+
+  Display: Video Gogh
+  Match:   Video Gogh
+
+  Display: Video Gogh Pro
+  Match:   Video Gogh 4
+
+───────────────────────────────────
+📂 ProductionCrate
+───────────────────────────────────
+  Display: Crate's Godrays
+  Match:   PEGR
+
+  Display: Crate's Light Wrap
+  Match:   PELP
+
+  Display: LaForge Editor
+  Match:   PC_LAFORGE
+
+───────────────────────────────────
+📂 Jordan Steele
+───────────────────────────────────
+  Display: Despill Maestro
+  Match:   JS Despill Maestro
+
+───────────────────────────────────
+📂 Digital Anarchy
+───────────────────────────────────
+  Display: Flicker Free
+  Match:   Digital Anarchy Flicker Free
+
+  Display: The Light Wrap Fantastic
+  Match:   Digital Anarchy Lightwrap
+
+  Display: Samurai
+  Match:   Digital Anarchy Samurai
+
+───────────────────────────────────
+📂 MEGAKRUNCH
+───────────────────────────────────
+  Display: Dither Decay
+  Match:   ADBE DitherDecay
+
+  Display: Pixel_Encoder
+  Match:   ADBE PixelEncoder
+
+───────────────────────────────────
+📂 irrealix
+───────────────────────────────────
+  Display: Dust Transition
+  Match:   irrealix Dust Transition
+
+  Display: Gaussian Splatting
+  Match:   irrealix Gaussian Splatting
+
+  Display: Nebulosity
+  Match:   irrealix Nebulosity
+
+  Display: Potok
+  Match:   irrealix Potok
+
+  Display: Reka Grid
+  Match:   irrealix Reka Grid
+
+  Display: Stretch
+  Match:   irrealix Stretch
+
+  Display: Volna
+  Match:   irrealix Volna
+
+  Display: freeGradient
+  Match:   irrealix freeGradient
+
+  Display: loopFlow
+  Match:   irrealix loopFlow
+
+───────────────────────────────────
+📂 EFX
+───────────────────────────────────
+  Display: EFX Chromatic Aberration
+  Match:   efx_chromaber
+
+───────────────────────────────────
+📂 Vimager
+───────────────────────────────────
+  Display: FacePro
+  Match:   Vimager FacePro
+
+  Display: ScaleUp
+  Match:   Vimager ScaleUp
+
+  Display: SpeedX
+  Match:   Vimager SpeedX
+
+  Display: DeepClear
+  Match:   Vimager DeepClear
+
+  Display: StyleX
+  Match:   Vimager StyleX
+
+───────────────────────────────────
+📂 Foldspace
+───────────────────────────────────
+  Display: Foldspace
+  Match:   QUIS Foldspace
+
+───────────────────────────────────
+📂 One Chance
+───────────────────────────────────
+  Display: Furikake
+  Match:   One Chance Furikake
+
+───────────────────────────────────
+📂 Yanobox
+───────────────────────────────────
+  Display: Mosaic
+  Match:   f4qZEoeLROulkNVO4s085g==
+
+  Display: Motype 2
+  Match:   6p0a3bUmS5ChsIJoy1rEyA==
+
+───────────────────────────────────
+📂 Auto Balancer
+───────────────────────────────────
+  Display: Auto Balancer
+  Match:   DXcm9bfRRDOsb5ayDH9kFQ==
+
+───────────────────────────────────
+📂 Hawaiki Super Glow
+───────────────────────────────────
+  Display: Hawaiki Super Glow
+  Match:   dsDjidB6ROK+5QvT+bKPhQ==
+
+───────────────────────────────────
+📂 Photo Montage
+───────────────────────────────────
+  Display: Photo Montage 4
+  Match:   ckOkd0w+QVidKhwFJzakCA==
+
+───────────────────────────────────
+📂 Pan and Zoom
+───────────────────────────────────
+  Display: Pan and Zoom: Image File
+  Match:   6Xp55+ZAQ8q494qvwxapeA==
+
+  Display: Pan and Zoom: Project Media
+  Match:   Z2X3fSXxTpieHT/d8uyMvQ==
+
+───────────────────────────────────
+📂 FxFactory Pro Halftones
+───────────────────────────────────
+  Display: Halftones
+  Match:   JAcMF+0bT06YA/defntvUg==
+
+───────────────────────────────────
+📂 FxFactory Pro Stylize
+───────────────────────────────────
+  Display: Sobel Edge
+  Match:   wJzY3Ez6QF+X2cw/Bem8/A==
+
+  Display: Comic Book
+  Match:   wrQuAy3ZTJKeZTyRrh+KQg==
+
+  Display: Scanlines
+  Match:   Os5cqdp2S6W6ZgBsr9u14Q==
+
+  Display: Watercolor
+  Match:   83CSbdaHTx2F29SL2JNRFw==
+
+  Display: Edge Work
+  Match:   HQSUbcxURT2CAmQVUdMykg==
+
+  Display: Pop Art
+  Match:   dSCMTVxIQbW0zbCfe3E4Yg==
+
+  Display: Pencil Sketch
+  Match:   PzGg011wQEKV9v8Rbw/MtA==
+
+  Display: Cartoon
+  Match:   Jp93eaUSTDilvQfmLlVM0g==
+
+  Display: Night Vision
+  Match:   9V0JrHVTQtS0AIfTsurlZQ==
+
+  Display: Neon Circles
+  Match:   ZHDV99h4QZCWpBrizjXjYQ==
+
+  Display: Heat
+  Match:   VuK/QbftT/GzgWZ4k4DRIg==
+
+  Display: Artist Sketch
+  Match:   bn0iokRkTrynzWpe8cQobA==
+
+  Display: Artist Sketch Color
+  Match:   ETvEXVWHTnGavfandxBHVw==
+
+  Display: Neon Edges
+  Match:   cLLi8GBrRwykOtkVuEfbtQ==
+
+  Display: Emboss Text
+  Match:   H1Uwx7epRE+SjdPSbFZ1OA==
+
+  Display: Emboss
+  Match:   vBzEK6DaSGyjZycf/YtFfA==
+
+  Display: Vintage TV
+  Match:   vvFQUJVQSyuGc2TECcns4Q==
+
+  Display: Synthesizer
+  Match:   xMKMgYcYR+CJMBGOqIxhFQ==
+
+  Display: Drop Shadow
+  Match:   H/3rrDhwSkOA/FY6cOMPEA==
+
+  Display: Spot Light
+  Match:   7EsasXBLQjyM5ezfWGaPRg==
+
+  Display: Add Noise
+  Match:   yF/NUjmGQLyafEgRdNW6Zg==
+
+  Display: Zebra
+  Match:   +7UhjyXiQkupGZpNj+ZmXw==
+
+  Display: Pixelate
+  Match:   dGbxHP7ITZuLgY8nT753cw==
+
+  Display: Dot Array
+  Match:   sx2ML6UdTi+2GAwxZK0IcA==
+
+───────────────────────────────────
+📂 FxFactory Pro Color Correction
+───────────────────────────────────
+  Display: Alpha Merger
+  Match:   SZi4C4TKTQ62YVX+8cDm/Q==
+
+  Display: Bleach Bypass
+  Match:   BVpn9Y0tSnyACsmMEAYAyg==
+
+  Display: Channel Block
+  Match:   Armkq0WGQ+ex1vEB/cLyMg==
+
+  Display: Channel Swap
+  Match:   7muJqrWpS/u0WxBC33p/Kw==
+
+  Display: Color Accent
+  Match:   JJ9/i0a8Sx6y+jXpAlMP7Q==
+
+  Display: Color Fill
+  Match:   gia0TQXxQhyUCH+ah/qj+Q==
+
+  Display: Crush
+  Match:   hmp9GINQSP2Cdo+G8J/eLA==
+
+  Display: Duotone/Tritone
+  Match:   vx4lD+UASMq82jPiWgEGzw==
+
+  Display: Erode/Dilate
+  Match:   wbbxWk7oQTWhT0cA+CneTA==
+
+  Display: Film Process
+  Match:   8OGd7N1DQe2m+Er/E+yHgw==
+
+  Display: Levels
+  Match:   80poNLLASi+ZVmqMKxm9ew==
+
+  Display: Local Contrast
+  Match:   pDiFojrHTeSXE1NKyl5PGA==
+
+  Display: Luminance To Alpha
+  Match:   b8H4OvS8SAa1ibohck+HDw==
+
+  Display: Mask From Color
+  Match:   AGeS5n9dStqDh65o7pZokw==
+
+  Display: Replace Range
+  Match:   h4SW0UsQRV++Xx6XSNkzCQ==
+
+  Display: Threshold
+  Match:   KkusXHuESCO5qYvHYG/ERQ==
+
+  Display: Vibrance
+  Match:   hrHyGLHuQDq9M2wapTFztA==
+
+  Display: Vignette
+  Match:   FUgx/kqCQKWTMFol8goS0w==
+
+  Display: LUT Works
+  Match:   eR0aNQcWRW+U4fw7R/f5rw==
+
+  Display: White Balance
+  Match:   Po09oOAYT5WfvQBnICU4tw==
+
+  Display: Temperature and Tint
+  Match:   jK1olG3ZQvmECWChPpF12g==
+
+  Display: Soften Frame
+  Match:   M+gj1zHaRB6rfVmoL5J5UA==
+
+  Display: LUT Browser
+  Match:   xAPFSKpFTVy1I4gEeoYbjg==
+
+───────────────────────────────────
+📂 FxFactory Pro Transitions
+───────────────────────────────────
+  Display: Copy Machine
+  Match:   vSDumSXpTRWT0o/FV12BRQ==
+
+  Display: Flash
+  Match:   IAG9gUTqQF6+csyL0awWLA==
+
+  Display: Mod
+  Match:   W4hP0w6DSHC0EL8Sl517Bw==
+
+  Display: Disintegrate With Dots
+  Match:   tniD9hQ2To2IM0CjNxB1xg==
+
+  Display: Disintegrate With Tiles
+  Match:   0gvDyMTTTC6sG0XyVtRp+Q==
+
+  Display: Polka Dots
+  Match:   5dzw5bWJRRCc3oU8YeVJ6Q==
+
+  Display: Paint Wipe
+  Match:   S+jGxtOgRxmOO9NEnTDcxA==
+
+  Display: Twirl Wipe
+  Match:   HgjrYNZ/Rk2aY3GPue00Sw==
+
+  Display: Waves Wipe
+  Match:   MdWwlgZrTj6UuqIa3BjBAQ==
+
+  Display: Luminance Dissolve
+  Match:   0IxUMWVXTRWhGaq0IFyljA==
+
+  Display: Glow Dissolve
+  Match:   BxpJ+lMGTh+DTIbQaQs+bQ==
+
+  Display: Bars Wipe
+  Match:   p2JPbBQ/Qi+IdZALAvWV8Q==
+
+  Display: Hexagon Wipe
+  Match:   AGYrKdjJS56kgG7wJKVYaw==
+
+  Display: Fade Out
+  Match:   28A1kSsJQsmtdaeUR6gGCQ==
+
+  Display: Fade In
+  Match:   5n+ESLcHQcKkjPMSvDs2jg==
+
+  Display: Edge Dissolve
+  Match:   k33icsfIQvKdpkz8Zkx38g==
+
+  Display: Mask Dissolve
+  Match:   1vVH/1QJTduz8Nh4T4xOCg==
+
+  Display: Tile Dissolve
+  Match:   3NGi/fUURcWfOCmnikgz6Q==
+
+  Display: Text Dissolve
+  Match:   BarQ6ZBjR4CG33X07ly0QQ==
+
+  Display: Videoconference
+  Match:   jwlr1HISTU+VhU23EGCM9g==
+
+  Display: Cell Phone Browser
+  Match:   fe+BoNBRSOK+hZhPyHg0fA==
+
+  Display: Blur Dissolve
+  Match:   c5MSvcdLQGOgpYJOtBSDFg==
+
+  Display: Cube
+  Match:   8lpMxKkyTGm52CXJzv6GvQ==
+
+  Display: Whoosh
+  Match:   B72htn64QbuaAIQVHeTHKg==
+
+  Display: Blocks Dissolve
+  Match:   N6qSSUYMTVe8kY7cEDlQpw==
+
+  Display: Organic Dissolve
+  Match:   ABu3+VEaQQGYCpu5ojnXKA==
+
+  Display: Radial Wipe
+  Match:   ps/UHQHJQymgrWSheBDT/Q==
+
+  Display: Origami (Square)
+  Match:   mt8sWD4lQcagix3rhzB4+g==
+
+  Display: Origami (Triangle)
+  Match:   Y3hD63vtRMKxZmHosLtApw==
+
+  Display: Page Flip
+  Match:   46Fh7c+gTbiF9p2Hr4yAng==
+
+  Display: Accordion
+  Match:   sgwh5p7ASnu3bSZgkkDHQw==
+
+  Display: Genie
+  Match:   WDmTBsafTJ+EabE5e+K/Qw==
+
+  Display: Agent
+  Match:   j/Av7BV+QHO2WFWXdhAAGQ==
+
+  Display: Scatter
+  Match:   r1sHXeAAQraY+Ip5xeWU1A==
+
+  Display: Channel Switch
+  Match:   zntqEoa5S3isfK655Ot0ZQ==
+
+  Display: Zoom Dissolve
+  Match:   LFopFlCsRpiaDPw3ZZKczA==
+
+  Display: Flip
+  Match:   OVwsE3krQXeFOGpyq5eZoQ==
+
+  Display: Slice
+  Match:   WYndkg+BRvO2WiyFvIZKuQ==
+
+  Display: Doorway
+  Match:   YqH9yVtfRUeU1QaXnOxc+A==
+
+  Display: Playback Ready
+  Match:   xuRDBqr6TTeKbP7mAAwWnA==
+
+───────────────────────────────────
+📂 FxFactory Pro Sharpen
+───────────────────────────────────
+  Display: Despeckle
+  Match:   YBCOL+vdQxmdb3+6yKsVVQ==
+
+  Display: Sharpen
+  Match:   /GHBbjOVQtOnwDPYSVil8w==
+
+───────────────────────────────────
+📂 FxFactory Pro Distortion
+───────────────────────────────────
+  Display: Analog TV
+  Match:   vyHa/6jLSEazcBGXM9e+dw==
+
+  Display: Bezier Distort
+  Match:   4a9M2yLETvqEC4l5+SZuag==
+
+  Display: Circle Splash
+  Match:   DU+W6f6aTXmGbmzsCYUABA==
+
+  Display: Free Distort
+  Match:   vPnBPCI1TW2zHpJFU0zPYg==
+
+  Display: Rounded Crop
+  Match:   c7KT1oX5S+iGp7HNElRlsA==
+
+  Display: Channel Geometry
+  Match:   /xXw8Z0cSc2h9jcC9OccOg==
+
+  Display: Circular Wrap
+  Match:   N8uJGkeDQnOrVTgD7HDjtg==
+
+  Display: Funhouse Mirror
+  Match:   xElaHHHvQ2SSZwFtzXFN0Q==
+
+  Display: Genie
+  Match:   ym+08u+UTcWVTAgwNC8tZw==
+
+  Display: Torus Lens
+  Match:   LAeSuFSiRlGkwqiSoNLqNQ==
+
+  Display: Glass Lozenge
+  Match:   CaL84NTRQMGNtK0In47D9Q==
+
+  Display: Hole
+  Match:   gSt2IBAfRPGHPNluIzfkkQ==
+
+  Display: Pinch
+  Match:   tgJr2zUVT06EkOcwyayvkQ==
+
+  Display: Vortex
+  Match:   apwH/KC7SsWrvoHT82pvNQ==
+
+  Display: Mask With Geometry
+  Match:   C+4RVtHqRAOM818G2/Yx8Q==
+
+  Display: Camera Shake
+  Match:   zDG/BXfjQa+0N+1jzaZC9g==
+
+  Display: Perspective Reflection
+  Match:   BNihFaBwTwq2rppFlIr1Mw==
+
+  Display: Random Crop
+  Match:   ELpHY2OwT+mAejyuxlwnDA==
+
+  Display: Random Close-up
+  Match:   SySJI3m/QFmTqOQ+NqWDUA==
+
+───────────────────────────────────
+📂 FxFactory Pro Glow
+───────────────────────────────────
+  Display: Glow
+  Match:   TyDPBB8xRd6qhYuANpzUuw==
+
+───────────────────────────────────
+📂 FxFactory Pro Blur
+───────────────────────────────────
+  Display: Blur
+  Match:   bDEno5JgQmGw7DEQd8a/lw==
+
+───────────────────────────────────
+📂 FxFactory Pro Tiling
+───────────────────────────────────
+  Display: Circular Tile
+  Match:   HkhrivFkQ/id1zxQrc95Rw==
+
+  Display: Glide Reflection
+  Match:   7eubyzM0RYG9CgqImfPkdA==
+
+  Display: Kaleidoscope
+  Match:   h1cKgfPeQW+4+oV32qOOUg==
+
+  Display: Op Tile
+  Match:   vMLfW0ZZTTu7PhdNMMX2EQ==
+
+  Display: Perspective Tile
+  Match:   KWSlRGNHRw6eu/Z8q8cOQg==
+
+  Display: Reflected Tile
+  Match:   boT7PMtzTVGR4D9NAVibLg==
+
+  Display: Rotated Tile
+  Match:   EuPfunJnRHGWU10X+VeKBw==
+
+  Display: Translated Tile
+  Match:   XsvxmWxeRuOGt+78QeC/iw==
+
+  Display: Triangular Kaleidoscope
+  Match:   ozNBPdyiR6aihf8N2Oj14A==
+
+  Display: Triangular Tile
+  Match:   YSQSXUH0RcC3bbYgmtO+kw==
+
+───────────────────────────────────
+📂 FxFactory Pro Video
+───────────────────────────────────
+  Display: Frame Info
+  Match:   AGZFFdsDQIeNLk24W9Y9Mw==
+
+  Display: Portrait to Landscape
+  Match:   x/y+2cJYTW6IfP7BZ7UrUg==
+
+  Display: Upscaler
+  Match:   x8DXMfM1St6vPPcaQEBkEw==
+
+  Display: Isolate Subject
+  Match:   TLTQKY9nQUyKwsyw1j6ybw==
+
+  Display: Side-by-Side
+  Match:   Z5l+b7CRRKKc0Wze1ECYAA==
+
+  Display: Trackable PiP
+  Match:   ECJtCXD1QLSfsWmZ3GK/YA==
+
+  Display: Clone
+  Match:   g2/MF/JXSnihcND6QUPp3w==
+
+  Display: FPS
+  Match:   UgTdc0BhQJuwksbnvdc5Pw==
+
+───────────────────────────────────
+📂 FxFactory Pro Generators
+───────────────────────────────────
+  Display: Banding-free Gradient
+  Match:   k4udZW8RSBiQjDVr4N8+BQ==
+
+  Display: Checkerboard
+  Match:   GYCjiLTaRmer3pXtVUvqMA==
+
+  Display: Circle
+  Match:   lOO+GNZcTiG3P//0eMvtPQ==
+
+  Display: Clouds
+  Match:   Vnny8QV1Tce+OLTHJsBx6Q==
+
+  Display: Dots
+  Match:   d8nQc1PeQmOfylgUqWa1Zg==
+
+  Display: Lenticular Halo
+  Match:   5rHY9a+0R8u93v0XMDQAyg==
+
+  Display: PDF Animator
+  Match:   lWRQREBkSei81+KPPyDdbA==
+
+  Display: Perlin Noise
+  Match:   CKbNnoRvQnGEom1W6tu0WQ==
+
+  Display: QR Code
+  Match:   JcGBcmFAQA67gbdjSpvW1Q==
+
+  Display: Random Noise
+  Match:   DYEJD3ksTnqI08mx8wtuRA==
+
+  Display: Rounded Rectangle
+  Match:   Gv7UnQqWRcu50EPp3VXgGw==
+
+  Display: Screen Overlay
+  Match:   luAIsAowRuqQ2F8+f7aCBw==
+
+  Display: Star Shine
+  Match:   UIC5yqkhRsu33mlPbTnmXA==
+
+  Display: Stripes
+  Match:   a1asiX9kQSqGq/CTRKIOgA==
+
+  Display: Sun
+  Match:   u6ywJ7o0R5Wity0fy1ABLA==
+
+  Display: Timecode
+  Match:   ROiZqfnQSNiSg8ZF7gBYHw==
+
+  Display: TV Static
+  Match:   CLRwQEktQ+C5u4JblSaVfg==
+
+  Display: Star Shape
+  Match:   LMaROdZfSYiD7T3hwxEoqg==
+
+───────────────────────────────────
+📂 Pixel Sorter Studio
+───────────────────────────────────
+  Display: Glasswork
+  Match:   GGGLASSWORK
+
+  Display: HydroChrome
+  Match:   PXSRT_HydroChrome
+
+  Display: Jlitch
+  Match:   PSSJlitch
+
+  Display: Pixel Sorter 4 
+  Match:   GG PixelSorter3
+
+  Display: Pixel Galactic
+  Match:   PSSPGAL
+
+───────────────────────────────────
+📂 ProductionCrate MoGraph
+───────────────────────────────────
+  Display: Al Ro Color Warp
+  Match:   PC_AlRoColorWarp
+
+  Display: Crates Glass
+  Match:   PC_CratesGlass
+
+  Display: Crates Long Gradient
+  Match:   PC_CratesLongGradient
+
+  Display: Crates Long Shadow (Free)
+  Match:   PC_CratesLongShadow
+
+  Display: Split Screen
+  Match:   PC_SplitScreen
+
+───────────────────────────────────
+📂 ProductionCrate 3D
+───────────────────────────────────
+  Display: Aurora
+  Match:   PC_Aurora
+
+  Display: Cubic Fractal
+  Match:   PC_CubicFractal
+
+───────────────────────────────────
+📂 ProductionCrate Filter
+───────────────────────────────────
+  Display: CRT Factory
+  Match:   PC_CRTFactory
+
+  Display: Chromatic Aberration (Free)
+  Match:   PC_ChromaticAberration
+
+  Display: Chromatic Distortion
+  Match:   PC_ChromaticDistortion
+
+  Display: Crates ASCII (Free)
+  Match:   PC_CratesASCII
+
+  Display: Crates Distortion
+  Match:   PC_CratesDistortion
+
+  Display: Crates Halftone
+  Match:   PC_CratesHalftone
+
+  Display: Crates Height Relight
+  Match:   PC_CratesHeightRelight
+
+  Display: Crates HyperGlitch
+  Match:   PC_CratesHyperGlitch
+
+  Display: Crates Pixelate
+  Match:   PC_CratesPixelate
+
+  Display: Crates Ring Bokeh
+  Match:   PC_CratesRingBokeh
+
+  Display: Crates VHS
+  Match:   PC_CratesVHS
+
+  Display: Kaleidoscoper
+  Match:   PC_Kaleidoscoper
+
+  Display: Lygia Kuwahara
+  Match:   PC_LygiaKuwahara
+
+  Display: Lygia Noise Blur
+  Match:   PC_LygiaNoiseBlur
+
+  Display: Retro Film Essentials
+  Match:   PC_RetroFilmEssentials
+
+───────────────────────────────────
+📂 ProductionCrate Utility
+───────────────────────────────────
+  Display: Crates Alpha Blur (Free)
+  Match:   PC_CratesAlphaBlur
+
+  Display: Crates Edge Blur (Free)
+  Match:   PC_CratesEdgeBlur
+
+  Display: Crates Unmult (Free)
+  Match:   PC_CratesUnmult
+
+───────────────────────────────────
+📂 ProductionCrate Glow
+───────────────────────────────────
+  Display: Crates Easy Glow
+  Match:   PC_CratesEasyGlow
+
+  Display: Crates Easy Godray (Free)
+  Match:   PC_CratesEasyGodray
+
+  Display: Crates Glow
+  Match:   PC_CratesGlow
+
+───────────────────────────────────
+📂 ProductionCrate VFX
+───────────────────────────────────
+  Display: Crates Hologram
+  Match:   PC_CratesHologram
+
+───────────────────────────────────
+📂 ProductionCrate Transitions
+───────────────────────────────────
+  Display: Transition CRT Factory
+  Match:   PC_TransitionCRTFactory
+
+  Display: Transition Chromatic Aberration (Free)
+  Match:   PC_TransitionChromaticAberratio
+
+  Display: Transition Crates ASCII (Free)
+  Match:   PC_TransitionCratesASCII
+
+  Display: Transition Crates HyperGlitch
+  Match:   PC_TransitionCratesHyperGlitch
+
+  Display: Transition Hologram
+  Match:   PC_TransitionHologram
+
+  Display: Transition Retro Film Essentials
+  Match:   PC_TransitionRetroFilmEssential
+
+  Display: Transition VHS
+  Match:   PC_TransitionVHS
+
+───────────────────────────────────
+📂 Hollywood Illusion
+───────────────────────────────────
+  Display: Layer Composite
+  Match:   ADBE LayerComposite
+
+───────────────────────────────────
+📂 Vranos
+───────────────────────────────────
+  Display: Lockdown
+  Match:   Vranos Lockdown
+
+───────────────────────────────────
+📂 RG Color
+───────────────────────────────────
+  Display: Magic Bullet Looks
+  Match:   MB LookSuite3
+
+  Display: Parametric Curve
+  Match:   RG_MB_ParamCurve_AE
+
+  Display: Colorista V
+  Match:   RG MB COLORISTA IV
+
+  Display: Cosmo II
+  Match:   RG Cosmo_II
+
+  Display: Denoiser III
+  Match:   RG Denoiser3
+
+  Display: Film
+  Match:   Magic_Bullet_Suite_Magic_Bullet
+
+  Display: Mojo II
+  Match:   Magic_Bullet_Mojo_II
+
+  Display: Renoiser
+  Match:   Magic_Bullet_Renoiser
+
+  Display: uni.Finisher
+  Match:   Universe_CrumplePop_Finisher
+
+  Display: uni.Grain16
+  Match:   Universe_CrumplePop_Grain16
+
+───────────────────────────────────
+📂 Mettle
+───────────────────────────────────
+  Display: Mantra Chrome Spheres
+  Match:   Mettle Mantra Chrome Spheres
+
+  Display: Mantra Circular Waves
+  Match:   Mettle Mantra Circular Waves
+
+  Display: Mantra Escher Droste
+  Match:   Mettle Mantra Escher Droste
+
+  Display: Mantra Magnifying Glass
+  Match:   Mettle Mantra Magnifying Glass
+
+  Display: Mantra Graphix
+  Match:   Mettle Mantra Graphix
+
+  Display: Mantra Hyperbolix
+  Match:   Mettle Mantra Hyperbolix
+
+  Display: Mantra Meridian Waves
+  Match:   Mettle Mantra Meridian Waves
+
+  Display: Mantra Mirrors
+  Match:   Mettle Mantra Flat Mirror
+
+  Display: Mantra Mobius Raw
+  Match:   Mettle Mantra Mobius Raw
+
+  Display: Mantra Mobius Rotate
+  Match:   Mettle Mantra Mobius Rotate
+
+  Display: Mantra Mobius Transform
+  Match:   Mettle Mantra Mobius Zoom
+
+  Display: Mantra Objx
+  Match:   Mettle Mantra Objx
+
+  Display: Mantra Primitivz
+  Match:   Mettle Mantra Primitivz
+
+  Display: Mantra Repeater
+  Match:   Mettle Mantra Repeater
+
+  Display: Mantra Spherify
+  Match:   Mettle Mantra Spherify
+
+  Display: Mantra Stretcher
+  Match:   Mettle Mantra Stretcher
+
+  Display: Mantra Turbulence
+  Match:   Mettle Mantra Turbulence
+
+  Display: Mantra Twirl
+  Match:   Mettle Mantra Spiraler
+
+  Display: Mantra
+  Match:   Mettle Mantra
+
+  Display: Mettle Flux
+  Match:   Mettle Flux V1
+
+───────────────────────────────────
+📂 Zaebects
+───────────────────────────────────
+  Display: Modulation 2
+  Match:   ADBE Modulation 2
+
+  Display: Slit-scan
+  Match:   ADBE Slit-scan
+
+  Display: Vectory
+  Match:   ADBE Vectory
+
+  Display: JPEG glitch
+  Match:   ADBE JPEG glitch
+
+  Display: Signal
+  Match:   ADBE Signal
+
+───────────────────────────────────
+📂 Motion Boutique
+───────────────────────────────────
+  Display: Pastiche
+  Match:   MB Pastiche
+
+───────────────────────────────────
+📂 omino
+───────────────────────────────────
+  Display: omino colorizer
+  Match:   omino color extract
+
+  Display: omino diffusion
+  Match:   omino_diffusion
+
+  Display: omino feedback
+  Match:   omino feedback
+
+  Display: omino halftone++
+  Match:   omino_halftone
+
+  Display: omino kaleidoscope
+  Match:   omino_kaleidoscope
+
+  Display: omino sheet
+  Match:   omino sheet
+
+  Display: omino snake
+  Match:   omino_snake
+
+  Display: omino sphere map
+  Match:   omino_sphere_map
+
+  Display: omino squares
+  Match:   omino squares
+
+  Display: omino test
+  Match:   omino_test
+
+───────────────────────────────────
+📂 Terrible Junk Show
+───────────────────────────────────
+  Display: Pixel Extender
+  Match:   TJS PixelExtender
+
+───────────────────────────────────
+📂 Satori
+───────────────────────────────────
+  Display: Pixel Melt
+  Match:   SatoriPixelMelt
+
+  Display: Curve Tracer
+  Match:   SatoriCurveTracer
+
+  Display: Geometric Filter
+  Match:   SatoriGeometricFilters
+
+  Display: Pixel Stretch
+  Match:   PixelStretch
+
+  Display: Pixelocybe
+  Match:   Pixelocybe
+
+  Display: Recursive Mosaic
+  Match:   RecursiveMosaic
+
+  Display: Split Blur
+  Match:   SatoriLumaBlur
+
+───────────────────────────────────
+📂 RG Utilities
+───────────────────────────────────
+  Display: Grow Bounds
+  Match:   Red Giant GrowBounds
+
+  Display: uni.Fisheye Fixer
+  Match:   Universe_CrumplePop_Fisheye_Fix
+
+  Display: uni.Camera Shake
+  Match:   Universe_Distort_Camera_Shake_P
+
+  Display: uni.Picture in Picture
+  Match:   Universe_Distort_Picture_in_Pic
+
+  Display: uni.Modes
+  Match:   RG_UNI_Utilities_Modes
+
+  Display: uni.Palettes
+  Match:   Universe_Utilities_Palettes
+
+  Display: uni.Socialize
+  Match:   RG_UNI_Utilities_Socialize
+
+  Display: uni.Unmult
+  Match:   Universe_Utilities_Unmult_Premi
+
+  Display: Sound Keys
+  Match:   tc Sound Keys
+
+───────────────────────────────────
+📂 RG Blurs and Glows
+───────────────────────────────────
+  Display: uni.Blur
+  Match:   Universe_Blur_Blur_Premium
+
+  Display: uni.Bokeh
+  Match:   Universe_Blur_Box_Bokeh
+
+  Display: uni.Compound Blur
+  Match:   Universe_Compound_Blur_Premium
+
+  Display: uni.Spot Blur
+  Match:   Universe_Blur_Spot_Blur
+
+  Display: uni.Chromatic Glow
+  Match:   Universe_Glow_Chromatic_Glow
+
+  Display: uni.Edge Glow
+  Match:   Universe_Glow_Edge_Glow_Premium
+
+  Display: uni.Glimmer
+  Match:   Universe_Glow_Glimmer
+
+  Display: uni.Glo Fi
+  Match:   Universe_Glow_Glo_Fi_Premium
+
+  Display: uni.Glow
+  Match:   Universe_Glow_Glow
+
+  Display: uni.Point Zoom
+  Match:   Universe_Glow_Point_Zoom
+
+  Display: uni.Quantum
+  Match:   RG_UNI_Glow_Quantum
+
+  Display: uni.Glo Fi II
+  Match:   Universe_Text_Glo_Fi_II
+
+  Display: Optical Glow
+  Match:   RG_VFX_OpticalGlow_AE
+
+  Display: Shine
+  Match:   tc Shine
+
+  Display: Starglow
+  Match:   tc Starglow
+
+───────────────────────────────────
+📂 RG Stylize
+───────────────────────────────────
+  Display: uni.OverLight
+  Match:   Universe_CrumplePop_OverLight
+
+  Display: uni.ShrinkRay
+  Match:   Universe_CrumplePop_ShrinkRay
+
+  Display: uni.Analog
+  Match:   RG_UNI_Stylize_Analog
+
+  Display: uni.Carousel
+  Match:   Universe_Stylize_Carousel
+
+  Display: uni.ChromaTown
+  Match:   RG_UNI_Chromatown
+
+  Display: uni.Electrify
+  Match:   RG_UNI_Stylize_Electrify
+
+  Display: uni.Error Diffuse Dither
+  Match:   Universe_Stylize_Error_Diffuse_
+
+  Display: uni.Glitch
+  Match:   Universe_Stylize_Glitch
+
+  Display: uni.Halftone Dither
+  Match:   Universe_Stylize_Halftone_Dithe
+
+  Display: uni.Holomatrix II
+  Match:   Universe_Distort_Holomatrix
+
+  Display: uni.Knoll Light Factory EZ
+  Match:   Universe_Knoll_Light_Factory_EZ
+
+  Display: uni.MisFire
+  Match:   Universe_Misfire_Premium
+
+  Display: uni.Multitone
+  Match:   RG_UNI_Stylize_Multitone
+
+  Display: uni.Noir
+  Match:   Universe_Stylize_Noir_Moderne
+
+  Display: uni.Ordered Dither
+  Match:   Universe_Stylize_Ordered_Dither
+
+  Display: uni.RetroGrade
+  Match:   Universe_CrumplePop_RetroGrade
+
+  Display: uni.Sketchify
+  Match:   Universe_Stylize_Sketchify
+
+  Display: uni.Texturize
+  Match:   Universe_Stylize_Texturize
+
+  Display: uni.Texturize Motion
+  Match:   MX_UNI_Stylize_Texturize_Motion
+
+  Display: uni.Threshold Dither
+  Match:   Universe_Stylize_Threshold_Dith
+
+  Display: uni.VHS
+  Match:   Universe_Stylize_VHS
+
+  Display: uni.AV Club
+  Match:   Universe_Text_AV_Club
+
+  Display: uni.Ecto
+  Match:   Universe_Text_Ecto
+
+  Display: uni.Long Shadow
+  Match:   Universe_Text_Long_Shadow
+
+  Display: uni.Luster
+  Match:   Universe_Text_Luster
+
+───────────────────────────────────
+📂 RG Distortions
+───────────────────────────────────
+  Display: uni.Chromatic Aberration
+  Match:   Universe_Distort_Chromatic_Aber
+
+  Display: uni.Heatwave
+  Match:   Universe_Distort_Heatwave
+
+  Display: uni.Prism Displacement
+  Match:   Universe_Distort_Prism_Displace
+
+  Display: uni.RGB Separation
+  Match:   Universe_Distort_RGB_Separation
+
+  Display: Chromatic Displacement
+  Match:   RG_VFX_ChromaDisp_AE
+
+───────────────────────────────────
+📂 RG Generators
+───────────────────────────────────
+  Display: uni.Custom Dither
+  Match:   Universe_Generators_Custom_Dith
+
+  Display: uni.Fractal Background
+  Match:   Universe_Generators_Fractal_Bac
+
+  Display: uni.Gradient Ramp
+  Match:   Universe_Generators_Gradient_Ra
+
+  Display: uni.Soft Gradient Background
+  Match:   Universe_Generators_Soft_Gradie
+
+  Display: uni.Spectralicious
+  Match:   Universe_Generators_Spectralici
+
+  Display: uni.Turbulence Noise
+  Match:   Universe_Generators_TurNoise
+
+───────────────────────────────────
+📂 RG Motion Graphics
+───────────────────────────────────
+  Display: uni.Array Gun
+  Match:   Universe_M_G_Array_Gun
+
+  Display: uni.HUD Components
+  Match:   Universe_Visualizations_HUD_Com
+
+  Display: uni.Line
+  Match:   Universe_Motion_Graphics_Draw_P
+
+  Display: uni.Progresso
+  Match:   Universe_M_G_Progresso
+
+  Display: uni.Reframe
+  Match:   RG_UNI_M_G_Reframe
+
+  Display: uni.Symbol Mapper
+  Match:   Universe_Stylize_Symbol_Mapper
+
+  Display: uni.Logo Motion
+  Match:   Universe_Utilities_Logo_Motion
+
+  Display: 3D Stroke
+  Match:   tc 3DStrokePath
+
+  Display: Echospace
+  Match:   tc Echospace
+
+───────────────────────────────────
+📂 RG Text
+───────────────────────────────────
+  Display: uni.Hacker Text
+  Match:   Universe_Text_Hacker_Text
+
+  Display: uni.Numbers
+  Match:   Universe_Text_Numbers
+
+  Display: uni.Screen Text
+  Match:   Universe_Text_Screen_Text
+
+  Display: uni.Text Tile
+  Match:   Universe_Text_Text_Tile
+
+  Display: uni.Title Motion
+  Match:   Universe_Utilities_Title_Motion
+
+  Display: uni.Type Cast
+  Match:   Universe_Text_Type_Cast
+
+  Display: uni.Type On
+  Match:   Universe_Text_Type_On
+
+  Display: uni.Typographic
+  Match:   RG_UNI_Text_Typographic
+
+───────────────────────────────────
+📂 RG Transitions
+───────────────────────────────────
+  Display: uni.Blinds
+  Match:   Universe_Transitions_Blinds
+
+  Display: uni.Bokeh Transition
+  Match:   Universe_Transitions_Bokeh
+
+  Display: uni.Camera Shake Transition
+  Match:   Universe_Transitions_Camera_Sha
+
+  Display: uni.Carousel Transition
+  Match:   Universe_Transitions_Carousel_T
+
+  Display: uni.Channel Blur
+  Match:   Universe_Transitions_Channel_Bl
+
+  Display: uni.Channel Surf
+  Match:   Universe_Transitions_Channel_Su
+
+  Display: uni.Clock Wipe
+  Match:   Universe_Transitions_Clock_Wipe
+
+  Display: uni.Color Mosaic Transition
+  Match:   Universe_Transitions_Color_Mosa
+
+  Display: uni.Color Stripe
+  Match:   Universe_Transitions_Color_Stri
+
+  Display: uni.Cube
+  Match:   Universe_Transitions_Cube
+
+  Display: uni.Diamond Wave
+  Match:   Universe_Transitions_Diamond_Wa
+
+  Display: uni.Dolly Fade
+  Match:   Universe_Transitions_Dolly_Fade
+
+  Display: uni.Exposure Blur
+  Match:   Universe_Exposure_Blur_Premium
+
+  Display: uni.Film Transition
+  Match:   Universe_Transitions_Film_Trans
+
+  Display: uni.Flicker Cut
+  Match:   Universe_Transitions_Flicker_Cu
+
+  Display: uni.Fold
+  Match:   Universe_Transitions_Fold
+
+  Display: uni.Glitch Transition
+  Match:   Universe_Transitions_Glitch_Tra
+
+  Display: uni.HalfLight
+  Match:   Universe_Transitions_HalfLight
+
+  Display: uni.Inside Cube
+  Match:   Universe_Transitions_Inside_Cub
+
+  Display: uni.Knoll Light Transition
+  Match:   Universe_Transitions_Knoll_Ligh
+
+  Display: uni.Linear Wipe
+  Match:   Universe_Transitions_Linear_Wip
+
+  Display: uni.RetroGrade Transition
+  Match:   Universe_Transitions_RetroGrade
+
+  Display: uni.Rubix Cube
+  Match:   Universe_Transitions_Rubics_Cub
+
+  Display: uni.Shape Wipe
+  Match:   Universe_Transitions_Shape_Wipe
+
+  Display: uni.Slide
+  Match:   Universe_Transitions_Slide
+
+  Display: uni.Soft Edge Wipe
+  Match:   Universe_Soft_Edge_Wipe_Premium
+
+  Display: uni.Spectralicious Transition
+  Match:   Universe_Transitions_Spectralic
+
+  Display: uni.Stretch
+  Match:   RG_UNI_Transition_Stretch
+
+  Display: uni.Swish Pan
+  Match:   Universe_Swish_Pan_Premium
+
+  Display: uni.Triangle Wave
+  Match:   Universe_Transitions_Triangle_W
+
+  Display: uni.Turbulence Transition
+  Match:   Universe_Transitions_Turbulence
+
+  Display: uni.Unfold
+  Match:   Universe_Transitions_Unfold
+
+  Display: uni.VHS Transition
+  Match:   Universe_Transitions_VHS_Transi
+
+  Display: uni.Warp
+  Match:   RG_UNI_Transition_Warp
+
+───────────────────────────────────
+📂 RG VFX
+───────────────────────────────────
+  Display: Bang
+  Match:   rgBang
+
+  Display: Depth Generator
+  Match:   RG_VFX_Depth_Generator_AE
+
+  Display: King Pin Tracker
+  Match:   RG_KingPin_Tracker
+
+  Display: Lens Distortion Matcher
+  Match:   RG_Lens_Distortion
+
+  Display: Real Lens Flares
+  Match:   MX_Lens_Flare
+
+  Display: Primatte Keyer 6
+  Match:   Photron Primatte6
+
+  Display: Reflection
+  Match:   rg.vfx.reflection
+
+  Display: Shadow
+  Match:   rg.vfx.shadow
+
+  Display: Spot Clone Tracker
+  Match:   RG_VFX_SpotClone_Tracker_AE
+
+  Display: Supercomp
+  Match:   RG_VFX_Supernova_AE
+
+───────────────────────────────────
+📂 Rowbyte
+───────────────────────────────────
+  Display: Aura
+  Match:   RWB AURA
+
+  Display: Bad TV
+  Match:   GUTS BadTV
+
+  Display: Data Glitch
+  Match:   RWB DATA GLITCH
+
+  Display: Dot Pixels
+  Match:   RWB DOT PIXELS
+
+  Display: Fast Bokeh
+  Match:   RWB Fast Bokeh
+
+  Display: Separate RGB
+  Match:   GUTS SEPRGB
+
+  Display: Stipple
+  Match:   RWB Stipple
+
+  Display: TVPixel
+  Match:   RWB TV PIXEL
+
+───────────────────────────────────
+📂 Skinworks
+───────────────────────────────────
+  Display: SW_bilateral
+  Match:   SW_bilateral
+
+  Display: SW_concealer
+  Match:   SW_concealer
+
+  Display: SW_concealer_2g
+  Match:   SW_concealer_2g
+
+  Display: SW_fast_median
+  Match:   SW_fast_median
+
+  Display: SW_foundation
+  Match:   SW_foundation
+
+  Display: SW_gloss
+  Match:   SW_gloss
+
+───────────────────────────────────
+📂 RG Particles and 3D
+───────────────────────────────────
+  Display: Form
+  Match:   tc Form
+
+  Display: Geo
+  Match:   Geo
+
+  Display: Horizon
+  Match:   tc Trapcode Horizon
+
+  Display: Lux
+  Match:   tc Lux
+
+  Display: Mir 3
+  Match:   rg Mir
+
+  Display: Trapcode Particular
+  Match:   tc Particular
+
+  Display: Tao
+  Match:   tc Tao
+
+───────────────────────────────────
+📂 TumoiYorozu Plug-ins
+───────────────────────────────────
+  Display: Fast Camera Lens Blur
+  Match:   TumoiYorozu FastCameraLensBlur
+
+───────────────────────────────────
+📂 iBelieveInSwordfish
+───────────────────────────────────
+  Display: UnMult
+  Match:   Mekajiki UnMult
+
+───────────────────────────────────
+📂 Wave Effects
+───────────────────────────────────
+  Display: Wave The Path
+  Match:   Wave The Path v1.0
+
+───────────────────────────────────
+📂 aescripts + aeplugins
+───────────────────────────────────
+  Display: Paint Link
+  Match:   aescripts_paint_link
+
+───────────────────────────────────
+📂 Ilumy
+───────────────────────────────────
+  Display: Transition Master 2 Pro
+  Match:   rfx_transfact
+
+───────────────────────────────────
+📂 murasin's FX
+───────────────────────────────────
+  Display: m's Halftone
+  Match:   m's Halftone
+
+───────────────────────────────────
+📂 Noise & Grain
+───────────────────────────────────
+  Display: Add Grain
+  Match:   VISINF Grain Implant
+
+  Display: Dust & Scratches
+  Match:   ADBE Dust & Scratches
+
+  Display: Fractal Noise
+  Match:   ADBE Fractal Noise
+
+  Display: Match Grain
+  Match:   VISINF Grain Duplication
+
+  Display: Median (Legacy)
+  Match:   ADBE Median
+
+  Display: Noise
+  Match:   ADBE Noise2
+
+  Display: Noise Alpha
+  Match:   ADBE Noise Alpha2
+
+  Display: Noise HLS
+  Match:   ADBE Noise HLS2
+
+  Display: Noise HLS Auto
+  Match:   ADBE Noise HLS Auto2
+
+  Display: Median
+  Match:   ADBE PS Median
+
+  Display: Remove Grain
+  Match:   VISINF Grain Removal
+
+  Display: Turbulent Noise
+  Match:   ADBE AIF Perlin Noise 3D
+
+───────────────────────────────────
+📂 Audio
+───────────────────────────────────
+  Display: Bass & Treble
+  Match:   ADBE Aud BT
+
+  Display: Compressor
+  Match:   ADBE Aud Compressor
+
+  Display: Delay
+  Match:   ADBE Aud Delay
+
+  Display: Distortion
+  Match:   ADBE Aud Distortion
+
+  Display: Flange & Chorus
+  Match:   ADBE Aud_Flange
+
+  Display: Gate
+  Match:   ADBE Aud Gate
+
+  Display: High-Low Pass
+  Match:   ADBE Aud HiLo
+
+  Display: Stereo Mixer
+  Match:   ADBE Aud Stereo Mixer
+
+  Display: Modulator
+  Match:   ADBE Aud Modulator
+
+  Display: Parametric EQ
+  Match:   ADBE Param EQ
+
+  Display: Reverb
+  Match:   ADBE Aud Reverb
+
+  Display: Backwards
+  Match:   ADBE Aud Reverse
+
+  Display: Tone
+  Match:   ADBE Aud Tone
+
+───────────────────────────────────
+📂 Expression Controls
+───────────────────────────────────
+  Display: Checkbox Control
+  Match:   ADBE Checkbox Control
+
+  Display: Slider Control
+  Match:   ADBE Slider Control
+
+  Display: Layer Control
+  Match:   ADBE Layer Control
+
+  Display: Color Control
+  Match:   ADBE Color Control
+
+  Display: 3D Point Control
+  Match:   ADBE Point3D Control
+
+  Display: Point Control
+  Match:   ADBE Point Control
+
+  Display: Angle Control
+  Match:   ADBE Angle Control
+
+  Display: Dropdown Menu Control
+  Match:   ADBE Dropdown Control
+
+───────────────────────────────────
+📂 Matte
+───────────────────────────────────
+  Display: Matte Choker
+  Match:   ADBE Matte Choker
+
+  Display: Simple Choker
+  Match:   ADBE Simple Choker
+
+  Display: Refine Hard Matte
+  Match:   ADBE RefineRBMatte
+
+  Display: Refine Soft Matte
+  Match:   ADBE RefineMatte2
+
+───────────────────────────────────
+📂 Text
+───────────────────────────────────
+  Display: Numbers
+  Match:   ADBE Numbers2
+
+  Display: Timecode
+  Match:   ADBE Timecode
+
+───────────────────────────────────
+📂 Immersive Video
+───────────────────────────────────
+  Display: VR Chromatic Aberrations
+  Match:   Mettle SkyBox Chromatic Aberrat
+
+  Display: VR Color Gradients
+  Match:   Mettle SkyBox Color Gradients
+
+  Display: VR Converter
+  Match:   Mettle SkyBox Converter
+
+  Display: VR De-Noise
+  Match:   Mettle SkyBox Denoise
+
+  Display: VR Digital Glitch
+  Match:   Mettle SkyBox Digital Glitch
+
+  Display: VR Fractal Noise
+  Match:   Mettle SkyBox Fractal Noise
+
+  Display: VR Blur
+  Match:   Mettle SkyBox Blur
+
+  Display: VR Glow
+  Match:   Mettle SkyBox Glow
+
+  Display: VR Plane to Sphere
+  Match:   Mettle SkyBox Project 2D
+
+  Display: VR Rotate Sphere
+  Match:   Mettle SkyBox Rotate Sphere
+
+  Display: VR Sharpen
+  Match:   Mettle SkyBox Sharpen
+
+  Display: VR Sphere To Plane
+  Match:   Mettle SkyBox Viewer
+
+───────────────────────────────────
+📂 Topaz Video
+───────────────────────────────────
+  Display: Frame Interpolation 
+  Match:   Frame Interpolation 
+
+  Display: Enhance 
+  Match:   Enhance AI 
+
+───────────────────────────────────
+📂 Uncategorized
+───────────────────────────────────
+  Display: Color Swirl
+  Match:   ADBE Color Swirl
+
+  Display: Getting Jiggy
+  Match:   ADBE Getting Jiggy
+
+  Display: Separate XYZ Position
+  Match:   ADBE Separate XYZ Position
+
+  Display: Separate XYZ Scale
+  Match:   ADBE Separate XYZ Scale
+
+  Display: Inset Video - framed
+  Match:   ADBE CM InsetVideoFramed
+
+  Display: Inset Video - torn edges
+  Match:   ADBE CM InsetVideoTorn
+
+  Display: Mood Lighting - amorphous
+  Match:   ADBE CM MoodLightAmorph
+
+  Display: Mood Lighting - digital
+  Match:   ADBE CM MoodLightDigital
+
+  Display: Mood Lighting - streaks
+  Match:   ADBE CM MoodLightStreaks
+
+  Display: Cracked Tiles
+  Match:   ADBE CM CrackedTiles
+
+  Display: Light Leaks - layer markers
+  Match:   ADBE CM LightLeaksMarkers
+
+  Display: Light Leaks - random
+  Match:   ADBE CM LightLeaksRandom
+
+  Display: Opacity Flash - layer markers
+  Match:   ADBE CM OpacityFlashMarkers
+
+  Display: Opacity Flash - random
+  Match:   ADBE CM OpacityFlashRandom
+
+  Display: Crop Edges
+  Match:   ADBE CM CropEdges
+
+  Display: Autoscroll - horizontal
+  Match:   ADBE CM AutoscrollHorizontal
+
+  Display: Autoscroll - vertical
+  Match:   ADBE CM AutoscrollVertical
+
+  Display: Drift Over Time
+  Match:   ADBE CM Throw
+
+  Display: Fade In+Out - frames
+  Match:   ADBE CM FadeInOutFrames
+
+  Display: Fade In+Out - msec
+  Match:   ADBE CM FadeInOutmsec
+
+  Display: Rotate Over Time
+  Match:   ADBE CM Spin
+
+  Display: Scale Bounce - layer markers
+  Match:   ADBE CM ScaleBounceMarkers
+
+  Display: Scale Bounce - random
+  Match:   ADBE CM ScaleBounceRandom
+
+  Display: Wiggle - gelatin
+  Match:   ADBE CM WiggleGelatin
+
+  Display: Wiggle - position
+  Match:   ADBE CM WigglePosition
+
+  Display: Wiggle - rotation
+  Match:   ADBE CM WiggleRotation
+
+  Display: Wiggle - scale
+  Match:   ADBE CM WiggleScale
+
+  Display: Wiggle - shear
+  Match:   ADBE CM WiggleShear
+
+  Display: Wigglerama
+  Match:   ADBE CM Wigglerama
+
+  Display: Dissolve - unmelt
+  Match:   ADBE CM DissolveUnmelt
+
+  Display: Zoom - 2D spin
+  Match:   ADBE CM Zoom2DSpin
+
+  Display: Zoom - 3D tumble
+  Match:   ADBE CM Zoom3DTumble
+
+  Display: Zoom - wobble
+  Match:   ADBE CM ZoomWobble
+
+  Display: Zoom - bubble
+  Match:   ADBE CM ZoomBubble
+
+  Display: Zoom - spiral
+  Match:   ADBE CM ZoomSpiral
+
+  Display: Slide - variable
+  Match:   ADBE CM SlideVariable
+
+  Display: Fly to Inset
+  Match:   ADBE CM FlyToInset
+
+  Display: Corner Reveal
+  Match:   ADBE CM CornerReveal
+
+  Display: Grid Wipe
+  Match:   ADBE CM GridWipe
+
+  Display: Transition Master Control
+  Match:   ADBE CM TransComplete
+
+  Display: Stretch Master Control
+  Match:   ADBE CM TransStretch
+
+  Display: Dissolve Master Control
+  Match:   ADBE CM TransDissolve
+
+  Display: Fade Master Control
+  Match:   ADBE CM TransFade
+
+  Display: Mask Fade Controls
+  Match:   ADBE CM TransFadeMask
+
+  Display: Wipe Master Control
+  Match:   ADBE CM TransWipe
+
+  Display: Wipe Master Controls
+  Match:   ADBE CM TransWipeFeath
+
+  Display: Card Wipe Master Control
+  Match:   ADBE CM TransCard
+
+  Display: Slide Master Control
+  Match:   ADBE CM TransSlide
+
+  Display: Stretch Master Control(corner)
+  Match:   ADBE CM TransCorner
+
+  Display: Stretch Master Control (edge)
+  Match:   ADBE CM TransDirection
+
+  Display: Iris Wipe Master Controls
+  Match:   ADBE CM TransIris
+
+  Display: Radial Wipe Master Controls
+  Match:   ADBE CM TransRadial
+
+  Display: Jiggle
+  Match:   ADBE DE Jiggle
+
+  Display: Jiggle At Marker
+  Match:   ADBE DE Jiggle At Marker
+
+  Display: Jiggle On Beat
+  Match:   ADBE DE Jiggle On Beat
+
+  Display: Jiggle Random
+  Match:   ADBE DE Jiggle Random
+
+  Display: Pulse
+  Match:   ADBE DE Pulse
+
+  Display: Pulse At Marker
+  Match:   ADBE DE Pulse At Marker
+
+  Display: Pulse On Beat
+  Match:   ADBE DE Pulse On Beat
+
+  Display: Pulse Random
+  Match:   ADBE DE Pulse Random
+
+  Display: Bounce
+  Match:   ADBE DE Bounce
+
+  Display: Bounce At Marker
+  Match:   ADBE DE Bounce At Marker
+
+  Display: Bounce On Beat
+  Match:   ADBE DE Bounce On Beat
+
+  Display: Bounce Random
+  Match:   ADBE DE Bounce Random
+
+  Display: Opacity Pulse
+  Match:   ADBE DE Opacity Pulse
+
+  Display: Opacity Pulse At Marker
+  Match:   ADBE DE Opacity Pulse At Marker
+
+  Display: Opacity Pulse On Beat
+  Match:   ADBE DE Opacity Pulse On Beat
+
+  Display: Opacity Pulse Random
+  Match:   ADBE DE Opacity Pulse Random
+
+  Display: Oscillate
+  Match:   ADBE DE Oscillate
+
+  Display: Oscillate At Marker
+  Match:   ADBE DE Oscillate At Marker
+
+  Display: Oscillate On Beat
+  Match:   ADBE DE Oscillate On Beat
+
+  Display: Oscillate Random
+  Match:   ADBE DE Oscillate Random
+
+  Display: Pendulum
+  Match:   ADBE DE Pendulum
+
+  Display: Pendulum At Marker
+  Match:   ADBE DE Pendulum At Marker
+
+  Display: Pendulum On Beat
+  Match:   ADBE DE Pendulum On Beat
+
+  Display: Pendulum Random
+  Match:   ADBE DE Pendulum Random
+
+  Display: Swarm
+  Match:   ADBE DE Swarm
+
+  Display: Follow
+  Match:   ADBE DE Follow
+
+  Display: Orbit
+  Match:   ADBE DE Orbit
+
+  Display: Orbit 3D
+  Match:   ADBE DE Orbit 3D
+
+  Display: Random Motion 1D
+  Match:   ADBE DE Random Motion 1D
+
+  Display: Random Motion
+  Match:   ADBE DE Random Motion
+
+  Display: Random Rotation
+  Match:   ADBE DE Random Rotation
+
+  Display: Random Rotation 3D
+  Match:   ADBE DE Random Rotation 3D
+
+  Display: Random Opacity
+  Match:   ADBE DE Random Opacity
+
+  Display: Random Scale
+  Match:   ADBE DE Random Scale
+
+  Display: Random Fill Color
+  Match:   ADBE DE Random Fill Color
+
+  Display: Z Spring
+  Match:   ADBE DE Z Spring
+
+  Display: Z Spring At Marker
+  Match:   ADBE DE Z Spring At Marker
+
+  Display: Wobble Bounce
+  Match:   ADBE DE Wobble Bounce
+
+  Display: Wobble Bounce At Marker
+  Match:   ADBE DE Wobble Bounce At Marker
+
+  Display: Wobble Bounce On Beat
+  Match:   ADBE DE Wobble Bounce On Beat
+
+  Display: Wobble Bounce Random
+  Match:   ADBE DE Wobble Bounce Random
+
+  Display: Animated Shape Control
+  Match:   ADBE CM Animated Shape Control
+
+  Display: Chaser Control
+  Match:   ADBE CM Animated Shape 2
+
+  Display: Animated Shape Control
+  Match:   ADBE CM Animated Shape 3
+
+  Display: Sample Image
+  Match:   ADBE Sample Image
+
+  Display: Stereo 3D Controls
+  Match:   ADBE Stereo 3D Controls
+
+  Display: Face Track Points
+  Match:   Pseudo/ADBE Animal Head66
+
+  Display: Face Measurements
+  Match:   Pseudo/ADBE Animal Head14
+
+  Display: Trace Path
+  Match:   Pseudo/ADBE Trace Path
+
+  Display: Pattern Template
+  Match:   Pseudo/ADBE Pattern Template
+
+  Display: Counter Controls
+  Match:   Pseudo/ADBE Counter Controls
+
+  Display: Currency Controls
+  Match:   Pseudo/ADBE Currency Controls
+
+  Display: Percentage Controls
+  Match:   Pseudo/ADBE Percentage Controls
+
+  Display: Timer Controls
+  Match:   Pseudo/ADBE Timer Controls
+
+  Display: 2D Text Box
+  Match:   Pseudo/ADBE 2D Text Box

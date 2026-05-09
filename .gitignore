@@ -1,3 +1,3 @@
-*
-!CINEPROMPT-MASTER.html
-!.gitignore
+# Allow all files in this directory
+!*
+# Or just remove the previous restrictions
